@@ -1,18 +1,13 @@
 import streamlit as st
 
-from ai1 import ai1
-from ai1.ai1 import AI1
-from ai2.ai2 import AI2
+from backend import Backend
 
-ai1 = AI1()
-ai2 = AI2()
+backend = Backend()
+
 # Create a text input field
 user_input = st.text_input("Enter your text here", "")
 
-user_input = user_input.split(" ")
+if user_input is not None and len(user_input) > 0:
+    keywords, result, improvement = backend.act(user_input)
 
-# Display the input below when the user hits enter
-keywords = ai1.refine(user_input)
-result = {}
-improvement = ai2.refine(user_input, keywords, result)
-st.write(f"You data: {user_input}, {keywords}, {result}, {improvement}")
+    st.write(f"You data: {user_input}, {keywords}, {result['result']['count']}, {improvement}")
