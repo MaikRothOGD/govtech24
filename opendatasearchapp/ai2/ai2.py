@@ -21,7 +21,9 @@ class AI2:
     def __init__(self, api_key):
         self.client = OpenAI(api_key=api_key)
 
-    def refine(self, user_input: list[str], keywords list[str], result: dict) -> Output:
+    def refine(
+        self, user_input: list[str], keywords: list[str], result: dict
+    ) -> Output:
         keyword = keywords[0]
 
         resp = requests.get("https://ckan.opendata.swiss/api/3/action/tag_list")
@@ -49,25 +51,29 @@ class AI2:
 
         chat_completion_2 = self.client.chat.completions.create(
             model="gpt-4-turbo-preview",
-            temperature=0,
+            temperature=1,
             messages=[
                 {
                     "role": "user",
-                    "content": f"Which of the following terms is related to {keyword}: {','.join(alternative_tags)}? Output only the terms, one per line as raw lowercase strings.",
+                    "content": f"Which of the following terms is related to {keyword}: {','.join(alternative_tags)}? Output only the terms, one per line as raw lowercase strings. Add a line with a sentence in the language of the terms stating how you feel about these results.",
                 }
             ],
         )
 
+        final_answer = chat_completion_2.choices[0].message.content.splitlines()
+        relevant_tags = final_answer[0:-1]
+        relevant_tags = list(filter(lambda t: t != "", relevant_tags))
+        message = final_answer[-1]
         return [
             Output(
-                "You go!",
+                message=message,
                 widening_prompts=list(
-                    map(lambda t: f"{keyword} OR {t}", alternative_tags)
+                    map(lambda t: f"{keyword} OR {t}", relevant_tags)
                 ),
                 narrowing_prompts=list(
-                    map(lambda t: f"{keyword} AND {t}", alternative_tags)
+                    map(lambda t: f"{keyword} AND {t}", relevant_tags)
                 ),
-                alternative_prompts=alternative_tags,
+                alternative_prompts=relevant_tags,
             )
         ]
 
@@ -76,7 +82,7 @@ ai2 = AI2(openai_api_key)
 
 result = ai2.refine(
     ["kuh"],
-    ["meteo", "kühe"],
+    ["fischerei", "kühe"],
     {
         "count": 180,
         "sort": "score desc metadata_modified_desc",
@@ -642,3 +648,4 @@ result = ai2.refine(
         ],
     },
 )
+print(result)
