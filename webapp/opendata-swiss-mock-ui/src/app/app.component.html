@@ -1,0 +1,36 @@
+<div class="search-result-title clearfix">
+  <h2>
+    {{results.count}} Datensätze gefunden ({{search}})
+  </h2>
+  <!-- Sort Options -->
+  <div class="form-group form-inline header-md-vertical-center sortby">
+    <label for="field-order-by">Sortieren nach</label>
+    <select class="form-control" id="field-order-by" name="sort" onchange="this.form.submit()">
+      <option value="score desc, metadata_modified desc">Relevanz</option>
+      <option value="max(res_latest_issued, res_latest_modified) desc">Daten zuletzt geändert</option>
+      <option value="max(issued, modified) desc">Metadaten zuletzt geändert</option>
+      <option value="title_string_de asc">Name aufsteigend</option>
+      <option value="title_string_de desc">Name absteigend</option>
+    </select>
+  </div>
+
+  <li class="dataset-item" *ngFor="let result of results.results">
+    <div class="dataset-content">
+      <h3 class="dataset-heading">
+        <a href="https://opendata.swiss/de/dataset/qualitatsindikatoren-der-schweizer-akutspitaler-2022">
+          {{result.title.de}}
+        </a>
+      </h3>
+      <p class="small"><span class="organization">{{result.organization.display_name.de}}</span><br>
+        <span *ngFor="let grp of result.groups; let last = last">{{grp.display_name.de}}<span *ngIf="!last">, </span></span>
+      </p>
+      <p>{{result.description.de}}</p>
+    </div>
+    <p class="small">Zuletzt aktualisiert: {{result.issued?.substring(0, 10)}}</p>
+    <ul class="dataset-resources-keywords list-inline tags">
+      <li *ngFor="let keyword of result.keywords.de">
+        <small><span class="label label-primary-gray" title="fallzahlen">{{keyword}}</span></small>
+      </li>
+    </ul>
+  </li>
+</div>
