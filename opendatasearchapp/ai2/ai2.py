@@ -53,7 +53,7 @@ class AI2:
             messages=[
                 {
                     "role": "user",
-                    "content": f"Which of the following terms is related to {keyword}: {','.join(alternative_tags)}. Output only the terms, one per line as raw lowercase strings.",
+                    "content": f"Which of the following terms is related to {keyword}: {','.join(alternative_tags)}? Output only the terms, one per line as raw lowercase strings.",
                 }
             ],
         )
