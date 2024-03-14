@@ -21,7 +21,7 @@ class AI2:
     def __init__(self, api_key):
         self.client = OpenAI(api_key=api_key)
 
-    def refine(self, user_input, keywords, result):
+    def refine(self, user_input: list[str], keywords list[str], result: dict) -> Output:
         keyword = keywords[0]
 
         resp = requests.get("https://ckan.opendata.swiss/api/3/action/tag_list")
@@ -642,5 +642,3 @@ result = ai2.refine(
         ],
     },
 )
-
-print(result)
