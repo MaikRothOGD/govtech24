@@ -18,7 +18,7 @@ export class AppComponent {
 
   query: string;
 
-  constructor(private datasetService: DatasetServiceService){
+  constructor(private datasetService: DatasetService){
     this.query = this.extractQueryString(window.location.search);
     // @ts-ignore
     document.getElementById("ogdch_search").value = this.query.replaceAll("+", " ");
