@@ -19,7 +19,7 @@ class AI2:
     def refine(
         self, user_input: list[str], keywords: list[str], result: dict
     ) -> list[Output]:
-        keyword = keywords[0]
+        keyword = " ".join(keywords)
 
         resp = requests.get("https://ckan.opendata.swiss/api/3/action/tag_list")
         resp_json = resp.json()
@@ -84,8 +84,7 @@ class AI2:
         ]
 
 
-ai2 = AI2(openai_api_key)
-
+# ai2 = AI2(openai_api_key)
 # print(
 #     ai2.refine(
 #         ["kuh"],
