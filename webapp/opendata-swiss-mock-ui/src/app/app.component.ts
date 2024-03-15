@@ -3,6 +3,7 @@ import {RouterOutlet} from '@angular/router';
 import {NgForOf, NgIf} from "@angular/common";
 import {DatasetService} from "./dataset.service";
 import {DatasetServiceService} from "./dataset-service.service";
+import {catchError, of} from "rxjs";
 
 
 @Component({
@@ -25,6 +26,14 @@ export class AppComponent {
     // @ts-ignore
     document.getElementById("ogdch_search").value = this.query.replaceAll("+", " ");
     this.datasetService.getDataset(this.query)
+      .pipe(
+        catchError(err => of({
+            result: {
+              count: 0,
+              results: []
+            }
+        }))
+      )
       .subscribe(
         result => {
           this.results = result;
