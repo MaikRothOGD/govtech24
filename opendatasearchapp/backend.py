@@ -10,14 +10,18 @@ class Backend:
         self.ai1 = AI1()
         self.ai2 = AI2()
 
-    def act(self, user_input):
-        user_input = user_input.split(" ")
+    def get_for_input(self, user_input):
+        user_input = user_input.split("+")
 
         # Display the input below when the user hits enter
         keywords = self.ai1.refine(user_input)
         result = self.callCKAN(keywords)
         improvement = self.ai2.refine(user_input, keywords, result["result"])
 
+        result["message"] = improvement.message
+        result["widening_prompts"] = improvement.widening_prompts
+        result["narrowing_prompts"] = improvement.narrowing_prompts
+        result["alternative_prompts"] = improvement.alternative_prompts
         return keywords, result, improvement
 
     def callCKAN(self, values):

@@ -1,3 +1,14 @@
 li {
   list-style-type: none;
 }
+
+.message-container {
+  background: #009688;
+  padding: 15px;
+  color: white;
+}
+
+.message-container a {
+  color: white;
+  font-weight: bold;
+}

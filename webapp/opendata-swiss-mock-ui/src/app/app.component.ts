@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import {ActivatedRoute, Router, RouterOutlet} from '@angular/router';
-import {DatasetServiceService} from "./dataset-service.service";
-import {switchMap} from "rxjs";
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {NgForOf, NgIf} from "@angular/common";
+import {DatasetService} from "./dataset.service";
+import {DatasetServiceService} from "./dataset-service.service";
 
 @Component({
   selector: 'app-root',
@@ -13,14 +13,15 @@ import {NgForOf, NgIf} from "@angular/common";
 })
 export class AppComponent {
 
-  search: any;
-
   results: any;
 
+  query: string;
+
   constructor(private datasetService: DatasetServiceService){
-    let query = this.extractQueryString(window.location.search);
-    this.search = query;
-    this.datasetService.getDataset(query)
+    this.query = this.extractQueryString(window.location.search);
+    // @ts-ignore
+    document.getElementById("ogdch_search").value = this.query.replaceAll("+", " ");
+    this.datasetService.getDataset(this.query)
       .subscribe(
         result => (this.results = result) && console.log(result)
       );
@@ -32,15 +33,15 @@ export class AppComponent {
       return ''; // No query string found
     }
 
-    const keyValuePairs = queryString.split("&"); // Split by "&" to get individual key-value pairs
+    const keyValuePairs = queryString.split("&");
     for (const pair of keyValuePairs) {
-      const [key, value] = pair.split("="); // Split each pair by "="
+      const [key, value] = pair.split("=");
       if (key === "q") {
-        return decodeURIComponent(value); // Return the decoded value after "q="
+        return decodeURIComponent(value);
       }
     }
 
-    return ''; // If "q=" is not found
+    return '';
   }
 
 }

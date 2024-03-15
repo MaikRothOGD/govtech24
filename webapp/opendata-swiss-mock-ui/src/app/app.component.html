@@ -1,6 +1,6 @@
 <div class="search-result-title clearfix">
   <h2>
-    {{results.count}} Datensätze gefunden ({{search}})
+    {{results.count}} Datensätze gefunden
   </h2>
   <!-- Sort Options -->
   <div class="form-group form-inline header-md-vertical-center sortby">
@@ -12,6 +12,34 @@
       <option value="title_string_de asc">Name aufsteigend</option>
       <option value="title_string_de desc">Name absteigend</option>
     </select>
+  </div>
+
+  <div class="message-container" *ngIf="!!query && query.length > 0">
+    <div class="chat-response">{{results.message}}</div>
+    <div class="widening">
+      <p>Hier sind ein paar Vorschläge, um die Suche auszuweiten:</p>
+      <ul>
+        <li *ngFor="let widened of results.widening_prompts">
+          <a href="/?q={{widened.split(' ').join('+')}}">{{widened}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="narrowing">
+      <p>Hier sind ein paar Vorschläge, um die Suche weiter einzugrenzen:</p>
+      <ul>
+        <li *ngFor="let narrowed of results.narrowing_prompts">
+          <a href="/?q={{narrowed.split(' ').join('+')}}">{{narrowed}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="alternative">
+      <p>Ich habe auch spannende alternative Suchergebnisse gefunden:</p>
+      <ul>
+        <li *ngFor="let alternative of results.alternative_prompts">
+          <a href="/?q={{alternative.split(' ').join('+')}}">{{alternative}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <li class="dataset-item" *ngFor="let result of results.results">
