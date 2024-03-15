@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import requests
+import json
 
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.util import semantic_search
@@ -9,9 +11,13 @@ TOP_K = 200
 
 DATA_PATH = "metadata_240314_cleaned.parq"
 EMBEDDING_PATH = "embeddings_240314_multi.npy"
-# EMBEDDING_PATH = "embeddings_240314.npy"
+BASELINK_DATAPORTAL = "https://opendata.swiss/de/dataset/"
 
-st.set_page_config(page_title="Opendata.swiss Semantic Search", layout="centered", initial_sidebar_state="auto")
+st.set_page_config(
+    page_title="Opendata.swiss Semantic Search",
+    layout="wide",
+    initial_sidebar_state="auto",
+)
 
 # ---------------------------------------------------------------
 
@@ -29,10 +35,18 @@ def load_models():
     """Load and cache sentence transformer and crossencoder model."""
     model_path = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     model = SentenceTransformer(model_path)
-    return model 
+    return model
 
 
 # ---------------------------------------------------------------
+
+
+def call_ckan(query, limit=100):
+    """Call CKAN API to search for query"""
+    url = f"https://opendata.swiss/api/3/action/package_search?q={query}&rows={limit}"
+    res = requests.get(url)
+    data = json.loads(res.content)
+    return data["result"]["results"]
 
 
 def do_semantic_search(search_terms, embeddings, top_k=TOP_K):
@@ -42,12 +56,12 @@ def do_semantic_search(search_terms, embeddings, top_k=TOP_K):
     return [x["corpus_id"] for x in hits]
 
 
-def list_results(res, result_counts):
+def list_results(res):
     """Display list of results in main window."""
-    st.markdown(
-        f"<sub>**{res.shape[0]:,.0f} Datensätze gefunden**</sub>",
-        unsafe_allow_html=True,
-    )
+    # st.markdown(
+    #     f"<sub>**{res.shape[0]:,.0f} Datensätze gefunden**</sub>",
+    #     unsafe_allow_html=True,
+    # )
     if len(res) > 0:
         for idx in range(0, len(res)):
             row = res.iloc[idx]
@@ -58,18 +72,36 @@ def list_results(res, result_counts):
 
 def search_by_terms():
     """Search by terms and display results."""
-
     if search_terms == "":
         return None
 
-    result_ids = do_semantic_search(search_terms, embeddings, top_k=TOP_K)
-    result_counts = (0, len(result_ids))
+    cols = st.columns([1, 1])
 
+    with cols[0]:
+        st.markdown("**CKAN Search Results**")
+        ckan_results = call_ckan(search_terms, limit=TOP_K)
+        if len(ckan_results) != 0:
+            for idx in range(0, len(ckan_results)):
+                res = ckan_results[idx]
+                if res["title"]["de"] != "":
+                    title = res["title"]["de"]
+                elif res["title"]["fr"] != "":
+                    title = res["title"]["fr"]
+                elif res["title"]["it"] != "":
+                    title = res["title"]["it"]
+                else:
+                    title = res["title"]["en"]
+                st.markdown(f"[{title}]({BASELINK_DATAPORTAL}{res['name']})")
+                if show_descriptions:
+                    st.caption(f"{res['description']['de'][:200]} ...")
 
-    if len(result_ids) != 0:
-        df_results = df.iloc[result_ids]
+    with cols[1]:
+        st.markdown("**Semantic Search Results**")
+        result_ids = do_semantic_search(search_terms, embeddings, top_k=TOP_K)
+        if len(result_ids) != 0:
+            df_results = df.iloc[result_ids]
 
-        list_results(df_results, result_counts)
+            list_results(df_results)
 
 
 # ---------------------------------------------------------------
@@ -81,11 +113,11 @@ with st.sidebar:
     st.markdown(f"***{len(df)}** datasets found*")
     st.markdown("---")
     show_descriptions = st.checkbox("Show descriptions", value=False)
-    TOP_K = st.slider(
-        "Limit results", min_value=0, max_value=200, value=50
+    TOP_K = st.slider("Limit results", min_value=0, max_value=200, value=50)
+
+st.header("🔍 Lexical versus semantic search on opendata.swiss")
+
+search_terms = st.text_input(
+        "Suchbegriffe oder Frage", value="Bevölkerung", max_chars=2000
     )
-
-st.header("🔍 Semantic Search | opendata.swiss")
-
-search_terms = st.text_input("", value="Bevölkerung", max_chars=2000)
 search_by_terms()
