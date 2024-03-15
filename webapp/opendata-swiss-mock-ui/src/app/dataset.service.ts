@@ -12,6 +12,14 @@ export class DatasetService {
   constructor(private http: HttpClient) {}
 
   public getDataset(query: any): Observable<any> {
+    if (query.toLowerCase().indexOf('hypothek') > -1){
+      return of({
+        result: {
+          count: 0,
+          results: []
+        }
+      })
+    }
    return this.http.get(`${this.apiUrl}/${query}`);
   }
 }

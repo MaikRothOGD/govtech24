@@ -9,6 +9,14 @@ export class DatasetServiceService {
   constructor() { }
 
   public getDataset(param: any): Observable<any> {
+    if (param.toLowerCase().indexOf('hypothek') > -1){
+      return of({
+        result: {
+          count: 0,
+          results: []
+        }
+      })
+    }
     console.log(`query with ${param}`)
     return of({
       "alternative_prompts": [
