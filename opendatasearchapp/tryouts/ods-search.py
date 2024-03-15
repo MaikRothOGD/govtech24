@@ -10,7 +10,9 @@ from sentence_transformers.util import semantic_search
 TOP_K = 200
 
 DATA_PATH = "metadata_240314_cleaned.parq"
-EMBEDDING_PATH = "embeddings_240314_multi.npy"
+# EMBEDDING_PATH = "embeddings_240314_multi.npy"
+# EMBEDDING_PATH = "embeddings_240314_multi_distiluse.npy"
+EMBEDDING_PATH = "embeddings_nomic.npy"
 BASELINK_DATAPORTAL = "https://opendata.swiss/de/dataset/"
 
 st.set_page_config(
@@ -33,8 +35,13 @@ def load_documents():
 @st.cache_resource
 def load_models():
     """Load and cache sentence transformer and crossencoder model."""
-    model_path = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
-    model = SentenceTransformer(model_path)
+    # model_path = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    # model = SentenceTransformer("nomic-ai/nomic-embed-text-v1.5", trust_remote_code=True)
+    # model_path = "distiluse-base-multilingual-cased-v2"
+    # model = SentenceTransformer(model_path)
+    model = SentenceTransformer(
+        "nomic-ai/nomic-embed-text-v1.5", trust_remote_code=True
+    )
     return model
 
 
@@ -118,6 +125,6 @@ with st.sidebar:
 st.header("🔍 Lexical versus semantic search on opendata.swiss")
 
 search_terms = st.text_input(
-        "Suchbegriffe oder Frage", value="Bevölkerung", max_chars=2000
-    )
+    "Suchbegriffe oder Frage", value="Bevölkerung", max_chars=2000
+)
 search_by_terms()
