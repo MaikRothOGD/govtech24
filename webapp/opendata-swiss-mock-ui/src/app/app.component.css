@@ -20,6 +20,7 @@ li {
 
 .message-container li:hover{
   background-color: white;
+  cursor: pointer;
 }
 
 .message-container a{
