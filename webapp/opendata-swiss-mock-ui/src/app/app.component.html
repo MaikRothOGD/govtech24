@@ -1,8 +1,6 @@
 <div class="loading-overlay" *ngIf="loading"><div class="loader"></div></div>
 <div class="search-result-title clearfix">
-  <h2>
-    {{results.result.count}} Datensätze gefunden
-  </h2>
+
   <!-- Sort Options -->
   <div class="form-group form-inline header-md-vertical-center sortby">
     <label for="field-order-by">Sortieren nach</label>
@@ -49,9 +47,12 @@
       </div>
     </div>
 
-    <h2>
-      {{results.result.count}} Datensätze gefunden
-    </h2>
+    <div class="row" style="margin-left: 0px;">
+      <h2>
+        {{results.result.count}} Datensätze gefunden
+      </h2>
+    </div>
+
 
     <li class="dataset-item" *ngFor="let result of results.result.results">
       <div class="dataset-content">
