@@ -14,7 +14,7 @@
     </select>
   </div>
 
-  @if (results.result.results){
+  @if (results.result.results.length > 0){
     <div class="message-container" *ngIf="!!query && query.length > 0">
       <div class="text">
       <div class="chat-response">{{results.message}}</div>
