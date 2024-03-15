@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Observable, of} from "rxjs";
+import {map, Observable, of, timer} from "rxjs";
 import {HttpClientModule, HttpClient} from "@angular/common/http";
 
 @Injectable({
@@ -13,12 +13,16 @@ export class DatasetService {
 
   public getDataset(query: any): Observable<any> {
     if (query.toLowerCase().indexOf('hypothek') > -1){
-      return of({
-        result: {
-          count: 0,
-          results: []
-        }
-      })
+      return timer(1000).pipe(
+        map(() => {
+          return {
+            result: {
+              count: 0,
+              results: []
+            }
+          };
+        })
+      );
     }
    return this.http.get(`${this.apiUrl}/${query}`);
   }

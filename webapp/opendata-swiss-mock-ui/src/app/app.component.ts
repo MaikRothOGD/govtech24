@@ -17,14 +17,19 @@ export class AppComponent {
   results: any;
 
   query: string;
+  loading: boolean;
 
   constructor(private datasetService: DatasetService){
     this.query = this.extractQueryString(window.location.search);
+    this.loading = true;
     // @ts-ignore
     document.getElementById("ogdch_search").value = this.query.replaceAll("+", " ");
     this.datasetService.getDataset(this.query)
       .subscribe(
-        result => (this.results = result)
+        result => {
+          this.results = result;
+          this.loading = false;
+        }
       );
   }
 
