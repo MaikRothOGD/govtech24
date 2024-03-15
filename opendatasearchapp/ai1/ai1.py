@@ -1,14 +1,13 @@
 from openai import OpenAI
 
-client = OpenAI()
 
 class AI1:
 
-    def __init__(self):
-        pass
+    def __init__(self, api_key):
+        self.client = OpenAI(api_key=api_key)
 
     def refine(self, input: str) -> list:
-        completion = client.chat.completions.create(
+        completion = self.client.chat.completions.create(
             model="gpt-4-0125-preview",
             messages=[
                 {
@@ -27,9 +26,9 @@ class AI1:
                 Output: Geshundheit Geshundheitswesen Akutspital Spital Akutversorgung Notfallversorgung Schweiz
                 """},
                 {
-                    "role": "user", 
+                    "role": "user",
                     "content": input
-                    }
+                }
             ]
         )
 

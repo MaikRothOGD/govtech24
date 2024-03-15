@@ -10,11 +10,9677 @@ export class DatasetServiceService {
 
   public getDataset(param: any): Observable<any> {
     console.log(`query with ${param}`)
-    return of({"count": 33,
-      "message": "Das ist unglaublich schlau, so ein Query!",
-      "widening_prompts": ["auto bus", "traktor velo"],
-      "narrowing_prompts": ["auto", "auto und traktor"],
-      "alternative_prompts": ["flugzeug", "schiff"],
-      "sort": "score desc, metadata_modified desc", "facets": {}, "results": [{"owner_org": "191560fd-46f5-439c-96e7-95840919b468", "maintainer": "geoportal@koeniz.ch", "groups": [{"display_name": {"fr": "R\u00e9gions et villes", "de": "Regionen und St\u00e4dte", "en": "Regions and cities", "it": "Regioni e citt\u00e0"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}", "image_display_url": "", "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa", "name": "regi"}, {"display_name": {"fr": "Transports", "de": "Verkehr", "en": "Transport", "it": "Trasporti"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}", "image_display_url": "", "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f", "name": "tran"}], "issued": "2021-04-07T00:00:00", "title_for_slug": "e-bike-ladestationen-gemeinde-koniz", "qualified_relations": [], "private": false, "maintainer_email": "geoportal@koeniz.ch", "num_tags": 0, "contact_points": [{"email": "geoportal@koeniz.ch", "name": "geoportal@koeniz.ch"}], "keywords": {"fr": ["fahrrad", "mobilitat"], "de": ["fahrrad", "mobilitat"], "en": ["fahrrad", "mobilitat"], "it": ["fahrrad", "mobilitat"]}, "temporals": [], "id": "56b27b1d-db0e-4bc9-828e-1d92c061fe49", "metadata_created": "2023-12-20T10:02:31.030395", "conforms_to": [], "metadata_modified": "2024-02-20T03:54:50.370493", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/1c31d6d3-ccb7-46a7-8f4a-f2abbdcd6779", "label": "geocat.ch permalink"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"protocol": "WWW:DOWNLOAD-URL", "cache_last_updated": null, "issued": "2021-04-07T00:00:00", "package_id": "56b27b1d-db0e-4bc9-828e-1d92c061fe49", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "b5836a4f-f893-4487-98e2-220b277c77dc", "size": null, "display_name": {"fr": "DWG", "de": "DWG", "en": "DWG", "it": "DWG"}, "title": {"fr": "DWG", "de": "DWG", "en": "DWG", "it": "DWG"}, "download_url": "https://map.koeniz.ch/download/ladestationen-dwg.zip", "created": "2023-12-20T10:04:45.509664", "state": "active", "media_type": "", "hash": "", "description": {"fr": "Download der Daten als DWG", "de": "Download der Daten als DWG", "en": "Download der Daten als DWG", "it": "Download der Daten als DWG"}, "format": "ZIP", "language": [], "mimetype_inner": null, "url_type": null, "mimetype": null, "cache_url": null, "name": {"fr": "DWG", "de": "DWG", "en": "DWG", "it": "DWG"}, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://map.koeniz.ch/download/ladestationen-dwg.zip", "byte_size": 0, "modified": "", "last_modified": null, "position": 0, "revision_id": "e000f02f-58b6-428d-b391-17f93b1c9bf2", "resource_type": null}, {"protocol": "WWW:DOWNLOAD-URL", "cache_last_updated": null, "issued": "2021-04-07T00:00:00", "package_id": "56b27b1d-db0e-4bc9-828e-1d92c061fe49", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "fe1425f1-a2af-4a3a-ab83-5b312aefa2e9", "size": null, "display_name": {"fr": "SHP", "de": "SHP", "en": "SHP", "it": "SHP"}, "title": {"fr": "SHP", "de": "SHP", "en": "SHP", "it": "SHP"}, "download_url": "https://map.koeniz.ch/download/ladestationen-shp.zip", "created": "2023-12-21T03:06:28.170300", "state": "active", "media_type": "", "hash": "", "description": {"fr": "Download der Daten als SHP", "de": "Download der Daten als SHP", "en": "Download der Daten als SHP", "it": "Download der Daten als SHP"}, "format": "ZIP", "language": [], "mimetype_inner": null, "url_type": null, "mimetype": null, "cache_url": null, "name": {"fr": "SHP", "de": "SHP", "en": "SHP", "it": "SHP"}, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://map.koeniz.ch/download/ladestationen-shp.zip", "byte_size": 0, "modified": "", "last_modified": null, "position": 1, "revision_id": "e000f02f-58b6-428d-b391-17f93b1c9bf2", "resource_type": null}], "num_resources": 2, "description": {"fr": "\u00d6ffentlich zug\u00e4ngliche Standorte der E-Bike Ladestationen in der Gemeinde K\u00f6niz. Die Standorte sind mit einer kurzen Beschreibung, dem Realisierungsdatum und einem Foto versehen und werden bei Bedarf aktualisiert.", "de": "\u00d6ffentlich zug\u00e4ngliche Standorte der E-Bike Ladestationen in der Gemeinde K\u00f6niz. Die Standorte sind mit einer kurzen Beschreibung, dem Realisierungsdatum und einem Foto versehen und werden bei Bedarf aktualisiert.", "en": "\u00d6ffentlich zug\u00e4ngliche Standorte der E-Bike Ladestationen in der Gemeinde K\u00f6niz. Die Standorte sind mit einer kurzen Beschreibung, dem Realisierungsdatum und einem Foto versehen und werden bei Bedarf aktualisiert.", "it": "\u00d6ffentlich zug\u00e4ngliche Standorte der E-Bike Ladestationen in der Gemeinde K\u00f6niz. Die Standorte sind mit einer kurzen Beschreibung, dem Realisierungsdatum und einem Foto versehen und werden bei Bedarf aktualisiert."}, "tags": [], "spatial": "K\u00f6niz", "coverage": "", "creator_user_id": "bf154fa8-b303-4af0-b584-000641f302aa", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://koeniz.ch/geoportal\", \"name\": \"Gemeinde K\\u00f6niz, Abteilung Verkehr und Unterhalt\"}", "organization": {"display_name": {"fr": "Section de la g\u00e9omatique Commune de K\u00f6niz", "de": "Dienstzweig Geomatik Gemeinde K\u00f6niz", "en": "Dienstzweig Geomatik Gemeinde K\u00f6niz", "it": "Ufficio della geomatica Comune di K\u00f6niz"}, "description": {"fr": "", "en": "", "de": "Der Dienstzweig Geomatik ist in Zusammenarbeit mit den Fachabteilungen f\u00fcr die Bewirtschaftung und Publikation der Geodaten sowie in Zusammenarbeit mit dem Informatikdienst f\u00fcr die GIS-Infrastruktur der Gemeinde K\u00f6niz zust\u00e4ndig. Hinzu kommen Aufgaben im Bereich Leitungskataster und die Integration der Daten der amtlichen Vermessung ins GIS der Gemeinde. Die Geodaten der Gemeinde K\u00f6niz welche den Prinzipien der Open Government Data Strategie entsprechen, werden vom Dienstzweig Geomatik Schritt f\u00fcr Schritt auf opendata.swiss zur Verf\u00fcgung gestellt.", "it": ""}, "name": "dienstzweig-geomatik-gemeinde-koeniz", "image_display_url": "", "url": "https://www.koeniz.ch/geoportal", "package_count": 22, "created": "2021-04-07T06:08:53.694267", "political_level": "commune", "is_organization": true, "state": "active", "image_url": "", "groups": [{"capacity": "public", "name": "gemeinde_koeniz"}], "type": "organization", "title": {"fr": "Section de la g\u00e9omatique Commune de K\u00f6niz", "de": "Dienstzweig Geomatik Gemeinde K\u00f6niz", "en": "Dienstzweig Geomatik Gemeinde K\u00f6niz", "it": "Ufficio della geomatica Comune di K\u00f6niz"}, "revision_id": "a4427c66-c8c6-40bf-b66f-a8bda2f71bc7", "num_followers": 0, "id": "191560fd-46f5-439c-96e7-95840919b468", "tags": [], "approval_status": "approved"}, "name": "e-bike-ladestationen-gemeinde-koniz", "language": ["de"], "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG", "license_title": null, "modified": "", "url": "https://opendata.swiss/de/perma/1c31d6d3-ccb7-46a7-8f4a-f2abbdcd6779@dienstzweig-geomatik-gemeinde-koeniz", "extras": [{"key": "harvest_object_id", "value": "386075bd-8703-484c-8fd4-45d08cdb9c92"}, {"key": "harvest_source_id", "value": "fbcc1f87-4c9b-4a17-91fc-a97c017f5456"}, {"key": "harvest_source_title", "value": "Dienstzweig Geomatik Gemeinde K\u00f6niz \u2013 Geocat Harvester"}], "title": {"fr": "E-Bike Ladestationen Gemeinde K\u00f6niz", "de": "E-Bike Ladestationen Gemeinde K\u00f6niz", "en": "E-Bike Ladestationen Gemeinde K\u00f6niz", "it": "E-Bike Ladestationen Gemeinde K\u00f6niz"}, "revision_id": "e000f02f-58b6-428d-b391-17f93b1c9bf2", "identifier": "1c31d6d3-ccb7-46a7-8f4a-f2abbdcd6779@dienstzweig-geomatik-gemeinde-koeniz"}, {"license_title": null, "maintainer": null, "issued": "2023-03-03T00:00:00", "title_for_slug": "publi-e-bike-availability-bern", "qualified_relations": [], "private": false, "maintainer_email": null, "num_tags": 0, "contact_points": [{"email": "geoinformation@bfe.admin.ch", "name": "Bundesamt f\u00fcr Energie"}], "keywords": {"fr": [], "de": [], "en": [], "it": []}, "temporals": [], "id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "metadata_created": "2023-03-06T00:40:25.937678", "documentation": [], "conforms_to": [], "metadata_modified": "2024-03-14T02:03:42.848023", "author": null, "author_email": null, "isopen": false, "relations": [], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/jsonld", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "e5ef0006-c27a-4b04-b26e-7ce3e86c541d", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "jsonld", "en": "", "it": ""}, "title": {"fr": "", "de": "jsonld", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/jsonld", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (jsonld)", "en": "", "it": ""}, "format": "JSON-LD", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "jsonld", "en": "", "it": ""}, "mimetype": "application/ld+json", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039322", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/jsonld", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 0, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/parquet", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "1ea87aeb-d6eb-45c2-8b74-11779fee6696", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "parquet", "en": "", "it": ""}, "title": {"fr": "", "de": "parquet", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/parquet", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (parquet)", "en": "", "it": ""}, "format": "", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "parquet", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2024-01-24T01:47:07.322529", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/parquet", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 1, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/jsonl", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "13f20c45-babb-4564-ad90-4c6d1a8444d7", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "jsonl", "en": "", "it": ""}, "title": {"fr": "", "de": "jsonl", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/jsonl", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (jsonl)", "en": "", "it": ""}, "format": "JSON", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "jsonl", "en": "", "it": ""}, "mimetype": "application/json", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039325", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/jsonl", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 2, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/csv", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "8135f5d4-6baf-42fe-99bf-c77a2455678a", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "csv", "en": "", "it": ""}, "title": {"fr": "", "de": "csv", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/csv", "state": "active", "media_type": "text/csv", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (csv)", "en": "", "it": ""}, "format": "CSV", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "csv", "en": "", "it": ""}, "mimetype": "text/csv", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-03-06T00:40:25.963199", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/csv", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 3, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/fgb", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "d2d5f447-ed35-4ae8-a12e-58e988e0c5c6", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "fgb", "en": "", "it": ""}, "title": {"fr": "", "de": "fgb", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/fgb", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (fgb)", "en": "", "it": ""}, "format": "octet-stream", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "fgb", "en": "", "it": ""}, "mimetype": "application/octet-stream", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039330", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/fgb", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 4, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/ov2", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "e3fdefe2-4b14-4619-880c-40ee873dea76", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "ov2", "en": "", "it": ""}, "title": {"fr": "", "de": "ov2", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/ov2", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (ov2)", "en": "", "it": ""}, "format": "", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "ov2", "en": "", "it": ""}, "mimetype": "text/plain", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039323", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/ov2", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 5, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/xls", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "db0cb7cf-69ea-4e5c-a381-aac104c9efc2", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "xls", "en": "", "it": ""}, "title": {"fr": "", "de": "xls", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/xls", "state": "active", "media_type": "application/vnd.ms-excel", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (xls)", "en": "", "it": ""}, "format": "XLS", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "xls", "en": "", "it": ""}, "mimetype": "application/xls", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039328", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/xls", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 6, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/n3", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "969d7a1b-6499-478d-ab64-756f5cd5e150", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "n3", "en": "", "it": ""}, "title": {"fr": "", "de": "n3", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/n3", "state": "active", "media_type": "text/n3", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (n3)", "en": "", "it": ""}, "format": "N3", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "n3", "en": "", "it": ""}, "mimetype": "text/n3", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039326", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/n3", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 7, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/gpx", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "e4490f32-7571-4159-87dd-6c3b7b527971", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "gpx", "en": "", "it": ""}, "title": {"fr": "", "de": "gpx", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/gpx", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (gpx)", "en": "", "it": ""}, "format": "", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "gpx", "en": "", "it": ""}, "mimetype": "application/gpx+xml", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039329", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/gpx", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 8, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/geojson", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "e537df68-9125-4a84-9adc-319ff22db204", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "geojson", "en": "", "it": ""}, "title": {"fr": "", "de": "geojson", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/geojson", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (geojson)", "en": "", "it": ""}, "format": "JSON", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "geojson", "en": "", "it": ""}, "mimetype": "application/json", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-03-06T00:40:25.963200", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/geojson", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 9, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/json", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "00b9ba57-c05e-492a-87a7-9e58f447a662", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "json", "en": "", "it": ""}, "title": {"fr": "", "de": "json", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/json", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (json)", "en": "", "it": ""}, "format": "JSON", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "json", "en": "", "it": ""}, "mimetype": "application/json", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-03-06T00:40:25.963189", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/json", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 10, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/shp", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "7dea1e62-28a9-42c0-871e-b008cf3ff8e4", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "shp", "en": "", "it": ""}, "title": {"fr": "", "de": "shp", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/shp", "state": "active", "media_type": "application/zip", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (shp)", "en": "", "it": ""}, "format": "ZIP", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "shp", "en": "", "it": ""}, "mimetype": "application/zip", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-03-06T00:40:25.963196", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/shp", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 11, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/rdfxml", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "06581a95-f3a1-42c2-a14b-29762d735545", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "rdfxml", "en": "", "it": ""}, "title": {"fr": "", "de": "rdfxml", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/rdfxml", "state": "active", "media_type": "application/rdf+xml", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (rdfxml)", "en": "", "it": ""}, "format": "RDF XML", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "rdfxml", "en": "", "it": ""}, "mimetype": "application/rdf+xml", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039318", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/rdfxml", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 12, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/kml", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "d80c9605-795e-4067-a1ca-db8d867be7d2", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "kml", "en": "", "it": ""}, "title": {"fr": "", "de": "kml", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/kml", "state": "active", "media_type": "application/vnd.google-earth.kml+xml", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (kml)", "en": "", "it": ""}, "format": "KML", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "kml", "en": "", "it": ""}, "mimetype": "application/vnd.google-earth.kml+xml", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039312", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/kml", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 13, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2023-03-03T00:00:00", "uri": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/turtle", "package_id": "29d403d2-fec5-45d3-90ef-06107343e3f8", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "9f740712-5205-4410-b219-f61d8862c38a", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "turtle", "en": "", "it": ""}, "title": {"fr": "", "de": "turtle", "en": "", "it": ""}, "download_url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/turtle", "state": "active", "media_type": "text/turtle", "hash": "", "description": {"fr": "", "de": "publi - e bike availability bern (turtle)", "en": "", "it": ""}, "format": "RDF Turtle", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "turtle", "en": "", "it": ""}, "mimetype": "text/turtle", "cache_url": null, "license": "https://data.sbb.ch/page/licence", "access_services": [], "created": "2023-09-01T00:36:53.039320", "url": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern/exports/turtle", "documentation": [], "modified": "2023-03-03T15:51:40+00:00", "last_modified": null, "position": 14, "revision_id": "095e2d3d-dfb7-4d1e-941b-51458d93a2e0", "resource_type": null}], "num_resources": 15, "description": {"fr": "", "de": "alle 10 Minuten werden die Publibike Daten ab dem OpenJourneyPlaner (OJP) abgefragt:----------------\u00a0 \u00a0\u00a0Aufruf:curl --location --request POST 'https://api.opentransportdata.swiss/ojp2020' \\--header 'Content-Type: application/xml' \\--header 'Authorization: Bearer 57c5dbbbf1fe4d00010000185bca6120cfa442c3a3d562b2de8fa9a7' \\--data-raw '<OJP xmlns=\"http://www.siri.org.uk/siri\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:ojp=\"http://www.vdv.de/ojp\" xsi:schemaLocation=\"http://www.siri.org.uk/siri ../ojp-xsd-v1.0/OJP.xsd\" version=\"1.0\">\u00a0 <OJPRequest>\u00a0 \u00a0 <ServiceRequest>\u00a0 \u00a0 \u00a0 <RequestorRef>OJP SDK v1.0</RequestorRef>\u00a0 \u00a0 \u00a0 <RequestTimestamp>2023-03-03T15:34:33.777Z</RequestTimestamp>\u00a0 \u00a0 \u00a0 <ojp:OJPLocationInformationRequest>\u00a0 \u00a0 \u00a0 \u00a0 <RequestTimestamp>2023-03-03T15:34:33.777Z</RequestTimestamp>\u00a0 \u00a0 \u00a0 \u00a0 <ojp:InitialInput>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:GeoRestriction>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:Rectangle>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:UpperLeft>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <Longitude>7.33644</Longitude>\u00a0\u00a0\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <Latitude>46.98743</Latitude>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:UpperLeft>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:LowerRight>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <Longitude>7.53302</Longitude>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <Latitude>46.91661</Latitude>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:LowerRight>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:Rectangle>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:GeoRestriction>\u00a0 \u00a0 \u00a0 \u00a0 </ojp:InitialInput>\u00a0 \u00a0 \u00a0 \u00a0 <ojp:Restrictions>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:NumberOfResults>300</ojp:NumberOfResults>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:Type>poi</ojp:Type>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:PointOfInterestFilter>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:PointOfInterestCategory>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:OsmTag>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:Tag>amenity</ojp:Tag>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 <ojp:Value>bicycle_rental</ojp:Value>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:OsmTag>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:PointOfInterestCategory>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 </ojp:PointOfInterestFilter>\u00a0 \u00a0 \u00a0 \u00a0 </ojp:Restrictions>\u00a0 \u00a0 \u00a0 </ojp:OJPLocationInformationRequest>\u00a0 \u00a0 </ServiceRequest>\u00a0 </OJPRequest></OJP>' -o $dateiname", "en": "", "it": ""}, "tags": [], "groups": [], "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://data.sbb.ch/explore/?refine.dcat_ap_ch.domain=schweizerische-bundesbahnen-sbb\", \"name\": \"schweizerische-bundesbahnen-sbb\"}", "organization": {"display_name": {"fr": "Chemins de fer f\u00e9d\u00e9raux suisses CFF", "de": "Schweizerische Bundesbahnen SBB", "en": "Swiss Federal Railways SBB", "it": "Ferrovie federali svizzere FFS"}, "description": {"fr": "Les CFF sont l\u2019un des piliers d\u2019une mobilit\u00e9 durable en Suisse. Chaque jour, les CFF acheminent 1,18 million de voyageurs et 210 000 tonnes de marchandises, de mani\u00e8re ponctuelle et respectueuse de l\u2019environnement.\r\n\r\n\r\nLe chemin de fer cr\u00e9e des liens \u00e0 travers toute la Suisse, par-del\u00e0 les fronti\u00e8res linguistiques, culturelles et politiques. Du point de vue \u00e9conomique et social, il contribue ainsi \u00e0 la qualit\u00e9 de vie et \u00e0 la comp\u00e9titivit\u00e9 de notre pays. Mais les CFF ne sont pas qu\u2019une entreprise de chemin de fer moderne et performante. En leur qualit\u00e9 d\u2019employeur, de commanditaire, de propri\u00e9taire et de g\u00e9rant d\u2019immeubles, ils sont responsables de la Suisse, de ses r\u00e9gions et de l\u2019environnement.\r\n", "de": "Die SBB ist das R\u00fcckgrat einer nachhaltigen Mobilit\u00e4t in der Schweiz. T\u00e4glich sind 1,18 Millionen Reisende und 210'000 Tonnen G\u00fcter mit der SBB sicher, p\u00fcnktlich und umweltfreundlich unterwegs.\r\n\r\nDie Eisenbahn verbindet die Schweiz \u00fcber alle sprachlichen, kulturellen und politischen Grenzen hinweg und leistet in wirtschaftlicher und gesellschaftlicher Hinsicht einen \u00fcberaus wertvollen Beitrag an die Lebensqualit\u00e4t und Wettbewerbsf\u00e4higkeit unseres Landes. Die SBB ist aber weit mehr als ein modernes und leistungsf\u00e4higes Bahnunternehmen. Auch als Arbeits- und Auftraggeberin sowie als Immobilienbesitzerin und \u2011bewirtschafterin \u00fcbernimmt sie Verantwortung f\u00fcr die Schweiz, ihre Regionen und die Umwelt.", "en": "SBB is the backbone of sustainable mobility in Switzerland. Every day, it safely transports 1.18 million passengers and 210,000 tonnes of freight on time and in an environmentally friendly manner. \r\n\r\n\r\nThe railway transcends all linguistic, cultural and political boundaries to bring Switzerland together, and in economic and social terms, it makes a vital contribution to the quality of life and competitiveness of our country. However, SBB is much more than just a modern, efficient railway company. As an employer and contractor, a property owner and a real estate manager, SBB takes responsibility for Switzerland, its regions and the environment. \r\n", "it": "Le FFS assumono la loro responsabilit\u00e0. \r\n\r\n \r\n\r\n\r\n\r\nConsigliare ad altri\r\n\r\n\r\nCondividere\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n\r\n\r\n \r\n\r\n\r\nLe FFS sono la colonna portante della mobilit\u00e0 sostenibile in Svizzera. Ogni giorno 1,18 milioni di viaggiatori e quasi 210 000 tonnellate di merci viaggiano con le FFS in modo sicuro, puntuale e rispettoso dell'ambiente.\r\n\r\n\r\nLa ferrovia unisce la Svizzera oltre i confini linguistici, culturali e politici e dal punto di vista economico e sociale assicura un contributo oltremodo prezioso alla qualit\u00e0 di vita e alla competitivit\u00e0 del nostro Paese. Le FFS tuttavia sono ben pi\u00f9 di un'impresa ferroviaria moderna e altamente performante. Esse assumono la loro responsalibit\u00e0 per la Svizzera, le sue regioni e l'ambiente anche come datore di lavoro, di committenti, cos\u00ec come di proprietarie e amministratrici di fondi e di immobili.\r\n"}, "name": "schweizerische-bundesbahnen-sbb", "image_display_url": "https://ckan.opendata.swiss/uploads/group/sbb-logo1.png", "url": "", "package_count": 83, "created": "2015-11-30T12:26:28.435998", "political_level": "other", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/sbb-logo1.png", "groups": [], "type": "organization", "title": {"fr": "Chemins de fer f\u00e9d\u00e9raux suisses CFF", "de": "Schweizerische Bundesbahnen SBB", "en": "Swiss Federal Railways SBB", "it": "Ferrovie federali svizzere FFS"}, "revision_id": "48b0a14c-d655-4d19-850e-cfccb53a4691", "num_followers": 0, "id": "9e730a9d-9f04-4c65-a977-6830e1ed3e61", "tags": [], "approval_status": "approved"}, "name": "publi-e-bike-availability-bern", "language": [], "accrual_periodicity": "", "owner_org": "9e730a9d-9f04-4c65-a977-6830e1ed3e61", "modified": "2023-03-03T15:51:40+00:00", "url": "https://data.sbb.ch/explore/dataset/publi-e-bike-availability-bern/", "extras": [{"value": "publi-e-bike-availability-bern@schweizerische-bundesbahnen-sbb", "key": "guid"}, {"value": "https://data.sbb.ch/api/v2/catalog/datasets/publi-e-bike-availability-bern", "key": "uri"}, {"key": "harvest_object_id", "value": "992449a0-3c32-42a6-bc7b-4e72cce4e789"}, {"key": "harvest_source_id", "value": "f926d101-3007-4eee-8333-a738af9d5442"}, {"key": "harvest_source_title", "value": "SBB - DCAT Harvester"}], "title": {"fr": "", "de": "publi - e bike availability bern", "en": "", "it": ""}, "revision_id": "403aa496-07a6-4899-afa0-f75abf149f0b", "identifier": "publi-e-bike-availability-bern@schweizerische-bundesbahnen-sbb"}, {"license_title": null, "maintainer": "Basel-Landschaft", "issued": "2012-06-17T00:00:00", "title_for_slug": "anderung-vom-30-september-2011-des-bundesgesetzes-uber-die-krankenversicherung-kvg-managed-care", "qualified_relations": [], "private": false, "maintainer_email": "wahlen-abstimmungen@bl.ch", "num_tags": 8, "contact_points": [{"email": "wahlen-abstimmungen@bl.ch", "name": "Basel-Landschaft"}], "keywords": {"fr": ["votation", "federal"], "de": ["abstimmung", "national"], "en": [], "it": ["nazionale", "votazione"]}, "temporals": [{"start_date": "2012-06-17T00:00:00", "end_date": "2012-06-17T23:59:59.999999"}], "id": "90118068-c515-4132-847e-7e4da82f5b31", "metadata_created": "2022-12-13T15:07:22.049601", "documentation": [], "conforms_to": [], "metadata_modified": "2024-03-14T04:43:25.533564", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_it.md", "label": "Descrizione del formato"}, {"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_rm.md", "label": "Descripziun dal format"}, {"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_de.md", "label": "Formatbeschreibung"}, {"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_fr.md", "label": "Description du format"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 0, "cache_last_updated": null, "issued": "2021-07-23T19:08:59+00:00", "uri": "http://kanton-basel-landschaft/vote-anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/csv", "package_id": "90118068-c515-4132-847e-7e4da82f5b31", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "38dfe09f-e759-488b-ae8d-5d25ff6c95c2", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"rm": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "fr": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "de": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "en": "", "it": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv"}, "title": {"rm": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "fr": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "de": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "en": "", "it": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv"}, "download_url": "https://abstimmungen.bl.ch/vote/anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-csv", "state": "active", "media_type": "text/csv", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "CSV", "language": [], "mimetype_inner": null, "url_type": null, "name": {"rm": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "fr": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "de": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "en": "", "it": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv"}, "mimetype": "text/csv", "cache_url": null, "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "access_services": [], "created": "2022-12-13T15:07:22.197935", "url": "https://abstimmungen.bl.ch/vote/anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-csv", "documentation": [], "modified": "2022-01-19T06:36:14+00:00", "last_modified": null, "position": 0, "revision_id": "bdb49643-34e3-48f3-adb9-913b4ba68301", "identifier": "csv", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2021-07-23T19:08:59+00:00", "uri": "http://kanton-basel-landschaft/vote-anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/json", "package_id": "90118068-c515-4132-847e-7e4da82f5b31", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "e01313cf-4a45-409b-b06f-5fcd27007748", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"rm": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "fr": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "de": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "en": "", "it": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json"}, "title": {"rm": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "fr": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "de": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "en": "", "it": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json"}, "download_url": "https://abstimmungen.bl.ch/vote/anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-json", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "JSON", "language": [], "mimetype_inner": null, "url_type": null, "name": {"rm": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "fr": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "de": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "en": "", "it": "anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json"}, "mimetype": "application/json", "cache_url": null, "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "access_services": [], "created": "2022-12-13T15:07:22.197942", "url": "https://abstimmungen.bl.ch/vote/anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-json", "documentation": [], "modified": "2022-01-19T06:36:14+00:00", "last_modified": null, "position": 1, "revision_id": "bdb49643-34e3-48f3-adb9-913b4ba68301", "identifier": "json", "resource_type": null}], "num_resources": 2, "description": {"rm": "Resultats finals da la votaziun federala \"\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17 da zercladur 2012, Kanton Basel-Landschaft, ordin\u00e0 tenor vischnancas.", "fr": "R\u00e9sultats finaux du vote f\u00e9d\u00e9ral \"\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17 juin 2012, Kanton Basel-Landschaft, r\u00e9partis par municipalit\u00e9s.", "de": "Schlussresultate der eidgen\u00f6ssischen Abstimmung \"\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17. Juni 2012, Kanton Basel-Landschaft, aufgeschl\u00fcsselt nach Gemeinden.", "en": "", "it": "Risultati finali della votazione federale \"\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17 giugno 2012, Kanton Basel-Landschaft, suddivisi per municipalit."}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "abstimmung", "id": "b23c35b9-e3c8-41ab-8a3f-2b33a98c7a97", "name": "abstimmung"}, {"vocabulary_id": null, "state": "active", "display_name": "federal", "id": "8a59db06-989d-464c-9f96-5bb80a90100d", "name": "federal"}, {"vocabulary_id": null, "state": "active", "display_name": "national", "id": "700a9f36-9c3f-4807-a718-524bbe3ffd2d", "name": "national"}, {"vocabulary_id": null, "state": "active", "display_name": "nazionale", "id": "619aa689-677b-4c60-aec1-a54a1dbc1915", "name": "nazionale"}, {"vocabulary_id": null, "state": "active", "display_name": "plaun-naziunal", "id": "9771f92d-0871-409a-8499-45100a1c6767", "name": "plaun-naziunal"}, {"vocabulary_id": null, "state": "active", "display_name": "votation", "id": "cc2ce8c9-0497-422f-859a-b0f0e52b3e7f", "name": "votation"}, {"vocabulary_id": null, "state": "active", "display_name": "votazione", "id": "e156fa4f-b674-4bc8-b3ee-133cada8f463", "name": "votazione"}, {"vocabulary_id": null, "state": "active", "display_name": "votaziun", "id": "39a4b4ff-9d47-466c-805e-96b71eb53c36", "name": "votaziun"}], "groups": [{"display_name": {"fr": "Gouvernement et secteur public", "de": "Regierung und \u00f6ffentlicher Sektor", "en": "Government and public sector", "it": "Governo e settore pubblico"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Regierung und \u00f6ffentlicher Sektor\", \"en\": \"Government and public sector\", \"fr\": \"Gouvernement et secteur public\", \"it\": \"Governo e settore pubblico\"}", "image_display_url": "", "id": "e63f4b4e-5e3e-4c7f-9d4a-4babf164878f", "name": "gove"}], "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://opendata.swiss/organization/kanton-basel-landschaft\", \"name\": \"Basel-Landschaft\"}", "organization": {"display_name": {"fr": "Canton de B\u00e2le-Campagne", "de": "Kanton Basel-Landschaft", "en": "Canton of Basel-Country", "it": "Cantone di Basilea-Campagna"}, "description": {"fr": "", "en": "The Canton of Basel-Country publishes open datasets of cantonal offices and agencies.\r\nFurther information at https://ogd.bl.ch/", "de": "Der Kanton Basel-Landschaft ver\u00f6ffentlicht nach und nach Open Government Datens\u00e4tze von kantonalen \u00c4mtern und Dienststellen. \r\nWeitere Informationen unter https://ogd.bl.ch/", "it": ""}, "name": "kanton-basel-landschaft", "image_display_url": "https://ckan.ogdch-abnahme.clients.liip.ch/uploads/group/2021-04-23-131437.419029baselland.jpg", "url": "https://www.baselland.ch", "package_count": 495, "created": "2022-12-13T14:49:27.397934", "political_level": "canton", "is_organization": true, "state": "active", "image_url": "https://ckan.ogdch-abnahme.clients.liip.ch/uploads/group/2021-04-23-131437.419029baselland.jpg", "groups": [], "type": "organization", "title": {"fr": "Canton de B\u00e2le-Campagne", "de": "Kanton Basel-Landschaft", "en": "Canton of Basel-Country", "it": "Cantone di Basilea-Campagna"}, "revision_id": "68e3d45e-3e6a-45b6-bda9-735e42e88857", "num_followers": 0, "id": "8bedecea-4a19-4807-8d58-59b83b4a6f92", "tags": [], "approval_status": "approved"}, "name": "anderung-vom-30-september-2011-des-bundesgesetzes-uber-die-krankenversicherung-kvg-managed-care", "language": [], "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG", "owner_org": "8bedecea-4a19-4807-8d58-59b83b4a6f92", "modified": "2022-01-19T06:36:14+00:00", "url": "https://abstimmungen.bl.ch/vote/anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data", "extras": [{"value": "vote-anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care@kanton-basel-landschaft", "key": "guid"}, {"value": "http://kanton-basel-landschaft/vote-anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care", "key": "uri"}, {"key": "harvest_object_id", "value": "e18205a8-eca0-40d4-917d-96de09f788f9"}, {"key": "harvest_source_id", "value": "cadaf0fe-9f1d-4bd4-a7ad-b769b0cdcca9"}, {"key": "harvest_source_title", "value": "BL - Abstimmungen"}], "title": {"rm": "\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)", "fr": "\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)", "de": "\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)", "en": "", "it": "\u00c4nderung vom 30. September 2011 des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)"}, "revision_id": "4cf73e8d-55d9-4419-be40-5439907a4f8c", "identifier": "vote-anderung-vom-30-september-2011-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care@kanton-basel-landschaft"}, {"license_title": null, "maintainer": "Staatskanzlei Zug", "issued": "2012-06-17T00:00:00", "title_for_slug": "anderung-des-bundesgesetzes-uber-die-krankenversicherung-kvg-managed-care", "qualified_relations": [], "private": false, "maintainer_email": "info@zg.ch", "num_tags": 8, "contact_points": [{"email": "info@zg.ch", "name": "Staatskanzlei Zug"}], "keywords": {"fr": ["federal", "votation"], "de": ["abstimmung", "national"], "en": [], "it": ["votazione", "nazionale"]}, "temporals": [{"start_date": "2012-06-17T00:00:00", "end_date": "2012-06-17T23:59:59.999999"}], "id": "d7ca22cd-9fcf-4110-9746-8a16ee1634b6", "metadata_created": "2017-10-05T09:21:08.529102", "documentation": [], "conforms_to": [], "metadata_modified": "2024-03-14T02:38:31.250310", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_fr.md", "label": "Description du format"}, {"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_de.md", "label": "Formatbeschreibung"}, {"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_rm.md", "label": "Descripziun dal format"}, {"url": "https://github.com/OneGov/onegov-cloud/blob/master/src/onegov/election_day/static/docs/api/open_data_it.md", "label": "Descrizione del formato"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 0, "cache_last_updated": null, "issued": "2017-07-13T13:25:22+00:00", "uri": "http://staatskanzlei-zug/vote-anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/csv", "package_id": "d7ca22cd-9fcf-4110-9746-8a16ee1634b6", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "893eb17e-2469-4bae-8a97-25f03140da0f", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"rm": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "fr": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "de": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "en": "", "it": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv"}, "title": {"rm": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "fr": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "de": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "en": "", "it": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv"}, "download_url": "https://wab.zug.ch/vote/anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-csv", "state": "active", "media_type": "text/csv", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "CSV", "language": [], "mimetype_inner": null, "url_type": null, "name": {"rm": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "fr": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "de": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv", "en": "", "it": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.csv"}, "mimetype": "text/csv", "cache_url": null, "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "access_services": [], "created": "2017-10-05T11:21:08.625933", "url": "https://wab.zug.ch/vote/anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-csv", "documentation": [], "modified": "2022-01-19T06:36:24+00:00", "last_modified": null, "position": 0, "revision_id": "71a89d52-40d9-404c-88a2-c1a25606a402", "identifier": "csv", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2017-07-13T13:25:22+00:00", "uri": "http://staatskanzlei-zug/vote-anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/json", "package_id": "d7ca22cd-9fcf-4110-9746-8a16ee1634b6", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "c99ce2dc-b2ad-44da-9fce-d4c6cfd89166", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"rm": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "fr": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "de": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "en": "", "it": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json"}, "title": {"rm": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "fr": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "de": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "en": "", "it": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json"}, "download_url": "https://wab.zug.ch/vote/anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-json", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "JSON", "language": [], "mimetype_inner": null, "url_type": null, "name": {"rm": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "fr": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "de": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json", "en": "", "it": "anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care.json"}, "mimetype": "application/json", "cache_url": null, "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "access_services": [], "created": "2017-10-05T11:21:08.625961", "url": "https://wab.zug.ch/vote/anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data-json", "documentation": [], "modified": "2022-01-19T06:36:24+00:00", "last_modified": null, "position": 1, "revision_id": "71a89d52-40d9-404c-88a2-c1a25606a402", "identifier": "json", "resource_type": null}], "num_resources": 2, "description": {"rm": "Resultats finals da la votaziun federala \"\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17 da zercladur 2012, Kanton Zug, ordin\u00e0 tenor vischnancas.", "fr": "R\u00e9sultats finaux du vote f\u00e9d\u00e9ral \"\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17 juin 2012, Kanton Zug, r\u00e9partis par municipalit\u00e9s.", "de": "Schlussresultate der eidgen\u00f6ssischen Abstimmung \"\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17. Juni 2012, Kanton Zug, aufgeschl\u00fcsselt nach Gemeinden.", "en": "", "it": "Risultati finali della votazione federale \"\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)\", 17 giugno 2012, Kanton Zug, suddivisi per municipalit."}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "abstimmung", "id": "b23c35b9-e3c8-41ab-8a3f-2b33a98c7a97", "name": "abstimmung"}, {"vocabulary_id": null, "state": "active", "display_name": "federal", "id": "8a59db06-989d-464c-9f96-5bb80a90100d", "name": "federal"}, {"vocabulary_id": null, "state": "active", "display_name": "national", "id": "700a9f36-9c3f-4807-a718-524bbe3ffd2d", "name": "national"}, {"vocabulary_id": null, "state": "active", "display_name": "nazionale", "id": "619aa689-677b-4c60-aec1-a54a1dbc1915", "name": "nazionale"}, {"vocabulary_id": null, "state": "active", "display_name": "plaun-naziunal", "id": "9771f92d-0871-409a-8499-45100a1c6767", "name": "plaun-naziunal"}, {"vocabulary_id": null, "state": "active", "display_name": "votation", "id": "cc2ce8c9-0497-422f-859a-b0f0e52b3e7f", "name": "votation"}, {"vocabulary_id": null, "state": "active", "display_name": "votazione", "id": "e156fa4f-b674-4bc8-b3ee-133cada8f463", "name": "votazione"}, {"vocabulary_id": null, "state": "active", "display_name": "votaziun", "id": "39a4b4ff-9d47-466c-805e-96b71eb53c36", "name": "votaziun"}], "groups": [{"display_name": {"fr": "Gouvernement et secteur public", "de": "Regierung und \u00f6ffentlicher Sektor", "en": "Government and public sector", "it": "Governo e settore pubblico"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Regierung und \u00f6ffentlicher Sektor\", \"en\": \"Government and public sector\", \"fr\": \"Gouvernement et secteur public\", \"it\": \"Governo e settore pubblico\"}", "image_display_url": "", "id": "e63f4b4e-5e3e-4c7f-9d4a-4babf164878f", "name": "gove"}], "creator_user_id": "0594d621-c92a-4a32-809c-98e281dc7944", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://opendata.swiss/organization/staatskanzlei-zug\", \"name\": \"Staatskanzlei Zug\"}", "organization": {"display_name": {"fr": "", "de": "Staatskanzlei Zug", "en": "", "it": ""}, "description": {"fr": "", "de": "Der Kanton Zug ver\u00f6ffentlicht hier schrittweise OGD-Datens\u00e4tze der kantonalen Verwaltung.", "en": "", "it": ""}, "name": "staatskanzlei-zug", "image_display_url": "https://ckan.opendata.swiss/uploads/group/regierungsgebaeude_zug.jpg", "url": "", "package_count": 229, "created": "2017-10-05T11:16:26.433022", "political_level": "canton", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/regierungsgebaeude_zug.jpg", "groups": [{"capacity": "public", "name": "kanton-zug"}], "type": "organization", "title": {"fr": "", "de": "Staatskanzlei Zug", "en": "", "it": ""}, "revision_id": "afa6d8c9-a8de-47b8-adca-86da8e037562", "num_followers": 0, "id": "5b554a78-e0c3-4224-9330-42ff3e0f3b2b", "tags": [], "approval_status": "approved"}, "name": "anderung-des-bundesgesetzes-uber-die-krankenversicherung-kvg-managed-care", "language": [], "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG", "owner_org": "5b554a78-e0c3-4224-9330-42ff3e0f3b2b", "modified": "2022-01-19T06:36:24+00:00", "url": "https://wab.zug.ch/vote/anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care/data", "extras": [{"value": "vote-anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care@staatskanzlei-zug", "key": "guid"}, {"value": "http://staatskanzlei-zug/vote-anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care", "key": "uri"}, {"key": "harvest_object_id", "value": "a5f470ac-9a9f-474b-b5d6-36da84aee0bd"}, {"key": "harvest_source_id", "value": "d4dd93ea-afd6-4cbc-ac01-ce601dc87154"}, {"key": "harvest_source_title", "value": "ZG-Kt - Staatskanzlei - DCAT Harvester"}], "title": {"rm": "\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)", "fr": "\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)", "de": "\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)", "en": "", "it": "\u00c4nderung des Bundesgesetzes \u00fcber die Krankenversicherung (KVG) (Managed Care)"}, "revision_id": "77041d94-1c58-4385-b67f-258fc46547b2", "identifier": "vote-anderung-des-bundesgesetzes-ueber-die-krankenversicherung-kvg-managed-care@staatskanzlei-zug"}, {"license_title": null, "maintainer": "Open data platform mobility Switzerland", "issued": "2023-12-15T10:51:34.554476", "title_for_slug": "bike-parking", "qualified_relations": [], "private": false, "maintainer_email": "opendata@sbb.ch", "num_tags": 31, "contact_points": [{"email": "opendata@sbb.ch", "name": "Open Data Mobilit\u00e4t Schweiz"}], "keywords": {"fr": ["bicyclette", "voyage-intermodal", "voyage-multimodal", "proprietaire", "donnees", "bicycliste", "parking", "lmeta"], "de": ["daten", "fahrradfahrer", "embag", "multi-modales-reisen", "proprietar", "fahrrad", "parkplatz", "inter-modales-reisen"], "en": ["bicycle", "cyclist", "inter-modal-journey", "data", "multi-modal-journey", "parking-space", "proprietary"], "it": ["parcheggio", "dati", "bicicletta", "proprietario", "lmeca", "multi-modal-transport", "inter-modal-transport", "ciclista"]}, "temporals": [], "id": "9752e4db-2bc8-4d57-a1c8-07a51e41b743", "metadata_created": "2023-06-29T00:32:32.057765", "documentation": [], "conforms_to": [], "metadata_modified": "2024-02-28T02:07:03.733852", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://opentransportdata.swiss/terms-of-use/", "label": "Terms of use"}, {"url": "https://opentransportdata.swiss/en/cookbook/bike-parking/", "label": "Cookbook"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 943306, "cache_last_updated": null, "issued": "2023-12-15T10:51:34.554476", "uri": "https://opentransportdata.swiss/dataset/344b7ba5-2080-441c-88a9-f81f9d670342/resource/5cbad1ca-2567-4ecc-b7b7-633d942a3f72", "package_id": "9752e4db-2bc8-4d57-a1c8-07a51e41b743", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "6101d962-fca1-4a8c-acde-4d652fcb979d", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "bike_parking.json", "en": "bike_parking.json", "de": "bike_parking.json", "it": "bike_parking.json"}, "title": {"fr": "bike_parking.json", "en": "bike_parking.json", "de": "bike_parking.json", "it": "bike_parking.json"}, "download_url": "https://opentransportdata.swiss/dataset/344b7ba5-2080-441c-88a9-f81f9d670342/resource/5cbad1ca-2567-4ecc-b7b7-633d942a3f72/download/bike_parking.json", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "JSON", "language": [], "mimetype_inner": null, "url_type": null, "name": {"fr": "bike_parking.json", "en": "bike_parking.json", "de": "bike_parking.json", "it": "bike_parking.json"}, "mimetype": null, "cache_url": null, "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "access_services": [], "created": "2024-02-28T02:07:04.351848", "url": "https://opentransportdata.swiss/dataset/344b7ba5-2080-441c-88a9-f81f9d670342/resource/5cbad1ca-2567-4ecc-b7b7-633d942a3f72/download/bike_parking.json", "documentation": [], "modified": "2024-02-27T04:40:10.690632", "last_modified": null, "position": 0, "revision_id": "0d18e424-8da5-4f25-9e17-abac23e78b17", "identifier": "bike_parking.json", "resource_type": null}], "num_resources": 1, "description": {"fr": "Le jeu de donn\u00e9es contient environ 1200 parkings \u00e0 v\u00e9los (possibilit\u00e9s de stationnement des v\u00e9los / places de stationnement). Les donn\u00e9es ne concernent que les lieux disponibles pour les CFF.", "de": "Der Datensatz enth\u00e4lt rund 1200 Fahrrad-Parkings (Velo-Abstellm\u00f6glichkeiten / Abstellpl\u00e4tze). Die Daten beziehen sich nur auf die der SBB verf\u00fcgbaren Orte.", "en": "The data set contains around 1200 bicycle parking spaces (bicycle parking facilities / parking spaces). The data refers only to the locations available to SBB.", "it": "Il set di dati contiene circa 1200 parcheggi per biciclette (strutture di parcheggio per biciclette / parcheggi). I dati si riferiscono solo alle sedi disponibili per le FFS."}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "bicicletta", "id": "ff7bd662-c36c-4c6c-a8ae-f77d883d9dfc", "name": "bicicletta"}, {"vocabulary_id": null, "state": "active", "display_name": "bicycle", "id": "accc15b6-f619-4502-a557-fab707c0b439", "name": "bicycle"}, {"vocabulary_id": null, "state": "active", "display_name": "bicyclette", "id": "0b310288-301b-4ca1-90b6-d4d9ecf89389", "name": "bicyclette"}, {"vocabulary_id": null, "state": "active", "display_name": "bicycliste", "id": "7dc16d31-f7f1-4bec-9b18-9da0d9aa0ec9", "name": "bicycliste"}, {"vocabulary_id": null, "state": "active", "display_name": "ciclista", "id": "79785677-f2ec-473e-88da-852ae9b8da1f", "name": "ciclista"}, {"vocabulary_id": null, "state": "active", "display_name": "cyclist", "id": "8c55ecd7-437c-4e6c-9ccf-8b89e4eda1bc", "name": "cyclist"}, {"vocabulary_id": null, "state": "active", "display_name": "data", "id": "66bb0751-33de-4f83-9fa6-61351e76518b", "name": "data"}, {"vocabulary_id": null, "state": "active", "display_name": "daten", "id": "7b27df00-4239-4c3c-b67a-71de289d1cad", "name": "daten"}, {"vocabulary_id": null, "state": "active", "display_name": "dati", "id": "a8a94c84-4273-4829-a1af-cb97de04428c", "name": "dati"}, {"vocabulary_id": null, "state": "active", "display_name": "donnees", "id": "49ad85ff-b5e4-4d0f-a80d-41a29694eec5", "name": "donnees"}, {"vocabulary_id": null, "state": "active", "display_name": "embag", "id": "4feeffe4-368c-47b9-880b-1bafabec93b6", "name": "embag"}, {"vocabulary_id": null, "state": "active", "display_name": "fahrrad", "id": "fa61da7a-458b-4e38-a9af-f6aaa20f2081", "name": "fahrrad"}, {"vocabulary_id": null, "state": "active", "display_name": "fahrradfahrer", "id": "9edb9490-71f1-46ea-b9bd-e3d1a813a832", "name": "fahrradfahrer"}, {"vocabulary_id": null, "state": "active", "display_name": "inter-modal-journey", "id": "9ba9dfb6-44ba-4b3b-bcc3-996c22f6d437", "name": "inter-modal-journey"}, {"vocabulary_id": null, "state": "active", "display_name": "inter-modal-transport", "id": "b14ac8f0-3503-483b-904b-05ec71ddad63", "name": "inter-modal-transport"}, {"vocabulary_id": null, "state": "active", "display_name": "inter-modales-reisen", "id": "c8b82b2a-403b-4f45-a3a5-6d99f05225e6", "name": "inter-modales-reisen"}, {"vocabulary_id": null, "state": "active", "display_name": "lmeca", "id": "967756a1-bf57-49a7-a9c7-873968a84fc4", "name": "lmeca"}, {"vocabulary_id": null, "state": "active", "display_name": "lmeta", "id": "9e584c50-3901-4609-9bbe-9793e524092e", "name": "lmeta"}, {"vocabulary_id": null, "state": "active", "display_name": "multi-modal-journey", "id": "e32e5c16-baa8-4bfe-9654-a1e4bbc488c1", "name": "multi-modal-journey"}, {"vocabulary_id": null, "state": "active", "display_name": "multi-modal-transport", "id": "20f4806c-e681-4641-bebf-f15a08164d89", "name": "multi-modal-transport"}, {"vocabulary_id": null, "state": "active", "display_name": "multi-modales-reisen", "id": "2a0a0d22-069e-4d36-bab7-3d7a0c3e9dfb", "name": "multi-modales-reisen"}, {"vocabulary_id": null, "state": "active", "display_name": "parcheggio", "id": "17b52ce2-14f9-42f2-832a-24cdd1b86026", "name": "parcheggio"}, {"vocabulary_id": null, "state": "active", "display_name": "parking", "id": "d691c307-c8c6-431f-b740-3b6fb2cb98a8", "name": "parking"}, {"vocabulary_id": null, "state": "active", "display_name": "parking-space", "id": "01fe39db-bcba-41bd-bfd3-2d6be4365cc2", "name": "parking-space"}, {"vocabulary_id": null, "state": "active", "display_name": "parkplatz", "id": "6763a0fa-64e2-4d03-b79d-8f14341a6e5a", "name": "parkplatz"}, {"vocabulary_id": null, "state": "active", "display_name": "proprietaire", "id": "4a00640d-0196-4a5a-b1b9-f6df7be9eb69", "name": "proprietaire"}, {"vocabulary_id": null, "state": "active", "display_name": "proprietar", "id": "3eb15c53-63dd-43cc-a900-966e48f20905", "name": "proprietar"}, {"vocabulary_id": null, "state": "active", "display_name": "proprietario", "id": "b5e92cb7-7e72-4ab4-a8a4-2223196cf058", "name": "proprietario"}, {"vocabulary_id": null, "state": "active", "display_name": "proprietary", "id": "393af8a3-478f-493b-889c-d64343e6fc84", "name": "proprietary"}, {"vocabulary_id": null, "state": "active", "display_name": "voyage-intermodal", "id": "f3f0aef9-2eb8-410c-8918-34f207a6bdf4", "name": "voyage-intermodal"}, {"vocabulary_id": null, "state": "active", "display_name": "voyage-multimodal", "id": "55c8c7c4-0355-4fe6-a734-4dd544bbb7b4", "name": "voyage-multimodal"}], "spatial": "Schweiz", "groups": [], "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://opendata.swiss/organization/oevch\", \"name\": \"SBB via ROKAS\"}", "organization": {"display_name": {"fr": "Secr\u00e9tariat des t\u00e2ches du syst\u00e8me d\u2019information \u00e0 la client\u00e8le (CFF SA)", "de": "Gesch\u00e4ftsstelle Systemaufgaben Kundeninformation (SBB AG)", "en": "Business office of Customer Information System Tasks (SBB CFF FFS)", "it": "Servizio commerciale Attivit\u00e0 di sistema Informazione alla clientela (FFS SA)"}, "description": {"fr": "Le Secr\u00e9tariat des t\u00e2ches du syst\u00e8me d\u2019information \u00e0 la client\u00e8le (SKI) publie pour le compte de l\u2019OFT les donn\u00e9es de l\u2019ensemble des transports publics de Suisse.", "de": "Die Gesch\u00e4ftsstelle Systemaufgaben Kundeninformation (SKI) ver\u00f6ffentlicht im Auftrag des BAV die Daten des gesamten \u00f6ffentlichen Verkehrs der Schweiz", "en": "Working on behalf of the Swiss Federal Office of Transport (FOT), the Customer Information System Tasks (SKI) business office publishes data on all public transport in Switzerland", "it": "Il servizio commerciale Attivit\u00e0 di sistema Informazione alla clientela (SKI) pubblica, per conto dell\u2019UFT, i dati di tutto il trasporto pubblico in Svizzera."}, "name": "oevch", "image_display_url": "https://ckan.opendata.swiss/uploads/group/sbb-logo1.png", "url": "https://www.opentransportdata.swiss", "package_count": 72, "created": "2017-03-02T09:25:05.476967", "political_level": "other", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/sbb-logo1.png", "groups": [{"capacity": "public", "name": "schweizerische-bundesbahnen-sbb"}], "type": "organization", "title": {"fr": "Secr\u00e9tariat des t\u00e2ches du syst\u00e8me d\u2019information \u00e0 la client\u00e8le (CFF SA)", "de": "Gesch\u00e4ftsstelle Systemaufgaben Kundeninformation (SBB AG)", "en": "Business office of Customer Information System Tasks (SBB CFF FFS)", "it": "Servizio commerciale Attivit\u00e0 di sistema Informazione alla clientela (FFS SA)"}, "revision_id": "b55610c5-a415-4850-8a01-a5b9a5ddd422", "num_followers": 0, "id": "d1cb4307-cbc1-4d04-bca0-4830844abff6", "tags": [], "approval_status": "approved"}, "name": "bike-parking", "language": ["en", "de", "fr", "it"], "accrual_periodicity": "", "owner_org": "d1cb4307-cbc1-4d04-bca0-4830844abff6", "modified": "2024-02-27T04:40:11.853360", "url": "https://opentransportdata.swiss/dataset/bike-parking", "extras": [{"value": "bike-parking@oevch", "key": "guid"}, {"value": "https://opentransportdata.swiss/dataset/344b7ba5-2080-441c-88a9-f81f9d670342", "key": "uri"}, {"key": "harvest_object_id", "value": "bb329989-ad0e-436b-ac54-9937d977319f"}, {"key": "harvest_source_id", "value": "9d4d42d9-3843-490b-918f-d30f9aa9d701"}, {"key": "harvest_source_title", "value": "Opendatatransport - DCAT Harvester"}], "title": {"fr": "Parkings \u00e0 bicyclette", "de": "Velo Abstellm\u00f6glichkeiten", "en": "Bike Parkings", "it": "Parcheggio per biciclette"}, "revision_id": "6be0db47-23eb-4036-8466-b5e2cebaabfe", "identifier": "bike-parking@oevch"}, {"license_title": null, "maintainer": null, "issued": "2024-01-15T12:31:07+00:00", "title_for_slug": "veloplan", "qualified_relations": [], "private": false, "maintainer_email": null, "num_tags": 5, "contact_points": [{"email": "opendata@stadt.sg.ch", "name": "OGD-Koordinationsstelle St.Gallen"}], "keywords": {"fr": [], "de": ["bike", "velo", "steigung", "strassen", "velorouten"], "en": [], "it": []}, "temporals": [], "id": "1d7389fc-b061-4377-8277-1e050164df6e", "metadata_created": "2023-12-21T12:47:22.961871", "documentation": [], "conforms_to": [], "metadata_modified": "2024-03-08T06:02:05.658419", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://map.stadt.sg.ch/stadtplan/ext/?lang=de&basemap=sg_av&layers=veloplan", "label": "https://map.stadt.sg.ch/stadtplan/ext/?lang=de&basemap=sg_av&layers=veloplan"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/n3", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "d7adbdc4-6e48-4218-a4dd-49d8edd3e23b", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "n3", "en": "", "it": ""}, "title": {"fr": "", "de": "n3", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/n3", "state": "active", "media_type": "text/n3", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (n3)", "en": "", "it": ""}, "format": "N3", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "n3", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975482", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/n3", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 0, "revision_id": "ce84dc36-e4f5-4527-8d09-bf0c8697d9d8", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/jsonl", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "8e501b1b-6756-4c95-af7c-623ca57cddfc", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "jsonl", "en": "", "it": ""}, "title": {"fr": "", "de": "jsonl", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/jsonl", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (jsonl)", "en": "", "it": ""}, "format": "JSON", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "jsonl", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975476", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/jsonl", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 1, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/kml", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "562db521-68d9-4b24-9c0e-879933a2a0f2", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "kml", "en": "", "it": ""}, "title": {"fr": "", "de": "kml", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/kml", "state": "active", "media_type": "application/vnd.google-earth.kml+xml", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (kml)", "en": "", "it": ""}, "format": "KML", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "kml", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975478", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/kml", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 2, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/gpx", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "7cc31387-d8a3-42e0-81ab-0c691b4fd9b9", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "gpx", "en": "", "it": ""}, "title": {"fr": "", "de": "gpx", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/gpx", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (gpx)", "en": "", "it": ""}, "format": "", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "gpx", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975470", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/gpx", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 3, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/csv", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "01763dcf-cc85-4d9e-9f5f-54440bd7e8de", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "csv", "en": "", "it": ""}, "title": {"fr": "", "de": "csv", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/csv", "state": "active", "media_type": "text/csv", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (csv)", "en": "", "it": ""}, "format": "CSV", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "csv", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975465", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/csv", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 4, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/xls", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "79c97312-50e4-4bc4-a0dd-1cfc0ac80efc", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "xls", "en": "", "it": ""}, "title": {"fr": "", "de": "xls", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/xls", "state": "active", "media_type": "application/vnd.ms-excel", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (xls)", "en": "", "it": ""}, "format": "XLS", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "xls", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975467", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/xls", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 5, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/json", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "9161fec1-5bd7-4a71-82cc-a6f8ba2b27be", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "json", "en": "", "it": ""}, "title": {"fr": "", "de": "json", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/json", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (json)", "en": "", "it": ""}, "format": "JSON", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "json", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975484", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/json", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 6, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/shp", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "9e908811-0212-41a0-82ce-d3c869d09c3a", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "shp", "en": "", "it": ""}, "title": {"fr": "", "de": "shp", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/shp", "state": "active", "media_type": "application/zip", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (shp)", "en": "", "it": ""}, "format": "ZIP", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "shp", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975481", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/shp", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 7, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/fgb", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "d09e54dd-efa5-4234-95d5-6e96f9659529", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "fgb", "en": "", "it": ""}, "title": {"fr": "", "de": "fgb", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/fgb", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (fgb)", "en": "", "it": ""}, "format": "octet-stream", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "fgb", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975473", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/fgb", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 8, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/turtle", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "d70cb566-89bb-4a6a-a028-91cbe63242d6", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "turtle", "en": "", "it": ""}, "title": {"fr": "", "de": "turtle", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/turtle", "state": "active", "media_type": "text/turtle", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (turtle)", "en": "", "it": ""}, "format": "RDF Turtle", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "turtle", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975469", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/turtle", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 9, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/parquet", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "9db7ab35-e8b1-4f70-bcda-488ef6ce67b3", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "parquet", "en": "", "it": ""}, "title": {"fr": "", "de": "parquet", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/parquet", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (parquet)", "en": "", "it": ""}, "format": "", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "parquet", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2024-01-26T05:00:40.891292", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/parquet", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 10, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/rdfxml", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "993729e6-a169-4ba7-a835-e9321a0d652d", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "rdfxml", "en": "", "it": ""}, "title": {"fr": "", "de": "rdfxml", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/rdfxml", "state": "active", "media_type": "application/rdf+xml", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (rdfxml)", "en": "", "it": ""}, "format": "RDF XML", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "rdfxml", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975479", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/rdfxml", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 11, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/jsonld", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "23b2ac68-49bb-4c5b-8460-970d451ee454", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "jsonld", "en": "", "it": ""}, "title": {"fr": "", "de": "jsonld", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/jsonld", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (jsonld)", "en": "", "it": ""}, "format": "JSON-LD", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "jsonld", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975472", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/jsonld", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 12, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/ov2", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "74db5596-a17e-4b0d-b51f-9302a048ea2c", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "ov2", "en": "", "it": ""}, "title": {"fr": "", "de": "ov2", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/ov2", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (ov2)", "en": "", "it": ""}, "format": "", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "ov2", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975475", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/ov2", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 13, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-15T12:31:07+00:00", "uri": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/geojson", "package_id": "1d7389fc-b061-4377-8277-1e050164df6e", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "dcc53ea7-1f46-488a-a100-0fd7d05dcb3a", "size": null, "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired", "display_name": {"fr": "", "de": "geojson", "en": "", "it": ""}, "title": {"fr": "", "de": "geojson", "en": "", "it": ""}, "download_url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/geojson", "state": "active", "media_type": "application/json", "hash": "", "description": {"fr": "", "de": "Veloplan Stadt St.Gallen (geojson)", "en": "", "it": ""}, "format": "JSON", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "geojson", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "CC BY", "access_services": [], "created": "2023-12-21T12:47:22.975458", "url": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan/exports/geojson", "documentation": [], "modified": "2024-01-15T12:31:07+00:00", "last_modified": null, "position": 14, "revision_id": "e479c075-af0e-4761-90c6-46f02d12bcf3", "resource_type": null}], "num_resources": 15, "description": {"fr": "", "de": "Infos \u00fcber Infrastruktur und Velorouten", "en": "", "it": ""}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "bike", "id": "9644ac14-769c-47f3-a8d3-3a2f24eb1b90", "name": "bike"}, {"vocabulary_id": null, "state": "active", "display_name": "steigung", "id": "9d4cc2c5-8dcd-40b0-b988-36fd073da48c", "name": "steigung"}, {"vocabulary_id": null, "state": "active", "display_name": "strassen", "id": "a6825701-54fc-414e-badc-c4ad3f20ec39", "name": "strassen"}, {"vocabulary_id": null, "state": "active", "display_name": "velo", "id": "0a86d77a-9ac9-40ed-a56b-57b83f9d21b2", "name": "velo"}, {"vocabulary_id": null, "state": "active", "display_name": "velorouten", "id": "3d2afa5d-7bec-4bae-8e01-ecba9ffb29b5", "name": "velorouten"}], "groups": [{"display_name": {"fr": "Transports", "de": "Verkehr", "en": "Transport", "it": "Trasporti"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}", "image_display_url": "", "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f", "name": "tran"}], "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://daten.stadt.sg.ch/explore/?refine.dcat_ap_ch.domain=stadt-st-gallen\", \"name\": \"stadt-st-gallen\"}", "organization": {"display_name": {"fr": "Ville de Saint-Gall", "de": "Stadt St.Gallen", "en": "City of St.Gallen", "it": "Citt\u00e0 di San Gallo"}, "description": {"fr": "Avec une population de 80 000 habitants, Saint-Gall, huiti\u00e8me ville de Suisse, est la m\u00e9tropole \u00e9conomique, politique, sociale et culturelle de la Suisse orientale. Ses 1400 ans d'histoire se m\u00ealent \u00e0 la cr\u00e9ativit\u00e9 urbaine, \u00e0 une \u00e9conomie innovante et \u00e0 un paysage pr\u00e9serv\u00e9.", "en": "With a population of 80,000, St.Gallen, Switzerland\u2019s eighth largest city, is the economic, political, social and cultural metropolis of eastern Switzerland. Its 1400 years of history blend with urban creativity, an innovative economy and an unspoilt landscape.", "de": "St.Gallen, die achtgr\u00f6sste Stadt der Schweiz, ist mit 80'000 Einwohnern die wirtschaftliche, politische, soziale und kulturelle Metropole der Ostschweiz. Ihre 1400-j\u00e4hrige Geschichte verbindet sich mit urbaner Kreativit\u00e4t, einer innovativen Wirtschaft und einer intakten Landschaft.", "it": "Con una popolazione di 80.000 abitanti, San Gallo, l'ottava citt\u00e0 pi\u00f9 grande della Svizzera, \u00e8 la metropoli economica, politica, sociale e culturale della Svizzera orientale. I suoi 1400 anni di storia si fondono con la creativit\u00e0 urbana, un'economia innovativa e un paesaggio incontaminato."}, "name": "stadt-st-gallen", "image_display_url": "https://ckan.opendata.swiss/uploads/group/2024-01-05-101727.5904662023-12-21-092646.943088Logostgallenrgb300dpi.jpg", "url": "https://www.stadt.sg.ch/", "package_count": 101, "created": "2023-12-21T12:38:31.806844", "political_level": "commune", "is_organization": true, "state": "active", "image_url": "2024-01-05-101727.5904662023-12-21-092646.943088Logostgallenrgb300dpi.jpg", "groups": [], "type": "organization", "title": {"fr": "Ville de Saint-Gall", "de": "Stadt St.Gallen", "en": "City of St.Gallen", "it": "Citt\u00e0 di San Gallo"}, "revision_id": "23212ea4-1857-41a4-a41a-2c1409d96ce8", "num_followers": 0, "id": "e311f25d-efb5-44e2-ac7a-0e223892f618", "tags": [], "approval_status": "approved"}, "name": "veloplan", "language": [], "accrual_periodicity": "", "owner_org": "e311f25d-efb5-44e2-ac7a-0e223892f618", "modified": "2024-01-15T12:31:07+00:00", "url": "https://daten.stadt.sg.ch/explore/dataset/veloplan/", "extras": [{"value": "veloplan@stadt-st-gallen", "key": "guid"}, {"value": "https://daten.stadt.sg.ch/api/v2/catalog/datasets/veloplan", "key": "uri"}, {"key": "harvest_object_id", "value": "ea02db2d-8a1e-4669-8d9f-f04fbfb3b1a7"}, {"key": "harvest_source_id", "value": "c9c0c3f2-d6be-41d2-9445-b0c62d885e1e"}, {"key": "harvest_source_title", "value": "DCAT Harvester Stadt St. Gallen"}], "title": {"fr": "", "de": "Veloplan Stadt St.Gallen", "en": "", "it": ""}, "revision_id": "5e0cab7f-b2ab-4478-8733-39dd11ae084d", "identifier": "veloplan@stadt-st-gallen"}, {"license_title": null, "maintainer": "info@bfs.admin.ch", "issued": "2020-06-08T06:30:00+00:00", "title_for_slug": "hospitalisierungen-mit-palliative-care-im-jahr-2018", "qualified_relations": [], "private": false, "maintainer_email": "auskunftsdienst@bfs.admin.ch", "num_tags": 5, "contact_points": [{"email": "auskunftsdienst@bfs.admin.ch", "name": "info@bfs.admin.ch"}], "keywords": {"fr": ["sante"], "de": ["gesundheit"], "en": ["health"], "it": ["salute"]}, "temporals": [{"start_date": "2018-01-01T00:00:00", "end_date": "2018-12-31T23:59:59.999999"}], "id": "071a3034-e486-4f85-bbac-8e60162413a2", "metadata_created": "2022-05-11T13:31:25.348517", "documentation": [], "conforms_to": [], "metadata_modified": "2024-03-14T10:53:49.557084", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://www.admin.ch/opc/de/classified-compilation/19920252/index.html", "label": "legal_basis"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 0, "cache_last_updated": null, "issued": "2020-06-08T06:30:00+00:00", "package_id": "071a3034-e486-4f85-bbac-8e60162413a2", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "c80a6c19-860a-49f7-89de-48f96ff7527e", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "title": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "state": "active", "media_type": "text/html", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "HTML", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "mimetype": "text/html", "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2022-05-11T13:31:25.435697", "url": "https://www.bfs.admin.ch/asset/de/2027-1800", "documentation": [], "uri": "", "last_modified": null, "position": 0, "revision_id": "bd673c97-c2e3-4ec6-b548-e77827878a2a", "identifier": "13047590-de@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2020-06-08T06:30:00+00:00", "package_id": "071a3034-e486-4f85-bbac-8e60162413a2", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "70d6e529-817c-4f66-a097-db59ee67790d", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "title": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "state": "active", "media_type": "text/html", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "HTML", "language": ["fr"], "mimetype_inner": null, "url_type": null, "name": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "mimetype": "text/html", "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2022-05-11T13:31:25.435700", "url": "https://www.bfs.admin.ch/asset/fr/2028-1800", "documentation": [], "uri": "", "last_modified": null, "position": 1, "revision_id": "bd673c97-c2e3-4ec6-b548-e77827878a2a", "identifier": "13047591-fr@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2020-06-08T06:30:00+00:00", "uri": "", "package_id": "071a3034-e486-4f85-bbac-8e60162413a2", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "4e8c7fb4-ad5b-459f-8b69-e39a3d1c9df1", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "title": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "download_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047591/master", "state": "active", "media_type": "application/pdf", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "PDF", "language": ["fr"], "mimetype_inner": null, "url_type": null, "name": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "mimetype": "application/pdf", "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2023-12-06T11:19:40.584012", "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047591/master", "documentation": [], "modified": "2020-05-28T06:19:48.326000+00:00", "last_modified": null, "position": 2, "revision_id": "bd673c97-c2e3-4ec6-b548-e77827878a2a", "identifier": "13047591-master@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2020-06-08T06:30:00+00:00", "uri": "", "package_id": "071a3034-e486-4f85-bbac-8e60162413a2", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "fb26d523-3159-4ed8-8a4d-9d8e0d1c7016", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "title": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "download_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047590/appendix", "state": "active", "media_type": "application/vnd.ms-excel", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "XLS", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2023-12-06T11:19:40.583999", "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047590/appendix", "documentation": [], "modified": "2020-05-26T12:41:40.410000+00:00", "last_modified": null, "position": 3, "revision_id": "bd673c97-c2e3-4ec6-b548-e77827878a2a", "identifier": "13047590-appendix@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2020-06-08T06:30:00+00:00", "uri": "", "package_id": "071a3034-e486-4f85-bbac-8e60162413a2", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "883d7eb7-09ef-49ef-935a-84f38d1de45e", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "title": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "download_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047590/master", "state": "active", "media_type": "application/pdf", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "PDF", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "mimetype": "application/pdf", "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2023-12-06T11:19:40.584008", "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047590/master", "documentation": [], "modified": "2020-05-28T06:19:45.831000+00:00", "last_modified": null, "position": 4, "revision_id": "bd673c97-c2e3-4ec6-b548-e77827878a2a", "identifier": "13047590-master@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2020-06-08T06:30:00+00:00", "uri": "", "package_id": "071a3034-e486-4f85-bbac-8e60162413a2", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "1568711f-7a0f-46ff-bc65-95dd1a58f67f", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "title": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "download_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047591/appendix", "state": "active", "media_type": "application/vnd.ms-excel", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "XLS", "language": ["fr"], "mimetype_inner": null, "url_type": null, "name": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "en": "", "de": "", "it": ""}, "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2023-12-06T11:19:40.584010", "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/13047591/appendix", "documentation": [], "modified": "2020-05-26T12:41:40.408000+00:00", "last_modified": null, "position": 5, "revision_id": "bd673c97-c2e3-4ec6-b548-e77827878a2a", "identifier": "13047591-appendix@bundesamt-fur-statistik-bfs", "resource_type": null}], "num_resources": 6, "description": {"fr": "", "de": "", "en": "", "it": ""}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "gesundheit", "id": "1f4b7e51-279b-4a54-afbc-3641b7dd70b9", "name": "gesundheit"}, {"vocabulary_id": null, "state": "active", "display_name": "health", "id": "7c92c65e-eaff-4f25-926c-d0a83c849129", "name": "health"}, {"vocabulary_id": null, "state": "active", "display_name": "salute", "id": "ffcbee3d-7057-4bbe-a0fc-b2b41367da8f", "name": "salute"}, {"vocabulary_id": null, "state": "active", "display_name": "sanadad", "id": "fa25615e-e7a8-4b68-9515-ec3a6a5af122", "name": "sanadad"}, {"vocabulary_id": null, "state": "active", "display_name": "sante", "id": "280abff9-c433-48f8-9b68-529913c13752", "name": "sante"}], "spatial": "Schweiz", "groups": [{"display_name": {"fr": "Sant\u00e9", "de": "Gesundheit", "en": "Health", "it": "Salute"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Gesundheit\", \"en\": \"Health\", \"fr\": \"Sant\u00e9\", \"it\": \"Salute\"}", "image_display_url": "", "id": "a3c80661-8b02-444b-9eb9-9453e52dd776", "name": "heal"}], "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://www.bfs.admin.ch/\", \"name\": \"BFS/OFS\"}", "organization": {"display_name": {"fr": "Office f\u00e9d\u00e9ral de la statistique OFS", "de": "Bundesamt f\u00fcr Statistik BFS", "en": "Federal Statistical Office FSO", "it": "Ufficio federale di statistica UST"}, "description": {"fr": "L'OFS est le centre de comp\u00e9tence de la statistique publique suisse. Il produit des informations statistiques sur la population, l'\u00e9conomie, la soci\u00e9t\u00e9, la formation et la recherche, le territoire et l'environnement. Ces informations servent \u00e0 la formation de l\u2019opinion publique. Elles sont un outil de planification et de gouvernance dans tous les domaines de l\u2019action politique et contribuent au bon fonctionnement de notre \u00c9tat moderne et d\u00e9mocratique.", "de": "Das BFS ist das nationale Kompetenzzentrum der \u00f6ffentlichen Statistik der Schweiz. Es produziert und publiziert statistische Informationen \u00fcber den Stand und die Entwicklung von Bev\u00f6lkerung, Wirtschaft, Gesellschaft, Bildung, Forschung, Raum und Umwelt. Diese Informationen dienen der Meinungsbildung in der Bev\u00f6lkerung sowie der Planung und Steuerung von zentralen Politikbereichen. Sie leisten einen wichtigen Beitrag f\u00fcr einen modernen, demokratischen Staat.", "en": "The FSO is Switzerland's national competence centre for official statistics. It produces and publishes statistical information on the status and development of the population, economy, society, education, research, territory and the environment. This information is used for opinion building among the population and for the planning and management of key policy areas. They make an important contribution to a modern, democratic state.", "it": "L\u2019UST \u00e8 il centro di competenza nazionale per la statistica pubblica della Svizzera. Produce e pubblica informazioni statistiche sullo stato e sull'evoluzione della popolazione, dell'economia, della societ\u00e0, della formazione, della ricerca, del territorio e dell'ambiente. Queste informazioni servono alla formazione dell'opinione pubblica nonch\u00e9 alla pianificazione e alla gestione in ambiti politici di centrale importanza. Forniscono un importante contributo per uno Stato moderno e democratico."}, "name": "bundesamt-fur-statistik-bfs", "image_display_url": "https://ckan.opendata.swiss/uploads/group/BFS_08_web.jpg", "url": "https://www.bfs.admin.ch", "package_count": 2894, "created": "2015-11-30T11:50:01.742198", "political_level": "confederation", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/BFS_08_web.jpg", "groups": [], "type": "organization", "title": {"fr": "Office f\u00e9d\u00e9ral de la statistique OFS", "de": "Bundesamt f\u00fcr Statistik BFS", "en": "Federal Statistical Office FSO", "it": "Ufficio federale di statistica UST"}, "revision_id": "a9c07792-c20d-406e-bae8-01efb95e3cce", "num_followers": 0, "id": "4309c328-c618-4077-bcdc-378a21ee1b46", "tags": [], "approval_status": "approved"}, "name": "hospitalisierungen-mit-palliative-care-im-jahr-2018", "language": ["de", "fr"], "accrual_periodicity": "", "owner_org": "4309c328-c618-4077-bcdc-378a21ee1b46", "url": "https://www.bfs.admin.ch/asset/de/2027-1800", "extras": [{"value": "13047588@bundesamt-fur-statistik-bfs", "key": "guid"}, {"value": "https://ckan.opendata.swiss/perma/13047588@bundesamt-fur-statistik-bfs", "key": "uri"}, {"key": "harvest_object_id", "value": "ec51234b-0f74-4359-9d15-bbb930c605d1"}, {"key": "harvest_source_id", "value": "47bf1425-f615-4803-838a-f9b4c79a3cbb"}, {"key": "harvest_source_title", "value": "BFS \u2013 DCAT Harvester"}], "title": {"fr": "Les hospitalisations avec des soins palliatifs en 2018", "de": "Hospitalisierungen mit Palliative Care im Jahr 2018", "en": "", "it": ""}, "revision_id": "56a2935e-670c-462a-a8c6-5a20ed79b33b", "identifier": "13047588@bundesamt-fur-statistik-bfs"}, {"license_title": null, "maintainer": "Nicolas Kessler", "issued": "2020-06-03T00:00:00", "title_for_slug": "Postauto Postkarten", "qualified_relations": [], "private": false, "maintainer_email": "n.kessler@mfk.ch", "num_tags": 3, "contact_points": [{"email": "n.kessler@mfk.ch", "name": "Nicolas Kessler"}], "keywords": {"fr": ["glam", "openglam", "ptt"], "de": ["glam", "openglam", "ptt"], "en": ["glam", "openglam", "ptt"], "it": ["glam", "openglam", "ptt"]}, "temporals": [{"start_date": "1937-01-01T00:00:00", "end_date": "1994-12-31T00:00:00"}], "id": "53a8f301-e98c-4dd1-af57-d68e56510573", "metadata_created": "2020-06-03T20:23:39.481064", "display_name": {"fr": "Cartes postales avec des cars postaux", "de": "Postauto Postkarten", "en": "Postcards with \"post-auto\"", "it": "Postauto Postkarten"}, "metadata_modified": "2023-12-06T16:39:49.535074", "author": "PTT-Archiv", "author_email": null, "relations": [], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "type": "dataset", "resources": [{"byte_size": 565000000, "cache_last_updated": null, "issued": "2020-06-03T00:00:00", "package_id": "53a8f301-e98c-4dd1-af57-d68e56510573", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "5dc3040e-f5c1-4aa1-82b6-893707eedc7d", "size": null, "display_name": {"fr": "", "de": "", "en": "", "it": ""}, "title": {"fr": "", "de": "", "en": "", "it": ""}, "download_url": "", "state": "active", "hash": "", "description": {"fr": "", "en": "", "de": "", "it": ""}, "format": "TIFF", "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "language": [], "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://kdrive.infomaniak.com/app/share/509850/91900ea5-f6b1-49ef-8cdb-3b7ea2b7425a", "created": "2020-06-08T07:07:47.102755", "modified": "", "last_modified": null, "position": 0, "revision_id": "1c482616-3082-4627-97f2-56878e2f1a4a", "identifier": "", "resource_type": null}], "scheduled": "", "num_resources": 1, "description": {"fr": "Der Datensatz enth\u00e4lt eine Auswahl an retrodigitalisierten Postautopostkarten aus den Best\u00e4nden des PTT-Archivs. Diese unter der Signatur P-44-70 aufbewahrten Postkarten zeigen jeweils Postautos auf bekannten Strecken, vor allem Passlinien. Sie wurden von der PTT zu Werbezwecken produziert. Im Dateinamen sind jeweils die Signatur und die abgebildete Strecke angegeben. Zu jeder Postkarte ist mit dem Zusatz \u00ab_r\u00bb (recto) die Vorderseite und mit \u00ab_v\u00bb (verso) die R\u00fcckseite als einzelner Scan vorhanden.", "en": "Der Datensatz enth\u00e4lt eine Auswahl an retrodigitalisierten Postautopostkarten aus den Best\u00e4nden des PTT-Archivs. Diese unter der Signatur P-44-70 aufbewahrten Postkarten zeigen jeweils Postautos auf bekannten Strecken, vor allem Passlinien. Sie wurden von der PTT zu Werbezwecken produziert. Im Dateinamen sind jeweils die Signatur und die abgebildete Strecke angegeben. Zu jeder Postkarte ist mit dem Zusatz \u00ab_r\u00bb (recto) die Vorderseite und mit \u00ab_v\u00bb (verso) die R\u00fcckseite als einzelner Scan vorhanden.", "de": "Der Datensatz enth\u00e4lt eine Auswahl an retrodigitalisierten Postautopostkarten aus den Best\u00e4nden des PTT-Archivs. Diese unter der Signatur P-44-70 aufbewahrten Postkarten zeigen jeweils Postautos auf bekannten Strecken, vor allem Passlinien. Sie wurden von der PTT zu Werbezwecken produziert. Im Dateinamen sind jeweils die Signatur und die abgebildete Strecke angegeben. Zu jeder Postkarte ist mit dem Zusatz \u00ab_r\u00bb (recto) die Vorderseite und mit \u00ab_v\u00bb (verso) die R\u00fcckseite als einzelner Scan vorhanden.", "it": "Der Datensatz enth\u00e4lt eine Auswahl an retrodigitalisierten Postautopostkarten aus den Best\u00e4nden des PTT-Archivs. Diese unter der Signatur P-44-70 aufbewahrten Postkarten zeigen jeweils Postautos auf bekannten Strecken, vor allem Passlinien. Sie wurden von der PTT zu Werbezwecken produziert. Im Dateinamen sind jeweils die Signatur und die abgebildete Strecke angegeben. Zu jeder Postkarte ist mit dem Zusatz \u00ab_r\u00bb (recto) die Vorderseite und mit \u00ab_v\u00bb (verso) die R\u00fcckseite als einzelner Scan vorhanden."}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "glam", "id": "f41a6b4a-8f1d-451e-87da-51317c0ccebc", "name": "glam"}, {"vocabulary_id": null, "state": "active", "display_name": "openglam", "id": "a0c2422f-763c-4f12-9c36-24167dd66135", "name": "openglam"}, {"vocabulary_id": null, "state": "active", "display_name": "ptt", "id": "7df6890c-21da-4928-ab95-234b46d99167", "name": "ptt"}], "title": {"fr": "Cartes postales avec des cars postaux", "de": "Postauto Postkarten", "en": "Postcards with \"post-auto\"", "it": "Postauto Postkarten"}, "language": [], "groups": [{"display_name": {"fr": "\u00c9ducation, culture et sport", "de": "Bildung, Kultur und Sport", "en": "Education, culture and sport", "it": "Istruzione, cultura e sport"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "image_display_url": "", "title": "{\"de\": \"Bildung, Kultur und Sport\", \"en\": \"Education, culture and sport\", \"fr\": \"\u00c9ducation, culture et sport\", \"it\": \"Istruzione, cultura e sport\"}", "id": "b36d9b09-dc05-422c-997e-4e81b02afd6f", "name": "educ"}], "creator_user_id": "082dec4d-1b01-4463-886e-6bb9e5b3a69a", "relationships_as_subject": [], "publisher": "{\"name\": \"PTT-Archiv\", \"url\": \"https://opendata.swiss/organization/openglam\"}", "organization": {"display_name": {"fr": "", "de": "OpenGLAM CH Working Group", "en": "OpenGLAM CH Working Group", "it": ""}, "description": {"fr": "", "de": "Die OpenGLAM-Arbeitsgruppe des Vereins opendata.ch setzt sich f\u00fcr die Umsetzung der OpenGLAM-Prinzipien in der Schweiz ein. Im Zusammenhang mit dem j\u00e4hrlich stattfindenden Open Cultural Data Hackathon fordert sie Ged\u00e4chtnisinstitutionen dazu auf, Daten und Digitalisate unter freien Lizenzen verf\u00fcgbar zu machen, so dass mit ihnen gearbeitet, experimentiert und gespielt werden kann. Die Hackathons bieten Gelegenheit zum Austausch zwischen den Institutionen, ProgrammiererInnen, WikipedianerInnen, Web-DesignerInnen und Forschenden. In der Regel erfassen Institutionen ihre Datens\u00e4tze auf opendata.swiss selber unter einem eigenen Benutzerkonto. In Ausnahmef\u00e4llen \u00fcbernimmt die OpenGLAM-Arbeitsgruppe die Beschreibung der Daten. Bis auf wenige Ausnahmen stammen nur die Beschreibungen, nicht aber die Daten selbst von der OpenGLAM-Arbeitsgruppe.", "en": "The OpenGLAM Working Group of the opendata.ch association promotes and facilitates the adoption of the OpenGLAM Principles in Switzerland. Once a year, it brings together data providers, software developers, digital humanists, artists, Wikimedians/Wikipedians, and other interested people in order to experiment how cultural data and content can be used for research purposes, for web and mobile apps, in the context of Wikipedia, for artistic re-mixes, or for other forms of re-use. In general, data providers manage the description of their data on opendata.swiss themselves under their own organizational account. As an exception in some cases, the OpenGLAM CH Working Group takes care of this. Save for a few noted exceptions, only the data descriptions, but not the data itself are provided by the OpenGLAM Working Group.", "it": ""}, "created": "2017-07-13T09:48:13.202133", "url": "https://glam.opendata.ch/hackathons/", "package_count": 69, "image_display_url": "https://ckan.opendata.swiss/uploads/group/OpenGLAM_ch_Logo-1024x512.png", "approval_status": "approved", "id": "b51dec91-59b2-4cf9-a103-4130a3049664", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/OpenGLAM_ch_Logo-1024x512.png", "groups": [], "title": {"fr": "", "de": "OpenGLAM CH Working Group", "en": "OpenGLAM CH Working Group", "it": ""}, "revision_id": "ae3ee95e-6893-4881-a144-9ca7511b35f5", "num_followers": 0, "type": "organization", "political_level": "other", "tags": [], "name": "openglam"}, "name": "postauto-postkarten", "isopen": false, "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG", "owner_org": "b51dec91-59b2-4cf9-a103-4130a3049664", "modified": "", "url": "", "extras": [{"key": "publishers", "value": "[{\"label\": \"PTT-Archiv\"}]"}], "see_alsos": [], "revision_id": "90cc4e59-7a9d-4f33-9300-6528eadfa3d4", "identifier": "postautopostkarten@openglam"}, {"license_title": null, "maintainer": null, "issued": "2024-01-30T07:30:00+00:00", "title_for_slug": "bestand-der-motorfahrrader-nach-kanton-inkl-schnelle-e-bikes", "qualified_relations": [], "private": false, "maintainer_email": null, "num_tags": 5, "contact_points": [{"email": "auskunftsdienst@bfs.admin.ch", "name": "info@bfs.admin.ch"}], "keywords": {"fr": ["mobilite-et-transports"], "de": ["mobilitat-und-verkehr"], "en": ["mobility-and-transport"], "it": ["mobilita-e-trasporti"]}, "temporals": [{"start_date": "1970-01-01T00:00:00", "end_date": "2022-12-31T23:59:59.999999"}], "id": "8f734b11-809e-47a4-8827-bd61657e85eb", "metadata_created": "2024-01-30T09:36:59.006061", "documentation": [], "conforms_to": [], "metadata_modified": "2024-03-14T09:43:06.799344", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://www.admin.ch/opc/de/classified-compilation/19920252/index.html", "label": "legal_basis"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-30T07:30:00+00:00", "package_id": "8f734b11-809e-47a4-8827-bd61657e85eb", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "da521c51-f321-4e1d-bd4a-45f0ffade0c5", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "en": "", "de": "", "it": ""}, "title": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "en": "", "de": "", "it": ""}, "state": "active", "media_type": "text/html", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "HTML", "language": ["fr"], "mimetype_inner": null, "url_type": null, "name": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "en": "", "de": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2024-01-30T09:36:59.016231", "url": "https://www.bfs.admin.ch/asset/fr/je-f-11.03.02.01.04", "documentation": [], "uri": "", "last_modified": null, "position": 0, "revision_id": "42fa1e85-0937-4b34-bdcc-595167c016b3", "identifier": "30148924-fr@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-30T07:30:00+00:00", "package_id": "8f734b11-809e-47a4-8827-bd61657e85eb", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "e2bf81ea-f5fb-4cc6-895a-f8c2cfe022f9", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "title": {"fr": "", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "state": "active", "media_type": "text/html", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "HTML", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2024-01-30T09:36:59.016238", "url": "https://www.bfs.admin.ch/asset/de/je-d-11.03.02.01.04", "documentation": [], "uri": "", "last_modified": null, "position": 1, "revision_id": "42fa1e85-0937-4b34-bdcc-595167c016b3", "identifier": "30148925-de@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-30T07:30:00+00:00", "uri": "", "package_id": "8f734b11-809e-47a4-8827-bd61657e85eb", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "a5657160-c52c-4714-a70c-0c1bd9c65e94", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "title": {"fr": "", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "download_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/30148925/master", "state": "active", "media_type": "application/vnd.ms-excel", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "XLS", "language": ["de"], "mimetype_inner": null, "url_type": null, "name": {"fr": "", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2024-01-30T09:36:59.016240", "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/30148925/master", "documentation": [], "modified": "2024-01-16T15:33:31.292000+00:00", "last_modified": null, "position": 2, "revision_id": "42fa1e85-0937-4b34-bdcc-595167c016b3", "identifier": "30148925-master@bundesamt-fur-statistik-bfs", "resource_type": null}, {"byte_size": 0, "cache_last_updated": null, "issued": "2024-01-30T07:30:00+00:00", "uri": "", "package_id": "8f734b11-809e-47a4-8827-bd61657e85eb", "temporal_resolution": "", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "c94ef7a3-9eef-4402-8553-c7ab4b2b7139", "size": null, "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "display_name": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "en": "", "de": "", "it": ""}, "title": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "en": "", "de": "", "it": ""}, "download_url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/30148924/master", "state": "active", "media_type": "application/vnd.ms-excel", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "XLS", "language": ["fr"], "mimetype_inner": null, "url_type": null, "name": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "en": "", "de": "", "it": ""}, "mimetype": null, "cache_url": null, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "access_services": [], "created": "2024-01-30T09:36:59.016236", "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/30148924/master", "documentation": [], "modified": "2024-01-16T15:33:31.556000+00:00", "last_modified": null, "position": 3, "revision_id": "42fa1e85-0937-4b34-bdcc-595167c016b3", "identifier": "30148924-master@bundesamt-fur-statistik-bfs", "resource_type": null}], "num_resources": 4, "description": {"fr": "", "de": "", "en": "", "it": ""}, "tags": [{"vocabulary_id": null, "state": "active", "display_name": "mobilita-e-trasporti", "id": "a6e2107c-0cf2-4f22-a851-8ed49708e191", "name": "mobilita-e-trasporti"}, {"vocabulary_id": null, "state": "active", "display_name": "mobilitad-e-traffic", "id": "4f5c9817-6600-4738-a70b-610f401f3978", "name": "mobilitad-e-traffic"}, {"vocabulary_id": null, "state": "active", "display_name": "mobilitat-und-verkehr", "id": "eb47069f-7cd5-4b7b-9bcd-e44c17223b70", "name": "mobilitat-und-verkehr"}, {"vocabulary_id": null, "state": "active", "display_name": "mobilite-et-transports", "id": "0a548414-cd81-4069-8ea3-1e54fcf0418c", "name": "mobilite-et-transports"}, {"vocabulary_id": null, "state": "active", "display_name": "mobility-and-transport", "id": "a9209dbe-146c-4e6c-995e-d5c00eac1b93", "name": "mobility-and-transport"}], "spatial": "Schweiz", "groups": [{"display_name": {"fr": "Transports", "de": "Verkehr", "en": "Transport", "it": "Trasporti"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}", "image_display_url": "", "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f", "name": "tran"}], "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"https://www.bfs.admin.ch/\", \"name\": \"BFS/OFS\"}", "organization": {"display_name": {"fr": "Office f\u00e9d\u00e9ral de la statistique OFS", "de": "Bundesamt f\u00fcr Statistik BFS", "en": "Federal Statistical Office FSO", "it": "Ufficio federale di statistica UST"}, "description": {"fr": "L'OFS est le centre de comp\u00e9tence de la statistique publique suisse. Il produit des informations statistiques sur la population, l'\u00e9conomie, la soci\u00e9t\u00e9, la formation et la recherche, le territoire et l'environnement. Ces informations servent \u00e0 la formation de l\u2019opinion publique. Elles sont un outil de planification et de gouvernance dans tous les domaines de l\u2019action politique et contribuent au bon fonctionnement de notre \u00c9tat moderne et d\u00e9mocratique.", "de": "Das BFS ist das nationale Kompetenzzentrum der \u00f6ffentlichen Statistik der Schweiz. Es produziert und publiziert statistische Informationen \u00fcber den Stand und die Entwicklung von Bev\u00f6lkerung, Wirtschaft, Gesellschaft, Bildung, Forschung, Raum und Umwelt. Diese Informationen dienen der Meinungsbildung in der Bev\u00f6lkerung sowie der Planung und Steuerung von zentralen Politikbereichen. Sie leisten einen wichtigen Beitrag f\u00fcr einen modernen, demokratischen Staat.", "en": "The FSO is Switzerland's national competence centre for official statistics. It produces and publishes statistical information on the status and development of the population, economy, society, education, research, territory and the environment. This information is used for opinion building among the population and for the planning and management of key policy areas. They make an important contribution to a modern, democratic state.", "it": "L\u2019UST \u00e8 il centro di competenza nazionale per la statistica pubblica della Svizzera. Produce e pubblica informazioni statistiche sullo stato e sull'evoluzione della popolazione, dell'economia, della societ\u00e0, della formazione, della ricerca, del territorio e dell'ambiente. Queste informazioni servono alla formazione dell'opinione pubblica nonch\u00e9 alla pianificazione e alla gestione in ambiti politici di centrale importanza. Forniscono un importante contributo per uno Stato moderno e democratico."}, "name": "bundesamt-fur-statistik-bfs", "image_display_url": "https://ckan.opendata.swiss/uploads/group/BFS_08_web.jpg", "url": "https://www.bfs.admin.ch", "package_count": 2894, "created": "2015-11-30T11:50:01.742198", "political_level": "confederation", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/BFS_08_web.jpg", "groups": [], "type": "organization", "title": {"fr": "Office f\u00e9d\u00e9ral de la statistique OFS", "de": "Bundesamt f\u00fcr Statistik BFS", "en": "Federal Statistical Office FSO", "it": "Ufficio federale di statistica UST"}, "revision_id": "a9c07792-c20d-406e-bae8-01efb95e3cce", "num_followers": 0, "id": "4309c328-c618-4077-bcdc-378a21ee1b46", "tags": [], "approval_status": "approved"}, "name": "bestand-der-motorfahrrader-nach-kanton-inkl-schnelle-e-bikes", "language": ["de", "fr"], "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/ANNUAL", "owner_org": "4309c328-c618-4077-bcdc-378a21ee1b46", "url": "https://www.bfs.admin.ch/asset/de/je-d-11.03.02.01.04", "extras": [{"value": "30148921@bundesamt-fur-statistik-bfs", "key": "guid"}, {"value": "https://ckan.opendata.swiss/perma/30148921@bundesamt-fur-statistik-bfs", "key": "uri"}, {"key": "harvest_object_id", "value": "89d20347-e83c-40fb-a7dc-79f4507b5e9d"}, {"key": "harvest_source_id", "value": "47bf1425-f615-4803-838a-f9b4c79a3cbb"}, {"key": "harvest_source_title", "value": "BFS \u2013 DCAT Harvester"}], "title": {"fr": "Parc des cyclomoteurs selon le canton (y compris les v\u00e9los \u00e9lectriques rapides)", "de": "Bestand der Motorfahrr\u00e4der nach Kanton (inkl. schnelle E-Bikes)", "en": "", "it": ""}, "revision_id": "3cea6952-c178-45bf-a833-fc4e8b19be1c", "identifier": "30148921@bundesamt-fur-statistik-bfs"}, {"owner_org": "28380eb8-c7c4-4ee0-a3bd-ac45a5fa647f", "maintainer": "info@schweizmobil.ch", "groups": [{"display_name": {"fr": "R\u00e9gions et villes", "de": "Regionen und St\u00e4dte", "en": "Regions and cities", "it": "Regioni e citt\u00e0"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}", "image_display_url": "", "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa", "name": "regi"}, {"display_name": {"fr": "Transports", "de": "Verkehr", "en": "Transport", "it": "Trasporti"}, "description": {"fr": "", "de": "", "en": "", "it": ""}, "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}", "image_display_url": "", "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f", "name": "tran"}], "issued": "2020-07-01T00:00:00", "title_for_slug": "sperrungen-umleitungen-mountainbikeland", "qualified_relations": [], "private": false, "maintainer_email": "info@schweizmobil.ch", "num_tags": 0, "contact_points": [{"email": "info@schweizmobil.ch", "name": "info@schweizmobil.ch"}], "keywords": {"fr": ["chemin", "verrouillage", "velo-tout-terrain-vtt", "velo", "ifdg-linfrastructure-federale-de-donnees-geographiques", "voie-cyclable", "trafic-non-motorise", "tourisme", "planification-de-lespace-physique"], "de": ["weg", "sperrung", "mountainbike", "fahrrad", "bgdi-bundesgeodaten-infrastruktur", "veloweg", "langsamverkehr", "tourismus-und-freizeit", "raumplanung"], "en": ["path", "blocking", "mountain-bike", "bike", "fsdi-federal-spatial-data-infrastructure", "cycleway", "human-powered-mobility", "tourism", "physical-planning"], "it": ["cammino", "blocco", "mountain-bike", "bicicletta", "ifdg-infrastruttura-federale-dei-dati-geografici", "ciclopista", "traffico-lento", "turismo", "pianificazione-dello-spazio-fisico"]}, "temporals": [], "id": "6efaf6c0-7998-4f28-b3a9-a40e1a9cfd50", "metadata_created": "2020-07-18T20:46:11.847826", "conforms_to": [], "metadata_modified": "2023-12-07T00:13:14.362935", "author": null, "author_email": null, "isopen": false, "relations": [{"url": "https://map.geo.admin.ch/?topic=astra&lang=de&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.astra.mountainbikeland-sperrungen_umleitungen&layers_opacity=0.8&catalogNodes=3019", "label": "Link zum Fachportal: http://map.geo.admin.ch"}, {"url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/fa5f0dfb-162f-4b83-828c-7b880ad5e972", "label": "geocat.ch permalink"}], "state": "active", "version": null, "relationships_as_object": [], "license_id": null, "see_alsos": [], "type": "dataset", "resources": [{"protocol": "MAP:Preview", "cache_last_updated": null, "issued": "2020-07-01T00:00:00", "package_id": "6efaf6c0-7998-4f28-b3a9-a40e1a9cfd50", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "2432b094-8de5-4d4d-a085-13fd3812a68c", "size": null, "display_name": {"fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch", "de": "Map (Preview) Vorschau map.geo.admin.ch", "en": "Map (Preview)  map.geo.admin.ch", "it": "Map (Preview) Previsione map.geo.admin.ch"}, "title": {"fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch", "de": "Map (Preview) Vorschau map.geo.admin.ch", "en": "Map (Preview)  map.geo.admin.ch", "it": "Map (Preview) Previsione map.geo.admin.ch"}, "created": "2022-06-14T00:05:11.524281", "state": "active", "media_type": "", "hash": "", "description": {"fr": "Aper\u00e7u map.geo.admin.ch", "de": "Vorschau map.geo.admin.ch", "en": "Preview map.geo.admin.ch", "it": "Previsione map.geo.admin.ch"}, "format": "SERVICE", "language": ["en", "de", "fr", "it"], "mimetype_inner": null, "url_type": null, "mimetype": null, "cache_url": null, "name": {"fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch", "de": "Map (Preview) Vorschau map.geo.admin.ch", "en": "Map (Preview)  map.geo.admin.ch", "it": "Map (Preview) Previsione map.geo.admin.ch"}, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://map.geo.admin.ch/?layers=ch.astra.mountainbikeland-sperrungen_umleitungen", "byte_size": 0, "modified": "", "last_modified": null, "position": 0, "revision_id": "ae3627ef-a1d7-4ad1-9bd3-3a9159c5d88f", "resource_type": null}, {"protocol": "OGC:WMS", "cache_last_updated": null, "issued": "2020-07-01T00:00:00", "package_id": "6efaf6c0-7998-4f28-b3a9-a40e1a9cfd50", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "bc714201-fd63-4611-b421-e57c80e27e84", "size": null, "display_name": {"fr": "ch.astra.mountainbikeland-sperrungen_umleitungen", "de": "ch.astra.mountainbikeland-sperrungen_umleitungen", "en": "ch.astra.mountainbikeland-sperrungen_umleitungen", "it": "ch.astra.mountainbikeland-sperrungen_umleitungen"}, "title": {"fr": "ch.astra.mountainbikeland-sperrungen_umleitungen", "de": "ch.astra.mountainbikeland-sperrungen_umleitungen", "en": "ch.astra.mountainbikeland-sperrungen_umleitungen", "it": "ch.astra.mountainbikeland-sperrungen_umleitungen"}, "created": "2023-03-30T00:04:38.875050", "state": "active", "media_type": "", "hash": "", "description": {"fr": "Service WMS-IFDG, couche \"Fermetures VTT\"", "de": "WMS-BGDI Dienst, Layer \"Sperrungen Mountainbike\"", "en": "WMS-FSDI service, layer \"Closures Mountain Bike\"", "it": "Servizio WMS-IFDG, strato \"Chiusure Mountain Bike\""}, "format": "WMS", "language": ["en", "de", "fr", "it"], "mimetype_inner": null, "url_type": null, "mimetype": null, "cache_url": null, "name": {"fr": "ch.astra.mountainbikeland-sperrungen_umleitungen", "de": "ch.astra.mountainbikeland-sperrungen_umleitungen", "en": "ch.astra.mountainbikeland-sperrungen_umleitungen", "it": "ch.astra.mountainbikeland-sperrungen_umleitungen"}, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de", "byte_size": 0, "modified": "", "last_modified": null, "position": 1, "revision_id": "ae3627ef-a1d7-4ad1-9bd3-3a9159c5d88f", "resource_type": null}, {"protocol": "ESRI:REST", "cache_last_updated": null, "issued": "2020-07-01T00:00:00", "package_id": "6efaf6c0-7998-4f28-b3a9-a40e1a9cfd50", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "fd7934df-e9e7-475c-b30d-6495856ad18f", "size": null, "display_name": {"fr": "RESTful API de geo.admin.ch", "de": "RESTful API von geo.admin.ch", "en": "RESTful API from geo.admin.ch", "it": "RESTful API da geo.admin.ch"}, "title": {"fr": "RESTful API de geo.admin.ch", "de": "RESTful API von geo.admin.ch", "en": "RESTful API from geo.admin.ch", "it": "RESTful API da geo.admin.ch"}, "created": "2023-03-30T00:04:38.875061", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "API", "language": ["en", "de", "fr", "it"], "mimetype_inner": null, "url_type": null, "mimetype": null, "cache_url": null, "name": {"fr": "RESTful API de geo.admin.ch", "de": "RESTful API von geo.admin.ch", "en": "RESTful API from geo.admin.ch", "it": "RESTful API da geo.admin.ch"}, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.astra.mountainbikeland-sperrungen_umleitungen", "byte_size": 0, "modified": "", "last_modified": null, "position": 2, "revision_id": "ae3627ef-a1d7-4ad1-9bd3-3a9159c5d88f", "resource_type": null}, {"protocol": "WWW:DOWNLOAD-URL", "cache_last_updated": null, "issued": "2020-07-01T00:00:00", "package_id": "6efaf6c0-7998-4f28-b3a9-a40e1a9cfd50", "datastore_contains_all_records_of_source_file": false, "datastore_active": false, "id": "13065044-a6c3-4017-a50f-c6594b07521c", "size": null, "display_name": {"fr": "Download", "de": "Download", "en": "Download", "it": "Download"}, "title": {"fr": "Download", "de": "Download", "en": "Download", "it": "Download"}, "download_url": "https://data.geo.admin.ch/ch.astra.mountainbikeland-sperrungen_umleitungen", "created": "2022-06-14T00:05:11.524289", "state": "active", "media_type": "", "hash": "", "description": {"fr": "", "de": "", "en": "", "it": ""}, "format": "", "language": ["en", "de", "fr", "it"], "mimetype_inner": null, "url_type": null, "mimetype": null, "cache_url": null, "name": {"fr": "Download", "de": "Download", "en": "Download", "it": "Download"}, "license": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "rights": "NonCommercialAllowed-CommercialWithPermission-ReferenceRequired", "url": "https://data.geo.admin.ch/ch.astra.mountainbikeland-sperrungen_umleitungen", "byte_size": 0, "modified": "", "last_modified": null, "position": 3, "revision_id": "ae3627ef-a1d7-4ad1-9bd3-3a9159c5d88f", "resource_type": null}], "num_resources": 4, "description": {"fr": "Le jeu de donn\u00e9es contient les fermetures et les d\u00e9viations sur le r\u00e9seau de \u00abLa Suisse \u00e0 VTT\u00bb de la Suisse et de la Principaut\u00e9 du Liechtenstein, qui ont \u00e9t\u00e9 communiqu\u00e9es \u00e0 SuisseMobile. Il compl\u00e8te les g\u00e9odonn\u00e9es \u00abLa Suisse \u00e0 VTT\u00bb (Mobilit\u00e9 douce \u2013 La Suisse \u00e0 VTT), et il est publi\u00e9 par l'Office f\u00e9d\u00e9ral des routes OFROU, l'Office f\u00e9d\u00e9ral de topographie swisstopo, SuisseMobile et les cantons. Lien vers le disclaimer: https://www.schweizmobil.ch/fr/unterseiten/disclaimer_fr.html", "de": "Der Datensatz enth\u00e4lt Sperrungen und Umleitungen auf den Mountainbikeland-Routen der Schweiz und des F\u00fcrstentums Liechtenstein, die SchweizMobil gemeldet wurden. Der Datensatz erg\u00e4nzt den Geobasisdatensatz \"Mountainbikeland\" (Langsamverkehr \u2013 Mountainbikeland Schweiz) und wird durch das Bundesamt f\u00fcr Strassen ASTRA, das Bundesamt f\u00fcr Landestopografie swisstopo, SchweizMobil und die Kantone publiziert. Link zu Disclaimer: https://www.schweizmobil.ch/de/unterseiten/disclaimer_de.html", "en": "The dataset contains trail closures and detours on the routes of \"Mountain biking in Switzerland\" of Switzerland and the Principality of Liechtenstein, which have been announced to the SwitzerlandMobility. It complements the \"Mountain biking in Switzerland\" geodata (Non-motorised transport \u2013 Mountainbikeland Schweiz), and is managed by the Federal Roads Office FEDRO, the Federal Office of Topography swisstopo, SwitzerlandMobility and the cantons. Link to the disclaimer: https://www.schweizmobil.ch/en/unterseiten/disclaimer_en.html", "it": "Il set di dati contiene le chiusure e le deviazioni sulla rete dei percorsi di \"La Svizzera in mountain bike\" della Svizzera e del Principato del Liechtenstein, che sono state segnalate a SvizzeraMobile. Il set completa i geodati \"La Svizzera in mountain bike\" (Traffico lento \u2013 La Svizzera in mountain bike), ed \u00e8 pubblicato dall'Ufficio federale delle strade (USTRA), dall'Ufficio federale di topografia (swisstopo), da SvizzeraMobile e dai cantoni. Link verso il disclaimer: https://www.schweizmobil.ch/it/unterseiten/disclaimer_it.html"}, "tags": [], "spatial": "Schweiz", "coverage": "", "creator_user_id": "af084126-f711-4016-a585-70354e997796", "display_name": {}, "relationships_as_subject": [], "publisher": "{\"url\": \"http://www.astra.admin.ch\", \"name\": \"Bundesamt f\\u00fcr Strassen\"}", "organization": {"display_name": {"fr": "Office f\u00e9d\u00e9ral des routes OFROU", "de": "Bundesamt f\u00fcr Strassen ASTRA", "en": "Federal Roads Office FEDRO", "it": "Ufficio federale delle strade USTRA"}, "description": {"fr": "L'Office f\u00e9d\u00e9ral des routes (OFROU) est l'autorit\u00e9 suisse comp\u00e9tente pour l'infrastructure routi\u00e8re et le trafic individuel. Chapeaut\u00e9 par le D\u00e9partement f\u00e9d\u00e9ral de l'environnement, des transports, de l'\u00e9nergie et de la communication (DETEC), il oeuvre en faveur d'une mobilit\u00e9 routi\u00e8re durable et s\u00fbre. Son objectif principal est de garantir le bon fonctionnement du r\u00e9seau des routes nationales et principales.", "de": "Das Bundesamt f\u00fcr Strassen (ASTRA) ist die Schweizer Fachbeh\u00f6rde f\u00fcr die Strasseninfrastruktur und den individuellen Strassenverkehr. Im Verantwortungsbereich des eidgen\u00f6ssischen Departements f\u00fcr Umwelt, Verkehr, Energie und Kommunikation (UVEK) wirkt es f\u00fcr eine nachhaltige und sichere Mobilit\u00e4t auf der Strasse. Im Mittelpunkt steht die Sicherstellung der Funktionsf\u00e4higkeit des Nationalstrassen und Hauptstrassennetzes.", "en": "The Federal Roads Office (FEDRO) is Switzerland's federal authority responsible for road infrastructure and private road transport. It belongs to the Federal Department of the Environment, Transport, Energy and Communications (DETEC), and focuses on securing sustainable and safe mobility on the country's roads. Its principal objective is to secure the functionality of Switzerland's motorway and main road networks.", "it": "L'Ufficio federale delle strade (USTRA) \u00e8 l'autorit\u00e0 svizzera competente in materia di infrastruttura stradale e traffico stradale privato. Parte integrante del Dipartimento federale dell'ambiente, dei trasporti, dell'energia e delle comunicazioni (DATEC), l'Ufficio \u00e8 impegnato nella realizzazione di una mobilit\u00e0 sostenibile e sicura sulla strada. Il suo obiettivo principale \u00e8 di garantire la funzionalit\u00e0 della rete delle strade nazionali e principali."}, "name": "bundesamt-fur-strassen-astra", "image_display_url": "https://ckan.opendata.swiss/uploads/group/Astra_Gebaeude.jpg", "url": "https://www.astra.admin.ch", "package_count": 23, "created": "2016-01-21T16:53:29.141875", "political_level": "confederation", "is_organization": true, "state": "active", "image_url": "https://ckan.opendata.swiss/uploads/group/Astra_Gebaeude.jpg", "groups": [], "type": "organization", "title": {"fr": "Office f\u00e9d\u00e9ral des routes OFROU", "de": "Bundesamt f\u00fcr Strassen ASTRA", "en": "Federal Roads Office FEDRO", "it": "Ufficio federale delle strade USTRA"}, "revision_id": "55d5b245-5a67-475a-aa56-74cc6d98904e", "num_followers": 0, "id": "28380eb8-c7c4-4ee0-a3bd-ac45a5fa647f", "tags": [], "approval_status": "approved"}, "name": "sperrungen-umleitungen-mountainbikeland", "language": ["en", "de", "fr", "it"], "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/DAILY", "license_title": null, "modified": "", "url": "https://www.schweizmobil.org", "extras": [{"key": "harvest_object_id", "value": "fe3b9d87-c8dc-47c5-a7b6-2aa6aa1654fb"}, {"key": "harvest_source_id", "value": "8e5dccab-64c7-4dd8-bc46-c3652592273a"}, {"key": "harvest_source_title", "value": "ASTRA - Geocat Harvester"}], "title": {"fr": "Fermetures / D\u00e9viations \"La Suisse \u00e0 VTT\"", "de": "Sperrungen / Umleitungen Mountainbikeland", "en": "Closures / Diversions \"Mountain Biking in Switzerland\"", "it": "Chiusure / Deviazioni \"La Svizzera in mountain bike\""}, "revision_id": "f733e24a-f403-4710-a261-b999fff72e48", "identifier": "fa5f0dfb-162f-4b83-828c-7b880ad5e972@bundesamt-fur-strassen-astra"}], "search_facets": {}} );
+    return of({
+      "alternative_prompts": [
+        "anzahl-zuge",
+        "rollstuhlzuganglichkeit",
+        "zug",
+        "zuge",
+        "bahnhof",
+        "bahnhofsliste",
+        "bahnhofstrasse",
+        "gleise",
+        "schienenschmieranlagen",
+        "statistik-des-offentlichen-verkehrs-inkl-schienenguterverkehr"
+      ],
+      "help": "https://ckan.opendata.swiss/api/3/action/help_show?name=package_search",
+      "message": "Ich finde diese Ergebnisse sehr interessant und n\u00fctzlich f\u00fcr jemanden, der sich mit Eisenbahnen besch\u00e4ftigt.",
+      "narrowing_prompts": [
+        "Eisenbahn AND anzahl-zuge",
+        "Eisenbahn AND rollstuhlzuganglichkeit",
+        "Eisenbahn AND zug",
+        "Eisenbahn AND zuge",
+        "Eisenbahn AND bahnhof",
+        "Eisenbahn AND bahnhofsliste",
+        "Eisenbahn AND bahnhofstrasse",
+        "Eisenbahn AND gleise",
+        "Eisenbahn AND schienenschmieranlagen",
+        "Eisenbahn AND statistik-des-offentlichen-verkehrs-inkl-schienenguterverkehr"
+      ],
+      "result": {
+        "count": 430,
+        "facets": {},
+        "results": [
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "info@bav.admin.ch",
+                "name": "info@bav.admin.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "0594d621-c92a-4a32-809c-98e281dc7944",
+            "description": {
+              "de": "Der Sachplan Verkehr, Teil Infrastruktur Schiene (SIS) koordiniert die sachplanrelevanten Infrastrukturen des Schienenverkehrs, die sich im Kompetenzbereich des Bundes befinden.",
+              "en": "The Rail Infrastructure Section of the Sectoral plan on Transport (SIS) coordinates the rail infrastructure which is relevant to the sectoral plan and which falls within the sphere of competence of the Swiss Confederation.",
+              "fr": "Le plan sectoriel des transports, partie Infrastructure rail (SIS) sert \u00e0 coordonner les infrastructures destin\u00e9es au trafic ferroviaire d'importance nationale qui sont de la comp\u00e9tence de la Conf\u00e9d\u00e9ration.",
+              "it": "Il Piano settoriale dei trasporti, parte Infrastruttura ferroviaria (SIS) prende in esame le infrastrutture adibite al traffico ferroviario d'importanza nazionale che rientrano nell'ambito di competenza della Confederazione."
+            },
+            "display_name": {},
+            "documentation": [
+              "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/geoinformation/geobasisdaten/sachplan-verkehr-teil-unterirdischer-gutertransport.html"
+            ],
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "b64870cc-577c-4728-82ee-9f86fa3eb645"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "732512f4-310e-468a-8df9-eb5836bcbff4"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "BAV - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Umwelt",
+                  "en": "Environment",
+                  "fr": "Environnement",
+                  "it": "Ambiente"
+                },
+                "id": "ab2cc387-d129-4d76-b78d-517326d2a772",
+                "image_display_url": "",
+                "name": "envi",
+                "title": "{\"de\": \"Umwelt\", \"en\": \"Environment\", \"fr\": \"Environnement\", \"it\": \"Ambiente\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Verkehr",
+                  "en": "Transport",
+                  "fr": "Transports",
+                  "it": "Trasporti"
+                },
+                "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f",
+                "image_display_url": "",
+                "name": "tran",
+                "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}"
+              }
+            ],
+            "id": "d1ce7205-0339-42ae-bd94-db28b4b864e5",
+            "identifier": "80d0a3a6-56a3-408a-8964-6a48a500678e@bundesamt-fur-verkehr-bav",
+            "isopen": false,
+            "issued": "2014-01-01T00:00:00",
+            "keywords": {
+              "de": [
+                "geobasisdaten",
+                "aufbewahrungs--und-archivierungsplanung-aap---bund",
+                "verkehrsnetze",
+                "verkehr",
+                "bgdi-bundesgeodaten-infrastruktur"
+              ],
+              "en": [
+                "official-geodata",
+                "conservation-and-archiving-planning-aap---confederation",
+                "transport-networks",
+                "transport",
+                "fsdi-federal-spatial-data-infrastructure"
+              ],
+              "fr": [
+                "geodonnees-de-base",
+                "planification-de-la-conservation-et-de-larchivage-aap---confederation",
+                "reseaux-de-transport",
+                "transport",
+                "ifdg-linfrastructure-federale-de-donnees-geographiques"
+              ],
+              "it": [
+                "geodati-di-base",
+                "pianificazione-della-conservazione-e-dellarchiviazione-aap---confederazione",
+                "reti-di-trasporto",
+                "trasporti",
+                "ifdg-infrastruttura-federale-dei-dati-geografici"
+              ]
+            },
+            "language": [
+              "en",
+              "de",
+              "fr",
+              "it"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "Wolf-Dieter.Deuschle@bav.admin.ch",
+            "maintainer_email": "Wolf-Dieter.Deuschle@bav.admin.ch",
+            "metadata_created": "2018-02-15T09:13:31.338681",
+            "metadata_modified": "2024-02-17T00:53:18.088696",
+            "modified": "2022-01-26T00:00:00",
+            "name": "sachplan-verkehr-teil-infrastruktur-schiene-sis",
+            "num_resources": 4,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2016-03-04T16:00:58.767460",
+              "description": {
+                "de": "Das Bundesamt f\u00fcr Verkehr (BAV) ist t\u00e4glich daf\u00fcr besorgt, die schweizerische Politik im Bereich des \u00f6ffentlichen Verkehrs umzusetzen und mitzugestalten. Es realisiert damit wesentliche Teile der von Volk, Parlament und Bundesrat beschlossenen Verkehrspolitik. Die Fachleute des BAV sind zust\u00e4ndig f\u00fcr den Personen- und den G\u00fcterverkehr auf der Schiene, f\u00fcr die Seilbahnen und Sessellifte, die Busse und die Schiffe.",
+                "en": "",
+                "fr": "L'Office f\u00e9d\u00e9ral des transports (OFT) veille journellement \u00e0 concevoir et \u00e0 mettre en \u0153uvre la politique suisse en mati\u00e8re de transports publics, r\u00e9alisant ainsi des parties essentielles de la politique des transports d\u00e9cid\u00e9e par le peuple, le Parlement et le Conseil f\u00e9d\u00e9ral. Les sp\u00e9cialistes de l'OFT sont comp\u00e9tents pour le transport de voyageurs et de marchandises sur le rail, pour les t\u00e9l\u00e9ph\u00e9riques et les t\u00e9l\u00e9si\u00e8ges, les bus et les bateaux.",
+                "it": "L'ufficio federale dei trasporti (UFT) si occupa quotidianamente di attuare e pianificare la politica svizzera nell'ambito dei trasporti pubblici, realizzando cos\u00ec i principi chiave della politica dei trasporti decisa dal Popolo, dal Parlamento e dal Consiglio federale. Gli esperti dell'UFT sono competenti per il trasporto di viaggiatori e di merci con la ferrovia, per gli impianti a fune, gli autobus e i battelli."
+              },
+              "display_name": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "groups": [],
+              "id": "2fddceb9-13df-42cc-8120-79d489582657",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "image_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "is_organization": true,
+              "name": "bundesamt-fur-verkehr-bav",
+              "num_followers": 0,
+              "package_count": 15,
+              "political_level": "confederation",
+              "revision_id": "ebd80158-d8a3-416b-b402-e7a7d3174ccc",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "type": "organization",
+              "url": ""
+            },
+            "owner_org": "2fddceb9-13df-42cc-8120-79d489582657",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.bav.admin.ch/bav/de/home.html\", \"name\": \"Bundesamt f\\u00fcr Verkehr BAV\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "Sachplanseite des Bundes",
+                "url": "https://www.are.admin.ch/are/de/home/raumentwicklung-und-raumplanung/strategie-und-planung/konzepte-und-sachplaene/sachplaene-des-bundes.html"
+              },
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/80d0a3a6-56a3-408a-8964-6a48a500678e"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:50.986984",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Vorschau map.geo.admin.ch",
+                  "en": "Preview map.geo.admin.ch",
+                  "fr": "Aper\u00e7u map.geo.admin.ch",
+                  "it": "Previsione map.geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "format": "SERVICE",
+                "hash": "",
+                "id": "3ff3f188-7582-4be6-aa84-c1f775b95bb7",
+                "issued": "2014-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2022-01-26T00:00:00",
+                "name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "package_id": "d1ce7205-0339-42ae-bd94-db28b4b864e5",
+                "position": 0,
+                "protocol": "MAP:Preview",
+                "resource_type": null,
+                "revision_id": "487f1a0f-992e-4c5e-ab06-b0df2c69cb7c",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "url": "https://map.geo.admin.ch/?layers=ch.bav.sachplan-infrastruktur-schiene_kraft",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:16:20.958424",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WMS-BGDI Dienst, Layer \"SP Infrastruktur Schiene\"",
+                  "en": "WMS-FSDI service, layer \"SP rail infrastructure\"",
+                  "fr": "Service WMS-IFDG, couche \"PS Infrastructure rail\"",
+                  "it": "Servizio WMS-IFDG, strato \"PS Infrastruttura ferroviaria\""
+                },
+                "display_name": {
+                  "de": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "en": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "fr": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "it": "ch.bav.sachplan-infrastruktur-schiene_kraft"
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "ab064236-0dc4-4230-a8c1-cf943807318b",
+                "issued": "2014-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2022-01-26T00:00:00",
+                "name": {
+                  "de": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "en": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "fr": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "it": "ch.bav.sachplan-infrastruktur-schiene_kraft"
+                },
+                "package_id": "d1ce7205-0339-42ae-bd94-db28b4b864e5",
+                "position": 1,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "487f1a0f-992e-4c5e-ab06-b0df2c69cb7c",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "en": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "fr": "ch.bav.sachplan-infrastruktur-schiene_kraft",
+                  "it": "ch.bav.sachplan-infrastruktur-schiene_kraft"
+                },
+                "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-08-05T00:17:24.633586",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Download der Geodaten von geo.admin.ch",
+                  "en": "Download server from geo.admin.ch",
+                  "fr": "T\u00e9l\u00e9chargement des g\u00e9odonn\u00e9es de geo.admin.ch",
+                  "it": "Download dei geodati da geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://data.geo.admin.ch/ch.bav.sachplan-infrastruktur-schiene_kraft/data.zip",
+                "format": "ZIP",
+                "hash": "",
+                "id": "a0c55e4a-0472-486a-9dd1-f4b998a9c060",
+                "issued": "2014-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2022-01-26T00:00:00",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "d1ce7205-0339-42ae-bd94-db28b4b864e5",
+                "position": 2,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "487f1a0f-992e-4c5e-ab06-b0df2c69cb7c",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://data.geo.admin.ch/ch.bav.sachplan-infrastruktur-schiene_kraft/data.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:50.986997",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "format": "API",
+                "hash": "",
+                "id": "8a016a48-5cb0-4601-aa3b-c63fcf5fb1b8",
+                "issued": "2014-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2022-01-26T00:00:00",
+                "name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "package_id": "d1ce7205-0339-42ae-bd94-db28b4b864e5",
+                "position": 3,
+                "protocol": "ESRI:REST",
+                "resource_type": null,
+                "revision_id": "487f1a0f-992e-4c5e-ab06-b0df2c69cb7c",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bav.sachplan-infrastruktur-schiene_kraft",
+                "url_type": null
+              }
+            ],
+            "revision_id": "7765a986-4eb3-489f-942f-a34e58767cf3",
+            "see_alsos": [],
+            "spatial": "Schweiz",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "Sachplan Verkehr, Teil Infrastruktur Schiene (SIS)",
+              "en": "Sector plan on transport, rail infrastructure section (SIS)",
+              "fr": "Plan sectoriel des transports, partie infrastructure rail (SIS)",
+              "it": "Piano settoriale dei trasporti, parte infrastruttura ferroviaria\u00a0(SIS)"
+            },
+            "title_for_slug": "sachplan-verkehr-teil-infrastruktur-schiene-sis",
+            "type": "dataset",
+            "url": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/geoinformation/geobasisdaten/sachplan-verkehr-teil-unterirdischer-gutertransport.html",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "info@bav.admin.ch",
+                "name": "info@bav.admin.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "0594d621-c92a-4a32-809c-98e281dc7944",
+            "description": {
+              "de": "Laufende oder vergangene Anh\u00f6rungen der Kantone und Gemeinden sowie Information und Mitwirkung der Bev\u00f6lkerung nach Art. 19 RPV des Sachplans Verkehr, Teil Infrastruktur Schiene (SIS).",
+              "en": "Current or past consultations of the cantons and communes as well as information and participation of the population in accordance with Art. 19 RPV of the Sectoral Plan on Transport, Rail Infrastructure Section (SIS).",
+              "fr": "Consultations des cantons et des communes sur le plan sectoriel transport, partie Infrastructure rail (SIS), avec information et participation de la population, conform\u00e9ment \u00e0 l\u2019art. 19 OAT, en cours ou termin\u00e9es.",
+              "it": "Audizioni dei Cantoni e dei Comuni in corso o concluse nonch\u00e9 informazione e partecipazione della popolazione conformemente all\u2019articolo 19 OPT in relazione al piano settoriale trasporto, parte Infrastruttura ferroviaria (SIS)."
+            },
+            "display_name": {},
+            "documentation": [
+              "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/geoinformation/geobasisdaten/sachplan-verkehr-teil-unterirdischer-gutertransport.html"
+            ],
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "4397d9ef-cf2e-4746-b4da-b496d260d217"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "732512f4-310e-468a-8df9-eb5836bcbff4"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "BAV - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Umwelt",
+                  "en": "Environment",
+                  "fr": "Environnement",
+                  "it": "Ambiente"
+                },
+                "id": "ab2cc387-d129-4d76-b78d-517326d2a772",
+                "image_display_url": "",
+                "name": "envi",
+                "title": "{\"de\": \"Umwelt\", \"en\": \"Environment\", \"fr\": \"Environnement\", \"it\": \"Ambiente\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Verkehr",
+                  "en": "Transport",
+                  "fr": "Transports",
+                  "it": "Trasporti"
+                },
+                "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f",
+                "image_display_url": "",
+                "name": "tran",
+                "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}"
+              }
+            ],
+            "id": "51cb0e5e-981d-4fc9-98fb-1a3606005f97",
+            "identifier": "a94360e1-a238-4d5f-9396-8f7bb739c997@bundesamt-fur-verkehr-bav",
+            "isopen": false,
+            "issued": "2013-05-30T00:00:00",
+            "keywords": {
+              "de": [
+                "verkehrsnetze",
+                "verkehr",
+                "bgdi-bundesgeodaten-infrastruktur"
+              ],
+              "en": [
+                "transport-networks",
+                "transport",
+                "fsdi-federal-spatial-data-infrastructure"
+              ],
+              "fr": [
+                "reseaux-de-transport",
+                "transport",
+                "ifdg-linfrastructure-federale-de-donnees-geographiques"
+              ],
+              "it": [
+                "reti-di-trasporto",
+                "trasporti",
+                "ifdg-infrastruttura-federale-dei-dati-geografici"
+              ]
+            },
+            "language": [
+              "en",
+              "de",
+              "fr",
+              "it"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "Wolf-Dieter.Deuschle@bav.admin.ch",
+            "maintainer_email": "Wolf-Dieter.Deuschle@bav.admin.ch",
+            "metadata_created": "2018-02-15T09:13:19.349610",
+            "metadata_modified": "2024-02-17T00:53:04.175371",
+            "modified": "",
+            "name": "sachplan-verkehr-teil-infrastruktur-schiene-sis-anhorung",
+            "num_resources": 4,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2016-03-04T16:00:58.767460",
+              "description": {
+                "de": "Das Bundesamt f\u00fcr Verkehr (BAV) ist t\u00e4glich daf\u00fcr besorgt, die schweizerische Politik im Bereich des \u00f6ffentlichen Verkehrs umzusetzen und mitzugestalten. Es realisiert damit wesentliche Teile der von Volk, Parlament und Bundesrat beschlossenen Verkehrspolitik. Die Fachleute des BAV sind zust\u00e4ndig f\u00fcr den Personen- und den G\u00fcterverkehr auf der Schiene, f\u00fcr die Seilbahnen und Sessellifte, die Busse und die Schiffe.",
+                "en": "",
+                "fr": "L'Office f\u00e9d\u00e9ral des transports (OFT) veille journellement \u00e0 concevoir et \u00e0 mettre en \u0153uvre la politique suisse en mati\u00e8re de transports publics, r\u00e9alisant ainsi des parties essentielles de la politique des transports d\u00e9cid\u00e9e par le peuple, le Parlement et le Conseil f\u00e9d\u00e9ral. Les sp\u00e9cialistes de l'OFT sont comp\u00e9tents pour le transport de voyageurs et de marchandises sur le rail, pour les t\u00e9l\u00e9ph\u00e9riques et les t\u00e9l\u00e9si\u00e8ges, les bus et les bateaux.",
+                "it": "L'ufficio federale dei trasporti (UFT) si occupa quotidianamente di attuare e pianificare la politica svizzera nell'ambito dei trasporti pubblici, realizzando cos\u00ec i principi chiave della politica dei trasporti decisa dal Popolo, dal Parlamento e dal Consiglio federale. Gli esperti dell'UFT sono competenti per il trasporto di viaggiatori e di merci con la ferrovia, per gli impianti a fune, gli autobus e i battelli."
+              },
+              "display_name": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "groups": [],
+              "id": "2fddceb9-13df-42cc-8120-79d489582657",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "image_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "is_organization": true,
+              "name": "bundesamt-fur-verkehr-bav",
+              "num_followers": 0,
+              "package_count": 15,
+              "political_level": "confederation",
+              "revision_id": "ebd80158-d8a3-416b-b402-e7a7d3174ccc",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "type": "organization",
+              "url": ""
+            },
+            "owner_org": "2fddceb9-13df-42cc-8120-79d489582657",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.bav.admin.ch/bav/de/home.html\", \"name\": \"Bundesamt f\\u00fcr Verkehr BAV\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "Sachplanseite des Bundes",
+                "url": "https://www.are.admin.ch/are/de/home/raumentwicklung-und-raumplanung/strategie-und-planung/konzepte-und-sachplaene/sachplaene-des-bundes.html"
+              },
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/a94360e1-a238-4d5f-9396-8f7bb739c997"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:25.484968",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Vorschau map.geo.admin.ch",
+                  "en": "Preview map.geo.admin.ch",
+                  "fr": "Aper\u00e7u map.geo.admin.ch",
+                  "it": "Previsione map.geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "format": "SERVICE",
+                "hash": "",
+                "id": "9878d166-fd14-4d88-8476-e411711e8a98",
+                "issued": "2013-05-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "package_id": "51cb0e5e-981d-4fc9-98fb-1a3606005f97",
+                "position": 0,
+                "protocol": "MAP:Preview",
+                "resource_type": null,
+                "revision_id": "89cafc04-3520-4238-aba3-e81cc4ec5aac",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "url": "https://map.geo.admin.ch/?layers=ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:16:39.144486",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WMS-BGDI Dienst, Layer \"SIS Anh\u00f6rung\"",
+                  "en": "WMS-FSDI service, layer \"SIS Consultation\"",
+                  "fr": "Service WMS-IFDG, couche \"SIS consultation\"",
+                  "it": "Servizio WMS-IFDG, strato \"SIS consultazione\""
+                },
+                "display_name": {
+                  "de": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "en": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "fr": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "it": "ch.bav.sachplan-infrastruktur-schiene_anhorung"
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "fa4a9d5c-aacd-4314-ad4f-0128ed3c5ee0",
+                "issued": "2013-05-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "en": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "fr": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "it": "ch.bav.sachplan-infrastruktur-schiene_anhorung"
+                },
+                "package_id": "51cb0e5e-981d-4fc9-98fb-1a3606005f97",
+                "position": 1,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "89cafc04-3520-4238-aba3-e81cc4ec5aac",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "en": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "fr": "ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                  "it": "ch.bav.sachplan-infrastruktur-schiene_anhorung"
+                },
+                "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:16:39.144498",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "format": "API",
+                "hash": "",
+                "id": "2b79537d-d09c-4fb7-9de0-af4948c0ac27",
+                "issued": "2013-05-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "package_id": "51cb0e5e-981d-4fc9-98fb-1a3606005f97",
+                "position": 2,
+                "protocol": "ESRI:REST",
+                "resource_type": null,
+                "revision_id": "89cafc04-3520-4238-aba3-e81cc4ec5aac",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bav.sachplan-infrastruktur-schiene_anhorung",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-08-05T00:17:06.257515",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Download der Geodaten von geo.admin.ch",
+                  "en": "Download server from geo.admin.ch",
+                  "fr": "T\u00e9l\u00e9chargement des g\u00e9odonn\u00e9es de geo.admin.ch",
+                  "it": "Download dei geodati da geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://data.geo.admin.ch/ch.bav.sachplan-infrastruktur-schiene_anhorung/data.zip",
+                "format": "ZIP",
+                "hash": "",
+                "id": "98cb7f9b-5651-460d-b91d-b9299d3077ea",
+                "issued": "2013-05-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "51cb0e5e-981d-4fc9-98fb-1a3606005f97",
+                "position": 3,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "89cafc04-3520-4238-aba3-e81cc4ec5aac",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://data.geo.admin.ch/ch.bav.sachplan-infrastruktur-schiene_anhorung/data.zip",
+                "url_type": null
+              }
+            ],
+            "revision_id": "ded3aeda-4040-4791-9822-fbcdb5c47cd4",
+            "see_alsos": [],
+            "spatial": "Schweiz",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "Sachplan Verkehr, Teil Infrastruktur Schiene (SIS): Anh\u00f6rung",
+              "en": "Sectoral plan on Transport, rail Infrastructure Section (SIS): consultation",
+              "fr": "Plan sectoriel des transports, partie infrastructure rail (SIS): consultation",
+              "it": "Piano settoriale dei trasporti, parte infrastruttura ferroviaria (SIS): consultazione"
+            },
+            "title_for_slug": "sachplan-verkehr-teil-infrastruktur-schiene-sis-anhorung",
+            "type": "dataset",
+            "url": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/geoinformation/geobasisdaten/sachplan-verkehr-teil-unterirdischer-gutertransport.html",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "oev@sz.ch",
+                "name": "oev@sz.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+            "description": {
+              "de": "Abbildung aller Haltestellen des \u00f6ffentlichen Verkehrs im Kanton Schwyz (Bus, Eisenbahn, Luftseilbahn und Schiff).",
+              "en": "Abbildung aller Haltestellen des \u00f6ffentlichen Verkehrs im Kanton Schwyz (Bus, Eisenbahn, Luftseilbahn und Schiff).",
+              "fr": "Abbildung aller Haltestellen des \u00f6ffentlichen Verkehrs im Kanton Schwyz (Bus, Eisenbahn, Luftseilbahn und Schiff).",
+              "it": "Abbildung aller Haltestellen des \u00f6ffentlichen Verkehrs im Kanton Schwyz (Bus, Eisenbahn, Luftseilbahn und Schiff)."
+            },
+            "display_name": {},
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "e0629b12-5719-4fdc-a843-2640afa4c50a"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "b709ddda-68fc-48ad-a8e7-050cc9a30077"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "SZ-Kt Geoinformation - Geocat Harvester"
+              }
+            ],
+            "groups": [],
+            "id": "1f3e675a-f8eb-4deb-84f9-30c206478eaa",
+            "identifier": "2df6cdcd-5186-4d23-aecd-bb84fe1312cd@amt-geoinformation-sz",
+            "isopen": false,
+            "issued": "2023-10-20T00:00:00",
+            "keywords": {
+              "de": [
+                "seilbahn",
+                "schiff",
+                "eisenbahn",
+                "offentlicher-verkehr"
+              ],
+              "en": [
+                "seilbahn",
+                "schiff",
+                "eisenbahn",
+                "offentlicher-verkehr"
+              ],
+              "fr": [
+                "seilbahn",
+                "schiff",
+                "eisenbahn",
+                "offentlicher-verkehr"
+              ],
+              "it": [
+                "seilbahn",
+                "schiff",
+                "eisenbahn",
+                "offentlicher-verkehr"
+              ]
+            },
+            "language": [
+              "de"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "oev@sz.ch",
+            "maintainer_email": "oev@sz.ch",
+            "metadata_created": "2023-03-23T07:28:53.163618",
+            "metadata_modified": "2023-12-07T03:54:52.133953",
+            "modified": "2023-10-18T00:00:00",
+            "name": "haltestellen-des-offentlichen-verkehrs3",
+            "num_resources": 2,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2023-03-15T14:21:38.843344",
+              "description": {
+                "de": "Das Amt f\u00fcr Geoinformation verwaltet und ver\u00f6ffentlicht die Geodaten des Kantons Schwyz als OGC-Geodienste und als Datei-Download. Alle aktuell verf\u00fcgbaren Geodaten, welche dem OGD unterliegen, sind hier aufgef\u00fchrt.",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "display_name": {
+                "de": "Amt f\u00fcr Geoinformation Kanton Schwyz",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "groups": [
+                {
+                  "capacity": "public",
+                  "name": "kanton-schwyz"
+                }
+              ],
+              "id": "d5c6800f-f000-42fb-bc35-de2640fb8068",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/2023-03-15-142138.819580logo-kanton-schwyz.png",
+              "image_url": "2023-03-15-142138.819580logo-kanton-schwyz.png",
+              "is_organization": true,
+              "name": "amt-geoinformation-sz",
+              "num_followers": 0,
+              "package_count": 209,
+              "political_level": "canton",
+              "revision_id": "4836c308-7f5c-41c1-9bf5-9b650a5d2cbc",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Amt f\u00fcr Geoinformation Kanton Schwyz",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "type": "organization",
+              "url": "https://www.sz.ch/geoportal"
+            },
+            "owner_org": "d5c6800f-f000-42fb-bc35-de2640fb8068",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.sz.ch/oev\", \"name\": \"SZ Amt f\\u00fcr \\u00f6ffentlichen Verkehr\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "WebGIS Kanton Schwyz, Thema einblenden",
+                "url": "https://map.geo.sz.ch"
+              },
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/2df6cdcd-5186-4d23-aecd-bb84fe1312cd"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-23T07:28:53.184355",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WFS-Dienst des Kantons Schwyz",
+                  "en": "WFS-Dienst des Kantons Schwyz",
+                  "fr": "WFS-Dienst des Kantons Schwyz",
+                  "it": "WFS-Dienst des Kantons Schwyz"
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "36dfe95c-3c00-4199-92b0-ed4f633c06b4",
+                "issued": "2023-10-20T00:00:00",
+                "language": [],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-10-18T00:00:00",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "1f3e675a-f8eb-4deb-84f9-30c206478eaa",
+                "position": 0,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "b5cc015a-feda-4040-b24a-5e372db176f7",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WFS&REQUEST=GetCapabilities",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-23T07:28:53.184347",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Haltestellen",
+                  "en": "Haltestellen",
+                  "fr": "Haltestellen",
+                  "it": "Haltestellen"
+                },
+                "display_name": {
+                  "de": "ch.sz.tba_haltestellen.haltestellen",
+                  "en": "ch.sz.tba_haltestellen.haltestellen",
+                  "fr": "ch.sz.tba_haltestellen.haltestellen",
+                  "it": "ch.sz.tba_haltestellen.haltestellen"
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "efe9a8f1-7190-4dcf-8bcd-06c345527bb6",
+                "issued": "2023-10-20T00:00:00",
+                "language": [],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-10-18T00:00:00",
+                "name": {
+                  "de": "ch.sz.tba_haltestellen.haltestellen",
+                  "en": "ch.sz.tba_haltestellen.haltestellen",
+                  "fr": "ch.sz.tba_haltestellen.haltestellen",
+                  "it": "ch.sz.tba_haltestellen.haltestellen"
+                },
+                "package_id": "1f3e675a-f8eb-4deb-84f9-30c206478eaa",
+                "position": 1,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "b5cc015a-feda-4040-b24a-5e372db176f7",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.sz.tba_haltestellen.haltestellen",
+                  "en": "ch.sz.tba_haltestellen.haltestellen",
+                  "fr": "ch.sz.tba_haltestellen.haltestellen",
+                  "it": "ch.sz.tba_haltestellen.haltestellen"
+                },
+                "url": "https://map.geo.sz.ch/mapserv_proxy?SERVICE=WMS&REQUEST=GetCapabilities",
+                "url_type": null
+              }
+            ],
+            "revision_id": "980455ea-aa5d-48d4-a018-b8a589a1e205",
+            "see_alsos": [],
+            "spatial": "Kanton Schwyz (SZ)",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "Haltestellen des \u00f6ffentlichen Verkehrs",
+              "en": "Haltestellen des \u00f6ffentlichen Verkehrs",
+              "fr": "Haltestellen des \u00f6ffentlichen Verkehrs",
+              "it": "Haltestellen des \u00f6ffentlichen Verkehrs"
+            },
+            "title_for_slug": "haltestellen-des-offentlichen-verkehrs3",
+            "type": "dataset",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "info.aoev@be.ch",
+                "name": "info.aoev@be.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+            "description": {
+              "de": "Das Geoprodukt beinhaltet die Linien, Haltestellen und Einzugsgebiete des \u00f6ffentlichen Verkehrs im Kanton Bern f\u00fcr das aktuelle Fahrplanjahr. Die Angaben beziehen sich dabei getrennt auf die sechs verschiedenen Kategorien von Verkehrsmitteln (Bahn, Bus, Tram, Nachtlinien, Seilbahn, Schiff). Im Weiteren steht die \u00d6V-Erschliessungsg\u00fcte \u00ad gest\u00fctzt auf das Massnahmenblatt B_10 des kantonalen Richtplans - differenziert nach sechs verschiedenen G\u00fcteklassen (A, B, C, D, E und F) - als Fl\u00e4chendatensatz zur Verf\u00fcgung. Die Tarifzonen des Tarifverbundes 'Libero' sind ebenfalls Bestandteil dieses Geoprodukts.",
+              "en": "",
+              "fr": "Le g\u00e9oproduit comprend les lignes, les arr\u00eats et les zones de desserte des transports publics pour l'horaire de l'ann\u00e9e actuelle. Les indications sont pr\u00e9sent\u00e9es s\u00e9par\u00e9ment selon six cat\u00e9gories de moyen de transport (train, bus, tramway, lignes nocturnes, transport \u00e0 c\u00e2ble, bateau). Des informations suppl\u00e9mentaires sont \u00e0 disposition pour les arr\u00eats (nom) et les zones de desserte (nom, nombre d'habitants dans la zone). En outre, la qualit\u00e9 de la desserte par les transports publics peut \u00eatre indiqu\u00e9e d'apr\u00e8s six diff\u00e9rents niveaux de qualit\u00e9 (A, B, C, D, E et F). Ces qualit\u00e9s de la desserte par les transports publics sont d\u00e9finies dans la fiche de mesure B_10 du plan directeur cantonal. Les zones tarifaires de la communaut\u00e9 tarifaire 'Libero' font \u00e9galement part du g\u00e9oproduit.",
+              "it": ""
+            },
+            "display_name": {},
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "5f9023f1-fbeb-450d-95e1-36a1558dfea4"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "7ff03d8b-fdf5-42d3-8204-3aa2477da320"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "Bern-Kt - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Verkehr",
+                  "en": "Transport",
+                  "fr": "Transports",
+                  "it": "Trasporti"
+                },
+                "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f",
+                "image_display_url": "",
+                "name": "tran",
+                "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}"
+              }
+            ],
+            "id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+            "identifier": "72c891b2-d2f6-4198-9254-bae477775b35@amt-fuer-geoinformation-des-kantons-bern",
+            "isopen": false,
+            "issued": "2024-03-14T00:00:00",
+            "keywords": {
+              "de": [
+                "offentlicher-verkehr",
+                "verkehrsmittel"
+              ],
+              "en": [],
+              "fr": [
+                "transport-en-commun",
+                "moyen-de-transport"
+              ],
+              "it": []
+            },
+            "language": [
+              "de",
+              "fr"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "info.aoev@be.ch",
+            "maintainer_email": "info.aoev@be.ch",
+            "metadata_created": "2022-05-04T00:18:12.747400",
+            "metadata_modified": "2024-03-15T00:43:21.340386",
+            "modified": "2023-01-01T00:00:00",
+            "name": "offentlicher-verkehr",
+            "num_resources": 103,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2020-05-13T11:50:53.273799",
+              "description": {
+                "de": "Das Amt f\u00fcr Geoinformation ist das Kompetenzzentrum f\u00fcr r\u00e4umliche Informationen im Kanton Bern. Die kantonalen Geodaten sind unter Einhaltung der Nutzungsbedingungen kostenlos nutzbar. Das Geoportal des Kantons Bern ist der zentrale Einstiegspunkt f\u00fcr interaktive Karten, Geodaten und Geodienste der kantonalen Verwaltung.",
+                "en": "",
+                "fr": "L'Office de la g\u00e9oinformation est le centre de comp\u00e9tence pour l'information spatiale dans le canton de Berne. Les g\u00e9odonn\u00e9es cantonales peuvent \u00eatre utilis\u00e9es gratuitement, sous r\u00e9serve des conditions d'utilisation. Le G\u00e9oportail du canton de Berne est le point d'entr\u00e9e central pour les cartes interactives, les g\u00e9odonn\u00e9es et les g\u00e9oservices de l'administration cantonale.",
+                "it": ""
+              },
+              "display_name": {
+                "de": "Amt f\u00fcr Geoinformation des Kantons Bern",
+                "en": "",
+                "fr": "Office de l'information g\u00e9ographique du canton de Berne",
+                "it": ""
+              },
+              "groups": [
+                {
+                  "capacity": "public",
+                  "name": "kanton-bern-2"
+                }
+              ],
+              "id": "d2028962-fb10-4eba-a79d-1acf52c2792f",
+              "image_display_url": "",
+              "image_url": "",
+              "is_organization": true,
+              "name": "amt-fuer-geoinformation-des-kantons-bern",
+              "num_followers": 0,
+              "package_count": 269,
+              "political_level": "canton",
+              "revision_id": "d164585f-cff8-4545-8c36-0a87b5531bb3",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Amt f\u00fcr Geoinformation des Kantons Bern",
+                "en": "",
+                "fr": "Office de l'information g\u00e9ographique du canton de Berne",
+                "it": ""
+              },
+              "type": "organization",
+              "url": "https://www.be.ch/geoportal"
+            },
+            "owner_org": "d2028962-fb10-4eba-a79d-1acf52c2792f",
+            "private": false,
+            "publisher": "{\"url\": \"https://opendata.swiss/organization/amt-fuer-geoinformation-des-kantons-bern\", \"name\": \"Amt f\\u00fcr \\u00f6ffentlichen Verkehr und Verkehrskoordination\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/72c891b2-d2f6-4198-9254-bae477775b35"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710082",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EGKF_VW_13336",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_13336",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "41b6455a-0f2d-484b-bdd5-2c7b3abb577b",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EGKF_VW_13336",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_13336",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 0,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EGKF_VW_13336",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_13336",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710107",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EGKL_VW_14561",
+                  "en": "",
+                  "fr": "OEVTP_EGKL_VW_14561",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "4588b47e-926e-4e69-84b5-7355ae629099",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EGKL_VW_14561",
+                  "en": "",
+                  "fr": "OEVTP_EGKL_VW_14561",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 1,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EGKL_VW_14561",
+                  "en": "",
+                  "fr": "OEVTP_EGKL_VW_14561",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710094",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LIBERO_VW_16227",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_16227",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "1e278c2e-d780-4ee3-b066-75b73c38de17",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LIBERO_VW_16227",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_16227",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 2,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LIBERO_VW_16227",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_16227",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710122",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LIBERO_VW_13335",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_13335",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "4c46f81d-5e82-4496-b19b-5fdf0aee0ca2",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LIBERO_VW_13335",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_13335",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 3,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LIBERO_VW_13335",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_13335",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710129",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16205",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16205",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "7e9bb799-6ee9-4715-bb50-6e1f154ca2b3",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16205",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16205",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 4,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16205",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16205",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710080",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16212",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16212",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "ea4cd5d0-8a2b-4b85-b300-84162cca8712",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16212",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16212",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 5,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16212",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16212",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710077",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16196",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16196",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "7e732067-507b-41b7-a84d-fdcb27398d1f",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16196",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16196",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 6,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16196",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16196",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710125",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16206",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16206",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "efb6458a-0d3b-47fa-8f13-f30507b79f70",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16206",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16206",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 7,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16206",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16206",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710132",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16235",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16235",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "af6da8f6-60f4-478d-a585-4e4dc7f5262a",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16235",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16235",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 8,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16235",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16235",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710127",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16234",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16234",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "1b159fb7-58c2-415a-b56e-3a6aac444a17",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16234",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16234",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 9,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16234",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16234",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710119",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_13326",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_13326",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "adf9b279-80b9-4355-b9f6-a56c04a86cc9",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_13326",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_13326",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 10,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_13326",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_13326",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710075",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_18223",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_18223",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "14287a95-440b-4871-b2be-b64340953e2d",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_18223",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_18223",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 11,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_18223",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_18223",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710101",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16209",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16209",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "e751b38c-75b7-43d9-ab5f-6de3c9d8c5fe",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16209",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16209",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 12,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16209",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16209",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710130",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16225",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16225",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "9b49e3c9-260f-484e-ae74-099ad962d60b",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16225",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16225",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 13,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16225",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16225",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710099",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16255",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16255",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "459887a4-1ee9-4482-b0a8-f4c5a15108b8",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16255",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16255",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 14,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16255",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16255",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710073",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16199",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16199",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "c88dbea2-71be-4e82-b92d-c75daf384aaf",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16199",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16199",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 15,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16199",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16199",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710102",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16201",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16201",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "0d1e610a-bc4b-40dd-831b-8adbe2c12a79",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16201",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16201",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 16,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16201",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16201",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710110",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16217",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16217",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "594b5c93-8b76-46b6-af1d-925b123e8e09",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16217",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16217",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 17,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16217",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16217",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710079",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16216",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16216",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "59bf7d51-5ffe-463a-83f2-b14dafe5afa0",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16216",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16216",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 18,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16216",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16216",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710091",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16208",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16208",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "3a3b08dc-8b8e-47f3-a881-05b2d67a4367",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16208",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16208",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 19,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16208",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16208",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710118",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16221",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16221",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "ee384e9c-a091-4ad9-8f0d-2f39e65651af",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16221",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16221",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 20,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16221",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16221",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710088",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16254",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16254",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "3ef6b3dc-fd7a-4774-b11b-43ca17cc5c67",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16254",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16254",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 21,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16254",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16254",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710098",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16210",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16210",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "41e8bfd2-3c1d-45f9-a81e-2f1e61607445",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16210",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16210",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 22,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16210",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16210",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710096",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16242",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16242",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "1f4effb8-9ad4-4e25-abc9-88b6fd2d276d",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16242",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16242",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 23,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16242",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16242",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710109",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16197",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16197",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "80788a2c-d603-4cc4-bde9-68111c842706",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16197",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16197",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 24,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16197",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16197",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710112",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16256",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16256",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "f17124f9-08e8-4fb9-90d5-6cf26598417b",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16256",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16256",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 25,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16256",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16256",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710113",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_13330",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_13330",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "690387af-6f36-4589-b39f-8a0fee5df9fe",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_13330",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_13330",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 26,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_13330",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_13330",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710084",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16348",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16348",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "fe3601bf-ae0c-4f31-bc25-bd32fd485c79",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16348",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16348",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 27,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16348",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16348",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710115",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16355",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16355",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "56da8ee9-d9a8-4181-bf19-181a30a712a7",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16355",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16355",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 28,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16355",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16355",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710085",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16251",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16251",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "7952ecfe-6eeb-4bbc-ab91-9d95c735c1c9",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16251",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16251",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 29,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16251",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16251",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710134",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16211",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16211",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "be75350a-0ecc-44af-af3a-620f423a74c2",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16211",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16211",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 30,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16211",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16211",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710121",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16213",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16213",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "2ce1a0f3-66aa-48ee-95df-5de5262a8506",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16213",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16213",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 31,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16213",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16213",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710124",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16222",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "04db44f3-7dac-4ab6-b9d2-66e41c200fa9",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16222",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 32,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16222",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710093",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16244",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16244",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "04e40103-3575-4593-ae75-8e38df307ec1",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16244",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16244",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 33,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16244",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16244",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710065",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16218",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16218",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "5b535c3e-ab95-4f87-b4a2-56b94d5ffe7e",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16218",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16218",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 34,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16218",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16218",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710104",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16219",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16219",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "fd30bce5-2cb1-4f0f-a957-887ae92fbc94",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16219",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16219",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 35,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16219",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16219",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710135",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16204",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16204",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "2e0b0b0a-fd7a-4429-82d1-6dd42076b100",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16204",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16204",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 36,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16204",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16204",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710090",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16240",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16240",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "d63750da-c376-41ce-b036-1faa30b83ada",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16240",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16240",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 37,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16240",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16240",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710106",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16214",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16214",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "dd5ec825-50ef-4dd9-86c7-409b0ad8dc16",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16214",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16214",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 38,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16214",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16214",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710138",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16250",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16250",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "d823ee00-8f4f-4fc9-b553-e37d321a2c78",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16250",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16250",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 39,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16250",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16250",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710087",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16232",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16232",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "c5ba982e-8922-4b24-b180-59d3f21e8d9f",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16232",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16232",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 40,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16232",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16232",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710116",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16238",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16238",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "ec6adaa1-cf58-4415-b7c0-9bb7345fb40c",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16238",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16238",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 41,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16238",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16238",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710137",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_13292",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_13292",
+                  "it": ""
+                },
+                "format": "WFS",
+                "hash": "",
+                "id": "1c1e3e2d-9bd1-4f15-9141-07203e1fb29a",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_13292",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_13292",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 42,
+                "protocol": "OGC:WFS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_13292",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_13292",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wfs/MapServer/WFSServer?&SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710200",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EGKF_VW_16249",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_16249",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "0ce7f249-853f-41c5-9014-47bc68499f5e",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EGKF_VW_16249",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_16249",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 43,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EGKF_VW_16249",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_16249",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710158",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EGKF_VW_13336",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_13336",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1c118ab2-cefa-41f8-9cbb-c86dc477fc49",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EGKF_VW_13336",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_13336",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 44,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EGKF_VW_13336",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_13336",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710177",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EGKF_VW_16230",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_16230",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "20895bbc-0cd2-4da2-b1c8-707f661d5535",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EGKF_VW_16230",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_16230",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 45,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EGKF_VW_16230",
+                  "en": "",
+                  "fr": "OEVTP_EGKF_VW_16230",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710199",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EGKL_VW_14561",
+                  "en": "",
+                  "fr": "OEVTP_EGKL_VW_14561",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "ad619336-56cd-4721-9d1d-7c37769fb704",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EGKL_VW_14561",
+                  "en": "",
+                  "fr": "OEVTP_EGKL_VW_14561",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 46,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EGKL_VW_14561",
+                  "en": "",
+                  "fr": "OEVTP_EGKL_VW_14561",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710165",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LIBERO_VW_16227",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_16227",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "44ac8565-744d-43d1-985e-ed322f85c7c9",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LIBERO_VW_16227",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_16227",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 47,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LIBERO_VW_16227",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_16227",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710176",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LIBERO_VW_13335",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_13335",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "65797c06-a4e1-4a81-a8d6-8756c7011149",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LIBERO_VW_13335",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_13335",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 48,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LIBERO_VW_13335",
+                  "en": "",
+                  "fr": "OEVTP_LIBERO_VW_13335",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710147",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16205",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16205",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "c2c53914-160f-41e9-8205-3ce7c79d7a8b",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16205",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16205",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 49,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16205",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16205",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710248",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16212",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16212",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "ea1a056a-8c25-49b1-98e4-65c181aee955",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16212",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16212",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 50,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16212",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16212",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710189",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16196",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16196",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "675c24df-9b1b-416a-9ce5-af2d679d02c6",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16196",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16196",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 51,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16196",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16196",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710164",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16206",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16206",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "dc70c113-9d34-4eca-81a6-49e2e299de13",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16206",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16206",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 52,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16206",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16206",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710193",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16235",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16235",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "cb5e4d6a-1f84-4559-92de-32da502bf03b",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16235",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16235",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 53,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16235",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16235",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710150",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_16234",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16234",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "73430f91-ed79-4deb-b74f-c318c55475f5",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_16234",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16234",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 54,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_16234",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_16234",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710156",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_EZG_VW_13326",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_13326",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "8617eea2-3f97-4714-b3de-fc400672d9bd",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_EZG_VW_13326",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_13326",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 55,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_EZG_VW_13326",
+                  "en": "",
+                  "fr": "OEVTP_EZG_VW_13326",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710146",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_18223",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_18223",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "46ab87d8-83dc-4c01-8d68-c226a9178f5d",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_18223",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_18223",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 56,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_18223",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_18223",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710237",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16209",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16209",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "90ed77e6-511e-46dd-9661-2ae91cfb1336",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16209",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16209",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 57,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16209",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16209",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710183",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16225",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16225",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "f9d92fe9-5dd5-4c95-a361-8f08e3a4f833",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16225",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16225",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 58,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16225",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16225",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710168",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16255",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16255",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "ffe7cdcf-04e1-4a2a-91e6-87451581d2c1",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16255",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16255",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 59,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16255",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16255",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710173",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16199",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16199",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "c6dd81a6-c7e9-444e-b77b-fbe476b19417",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16199",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16199",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 60,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16199",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16199",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710180",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16201",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16201",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "505caf4d-3ab5-4ccc-aacc-edad17ab80a6",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16201",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16201",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 61,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16201",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16201",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710238",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16217",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16217",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "3077d1d7-67a3-4c5c-a8ac-e3b21993b91a",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16217",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16217",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 62,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16217",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16217",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710187",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16216",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16216",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "c71a856d-7a85-4c36-9003-0ec4792e5bf9",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16216",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16216",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 63,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16216",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16216",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710232",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16208",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16208",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "57eb19a4-d5b4-40fd-9245-3ded1e9db3f5",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16208",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16208",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 64,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16208",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16208",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710143",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16221",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16221",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "58d293c8-cd7e-4bbb-8d00-8920ce245bc0",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16221",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16221",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 65,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16221",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16221",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710154",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16254",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16254",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "c88af437-9065-44bf-b1f1-c20beb030002",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16254",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16254",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 66,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16254",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16254",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710186",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16210",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16210",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "0b0b8f39-d51e-40eb-999f-6f5f5a5ab12d",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16210",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16210",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 67,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16210",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16210",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710149",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16242",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16242",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "c6bd7eac-fc93-410b-bdb7-f4285b1b528e",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16242",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16242",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 68,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16242",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16242",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710174",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16197",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16197",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1fac0e58-1c00-43f7-99e9-54fb7b57dc02",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16197",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16197",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 69,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16197",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16197",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710152",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_16256",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16256",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "910600c3-88ba-4265-bb1a-2b90727f9bd0",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_16256",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16256",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 70,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_16256",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_16256",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710241",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_LINIE_VW_13330",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_13330",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "9d09af02-9a9a-477c-881a-116fbe7c85f6",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_LINIE_VW_13330",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_13330",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 71,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_LINIE_VW_13330",
+                  "en": "",
+                  "fr": "OEVTP_LINIE_VW_13330",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710197",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_18222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_18222",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "ebd88ea9-747b-4a2b-b7c3-880c64c6a2d3",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_18222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_18222",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 72,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_18222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_18222",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710162",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_18221",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_18221",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "da3ec5d1-4292-44fc-afd8-1245bdf5b734",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_18221",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_18221",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 73,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_18221",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_18221",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710192",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16352",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16352",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "0cf0405b-a114-4084-88c1-f0604efeace3",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16352",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16352",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 74,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16352",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16352",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710195",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16348",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16348",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "52196110-6cd4-4eb4-a03a-407627e9e4ae",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16348",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16348",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 75,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16348",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16348",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710249",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16355",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16355",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "de2d7f51-767f-4522-9029-ea2d1fab6b59",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16355",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16355",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 76,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16355",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16355",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710167",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16251",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16251",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "8d5538cb-2103-4e9d-a807-8b4e8989ba39",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16251",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16251",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 77,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16251",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16251",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710242",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16211",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16211",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "daf4e047-e54c-46f1-8a17-e2235942d588",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16211",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16211",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 78,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16211",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16211",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710244",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16213",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16213",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "bafe654f-61c8-4507-971e-a9024b2c9add",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16213",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16213",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 79,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16213",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16213",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710204",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16730",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16730",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "ad206db0-59e1-4c17-9334-3de107ae1551",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16730",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16730",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 80,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16730",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16730",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710144",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16732",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16732",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "9d2b9bf6-b420-4fb1-9caf-2ad56e9375c6",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16732",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16732",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 81,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16732",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16732",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710234",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16731",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16731",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "f9ef9ea2-2b22-452c-b868-486701d58d5c",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16731",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16731",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 82,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16731",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16731",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710202",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16354",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16354",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "16944727-fad3-4ce0-81c0-0987dac225c7",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16354",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16354",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 83,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16354",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16354",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710141",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16248",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16248",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "503c6d7f-7bd7-4cbe-8d85-a28aa566468c",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16248",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16248",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 84,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16248",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16248",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710179",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16222",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "c7a16a61-0bc5-42bf-9f94-6a081c4437af",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16222",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 85,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16222",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16222",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710182",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16244",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16244",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "af68d2a4-81f5-45de-890d-01ba8b934545",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16244",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16244",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 86,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16244",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16244",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710230",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16218",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16218",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "dd293973-5e05-44d4-bb1b-9ae3e06e5eb5",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16218",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16218",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 87,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16218",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16218",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710140",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16219",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16219",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "b04a0c8a-5d98-4ffb-9897-5a35e64ce0e6",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16219",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16219",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 88,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16219",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16219",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710245",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16350",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16350",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1c83300a-8b07-4fc7-b3c8-ac04843dc388",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16350",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16350",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 89,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16350",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16350",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710159",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16353",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16353",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "772bc987-0048-454f-b445-788c1782474c",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16353",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16353",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 90,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16353",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16353",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710247",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16351",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16351",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1ef3fecf-08b8-43b5-ac03-e57aa1bd796e",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16351",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16351",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 91,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16351",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16351",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710235",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16356",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16356",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "5588555c-1a4e-4fc3-9afa-c0668e7bbb2a",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16356",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16356",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 92,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16356",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16356",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710171",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16349",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16349",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "165051b8-6cad-46bd-9762-57b27f76ad22",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16349",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16349",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 93,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16349",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16349",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710161",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16347",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16347",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "2dddde93-1df1-49ce-aa97-6916ad980002",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16347",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16347",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 94,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16347",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16347",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710203",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16204",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16204",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "e8876e01-2186-4718-bff8-15167bc36cfd",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16204",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16204",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 95,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16204",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16204",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710170",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16240",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16240",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "80905502-b5dc-4560-ade4-6ca1b69d91f5",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16240",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16240",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 96,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16240",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16240",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710196",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16214",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16214",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1de6809a-2227-4375-b4fc-3ab0a5026479",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16214",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16214",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 97,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16214",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16214",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710190",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16250",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16250",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "8abd33d2-ce1d-4bc0-bba5-7589322f8f3e",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16250",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16250",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 98,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16250",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16250",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710185",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16232",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16232",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "e6c6bc5c-c5eb-4e03-8f7a-591abc8a50d0",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16232",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16232",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 99,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16232",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16232",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710155",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_16238",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16238",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1ddad67d-86c9-4ce1-a689-0c7f253343dc",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_16238",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16238",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 100,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_16238",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_16238",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-01T00:20:00.710240",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "OEVTP_HALT_VW_13292",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_13292",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "1f834182-be22-41c4-902b-19d17434a870",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "OEVTP_HALT_VW_13292",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_13292",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 101,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "30ccb319-60d8-4023-9d08-586839a1a2ad",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "OEVTP_HALT_VW_13292",
+                  "en": "",
+                  "fr": "OEVTP_HALT_VW_13292",
+                  "it": ""
+                },
+                "url": "https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_transportation01_de_ms_wms/MapServer/WMSServer?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-08-05T00:19:03.029866",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Link zum Daten-Download (Zip)",
+                  "en": "",
+                  "fr": "Lien vers le t\u00e9l\u00e9chargement de donn\u00e9es (Zip)",
+                  "it": ""
+                },
+                "download_url": "https://geofiles.be.ch/geoportal/pub/download/OEVTP/OEVTP.zip",
+                "format": "ZIP",
+                "hash": "",
+                "id": "58cf4177-c43a-4b2b-9ac1-c5bff53c21b9",
+                "issued": "2024-03-14T00:00:00",
+                "language": [
+                  "de",
+                  "fr"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-01-01T00:00:00",
+                "name": {
+                  "de": "Link zum Daten-Download (Zip)",
+                  "en": "",
+                  "fr": "Lien vers le t\u00e9l\u00e9chargement de donn\u00e9es (Zip)",
+                  "it": ""
+                },
+                "package_id": "0786e547-17aa-43f4-8f8a-caefa265fcdb",
+                "position": 102,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "0681d8e3-d4da-49ac-9b84-3c8707c85423",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Link zum Daten-Download (Zip)",
+                  "en": "",
+                  "fr": "Lien vers le t\u00e9l\u00e9chargement de donn\u00e9es (Zip)",
+                  "it": ""
+                },
+                "url": "https://geofiles.be.ch/geoportal/pub/download/OEVTP/OEVTP.zip",
+                "url_type": null
+              }
+            ],
+            "revision_id": "d1500065-5283-4901-9a62-7dc8f536f2f6",
+            "see_alsos": [],
+            "spatial": "Kanton Bern (erweitert)",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "\u00d6ffentlicher Verkehr",
+              "en": "",
+              "fr": "Transports publics",
+              "it": ""
+            },
+            "title_for_slug": "offentlicher-verkehr",
+            "type": "dataset",
+            "url": "https://www.agi.dij.be.ch/de/start/geoportal/geodaten/detail.html?type=geoproduct&code=OEVTP",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "info@bav.admin.ch",
+                "name": "info@bav.admin.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "0594d621-c92a-4a32-809c-98e281dc7944",
+            "description": {
+              "de": "Der Geobasisdatensatz \"Haltestellen des \u00f6ffentlichen Verkehrs\" umfasst die Haltestellen des \u00f6ffentlichen Verkehrs der Schweiz sowie weitere punktuelle, r\u00e4umlich lokalisierbare Orte des \u00f6ffentlichen Verkehrs, die eine betriebliche oder strukturbildende Bedeutung haben (Betriebspunkte).",
+              "en": "The basic geo-data set for public transport stops comprises public transport stops in Switzerland and additional selected geo-referenced public transport locations that are of operational or structural importance (operating points).",
+              "fr": "Le jeu de g\u00e9odonn\u00e9es de base \u00ab Arr\u00eats des transports publics \u00bb contient les arr\u00eats ainsi que des sites ponctuels g\u00e9or\u00e9f\u00e9renc\u00e9s qui ont une fonction d\u2019exploitation ou structurante dans les transports publics (points de service).",
+              "it": "La raccolta di geodati \u00abFermate dei trasporti pubblici\u00bb contiene le fermate dei trasporti pubblici in Svizzera e altri luoghi puntuali georeferenziati che hanno una funzione strutturale o d'esercizio nell'ambito del trasporto pubblico (punti operativi)."
+            },
+            "display_name": {},
+            "documentation": [
+              "https://www.geo.admin.ch/de/geo-dienstleistungen/geodienste/linkeddata.html"
+            ],
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "fc343171-eb92-4689-8161-81d490966d6f"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "732512f4-310e-468a-8df9-eb5836bcbff4"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "BAV - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Verkehr",
+                  "en": "Transport",
+                  "fr": "Transports",
+                  "it": "Trasporti"
+                },
+                "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f",
+                "image_display_url": "",
+                "name": "tran",
+                "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}"
+              }
+            ],
+            "id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+            "identifier": "841d42ff-8177-4e07-a96b-e8e5455ae048@bundesamt-fur-verkehr-bav",
+            "isopen": false,
+            "issued": "2014-04-30T00:00:00",
+            "keywords": {
+              "de": [
+                "aufbewahrungs--und-archivierungsplanung-aap---bund",
+                "geobasisdaten",
+                "bgdi-bundesgeodaten-infrastruktur"
+              ],
+              "en": [
+                "conservation-and-archiving-planning-aap---confederation",
+                "official-geodata",
+                "fsdi-federal-spatial-data-infrastructure"
+              ],
+              "fr": [
+                "planification-de-la-conservation-et-de-larchivage-aap---confederation",
+                "geodonnees-de-base",
+                "ifdg-linfrastructure-federale-de-donnees-geographiques"
+              ],
+              "it": [
+                "pianificazione-della-conservazione-e-dellarchiviazione-aap---confederazione",
+                "geodati-di-base",
+                "ifdg-infrastruttura-federale-dei-dati-geografici"
+              ]
+            },
+            "language": [
+              "en",
+              "de",
+              "fr",
+              "it"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "info@bav.admin.ch",
+            "maintainer_email": "info@bav.admin.ch",
+            "metadata_created": "2018-02-15T09:13:25.334159",
+            "metadata_modified": "2023-12-07T00:34:28.175360",
+            "modified": "2015-12-12T00:00:00",
+            "name": "haltestellen-des-offentlichen-verkehrs",
+            "num_resources": 7,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2016-03-04T16:00:58.767460",
+              "description": {
+                "de": "Das Bundesamt f\u00fcr Verkehr (BAV) ist t\u00e4glich daf\u00fcr besorgt, die schweizerische Politik im Bereich des \u00f6ffentlichen Verkehrs umzusetzen und mitzugestalten. Es realisiert damit wesentliche Teile der von Volk, Parlament und Bundesrat beschlossenen Verkehrspolitik. Die Fachleute des BAV sind zust\u00e4ndig f\u00fcr den Personen- und den G\u00fcterverkehr auf der Schiene, f\u00fcr die Seilbahnen und Sessellifte, die Busse und die Schiffe.",
+                "en": "",
+                "fr": "L'Office f\u00e9d\u00e9ral des transports (OFT) veille journellement \u00e0 concevoir et \u00e0 mettre en \u0153uvre la politique suisse en mati\u00e8re de transports publics, r\u00e9alisant ainsi des parties essentielles de la politique des transports d\u00e9cid\u00e9e par le peuple, le Parlement et le Conseil f\u00e9d\u00e9ral. Les sp\u00e9cialistes de l'OFT sont comp\u00e9tents pour le transport de voyageurs et de marchandises sur le rail, pour les t\u00e9l\u00e9ph\u00e9riques et les t\u00e9l\u00e9si\u00e8ges, les bus et les bateaux.",
+                "it": "L'ufficio federale dei trasporti (UFT) si occupa quotidianamente di attuare e pianificare la politica svizzera nell'ambito dei trasporti pubblici, realizzando cos\u00ec i principi chiave della politica dei trasporti decisa dal Popolo, dal Parlamento e dal Consiglio federale. Gli esperti dell'UFT sono competenti per il trasporto di viaggiatori e di merci con la ferrovia, per gli impianti a fune, gli autobus e i battelli."
+              },
+              "display_name": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "groups": [],
+              "id": "2fddceb9-13df-42cc-8120-79d489582657",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "image_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "is_organization": true,
+              "name": "bundesamt-fur-verkehr-bav",
+              "num_followers": 0,
+              "package_count": 13,
+              "political_level": "confederation",
+              "revision_id": "ebd80158-d8a3-416b-b402-e7a7d3174ccc",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "type": "organization",
+              "url": ""
+            },
+            "owner_org": "2fddceb9-13df-42cc-8120-79d489582657",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.bav.admin.ch/bav/de/home.html\", \"name\": \"Bundesamt f\\u00fcr Verkehr BAV\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/vollzugshilfen/verzeichnisse.html",
+                "url": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/vollzugshilfen/verzeichnisse.html"
+              },
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/841d42ff-8177-4e07-a96b-e8e5455ae048"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:41.714658",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Vorschau map.geo.admin.ch",
+                  "en": "Preview map.geo.admin.ch",
+                  "fr": "Aper\u00e7u map.geo.admin.ch",
+                  "it": "Previsione map.geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "format": "SERVICE",
+                "hash": "",
+                "id": "55728237-4604-4453-a6e1-39df8151e31f",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 0,
+                "protocol": "MAP:Preview",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "url": "https://map.geo.admin.ch/?layers=ch.bav.haltestellen-oev",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:16:54.584851",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WMS-BGDI Dienst, Layer \"\u00f6V-Haltestellen\"",
+                  "en": "WMS-FSDI service, layer \"Public transport stops\"",
+                  "fr": "Service WMS-IFDG, couche \"Arr\u00eats tp\"",
+                  "it": "Servizio WMS-IFDG, strato \"Stazioni tp\""
+                },
+                "display_name": {
+                  "de": "ch.bav.haltestellen-oev",
+                  "en": "ch.bav.haltestellen-oev",
+                  "fr": "ch.bav.haltestellen-oev",
+                  "it": "ch.bav.haltestellen-oev"
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "e01634bd-d3ec-44a0-aca6-fdfb725ec0d1",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "ch.bav.haltestellen-oev",
+                  "en": "ch.bav.haltestellen-oev",
+                  "fr": "ch.bav.haltestellen-oev",
+                  "it": "ch.bav.haltestellen-oev"
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 1,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.bav.haltestellen-oev",
+                  "en": "ch.bav.haltestellen-oev",
+                  "fr": "ch.bav.haltestellen-oev",
+                  "it": "ch.bav.haltestellen-oev"
+                },
+                "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:16:54.584859",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WMTS-BGDI Dienst, Layer \"\u00f6V-Haltestellen\"",
+                  "en": "WMTS-FSDI service, layer \"Public transport stops\"",
+                  "fr": "Service WMTS-IFDG, couche , Layer \"Arr\u00eats tp\"",
+                  "it": "Servizio WMTS-IFDG, strato \"Stazioni tp\""
+                },
+                "display_name": {
+                  "de": "ch.bav.haltestellen-oev",
+                  "en": "ch.bav.haltestellen-oev",
+                  "fr": "ch.bav.haltestellen-oev",
+                  "it": "ch.bav.haltestellen-oev"
+                },
+                "format": "WMTS",
+                "hash": "",
+                "id": "485c273a-6b9d-4e2e-80e1-540dc81eacd5",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "ch.bav.haltestellen-oev",
+                  "en": "ch.bav.haltestellen-oev",
+                  "fr": "ch.bav.haltestellen-oev",
+                  "it": "ch.bav.haltestellen-oev"
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 2,
+                "protocol": "OGC:WMTS",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.bav.haltestellen-oev",
+                  "en": "ch.bav.haltestellen-oev",
+                  "fr": "ch.bav.haltestellen-oev",
+                  "it": "ch.bav.haltestellen-oev"
+                },
+                "url": "https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-08-05T00:17:16.307622",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Download Server von geo.admin.ch",
+                  "en": "Download server from geo.admin.ch",
+                  "fr": "Serveur de t\u00e9l\u00e9chargement de geo.admin.ch",
+                  "it": "Server di download di geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://data.geo.admin.ch/ch.bav.haltestellen-oev/data.zip",
+                "format": "ZIP",
+                "hash": "",
+                "id": "34f4247e-f3d8-4fc2-950a-6816e0cb7200",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 3,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://data.geo.admin.ch/ch.bav.haltestellen-oev/data.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:41.714669",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://data.geo.admin.ch/ch.bav.haltestellen-oev/",
+                "format": "",
+                "hash": "",
+                "id": "d64dccfe-6896-4f20-8c6d-79111d0aa52c",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 4,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://data.geo.admin.ch/ch.bav.haltestellen-oev/",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:41.714670",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "format": "API",
+                "hash": "",
+                "id": "191fec56-be3b-40fc-9e1f-7fa77e2f7970",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 5,
+                "protocol": "ESRI:REST",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bav.haltestellen-oev",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-10-29T00:16:13.748723",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Linked Data",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "format": "RDF XML",
+                "hash": "",
+                "id": "d024f3b5-442a-4ff0-85f5-6fddd8531c18",
+                "issued": "2014-04-30T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2015-12-12T00:00:00",
+                "name": {
+                  "de": "Linked Data",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "9269314c-aa05-4f9a-aacd-8433c820d42a",
+                "position": 6,
+                "protocol": "LINKED:DATA:RDF",
+                "resource_type": null,
+                "revision_id": "2409ea5d-9686-4383-afe9-9c750d179998",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Linked Data",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://geo.ld.admin.ch/data/publicTransportStops",
+                "url_type": null
+              }
+            ],
+            "revision_id": "966bb84c-e9dc-4d92-854a-71ae78840d9e",
+            "see_alsos": [],
+            "spatial": "Schweiz",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "Haltestellen des \u00f6ffentlichen Verkehrs",
+              "en": "Public transport stops",
+              "fr": "Arr\u00eats des transports publics",
+              "it": "Stazioni per i trasporti pubblici"
+            },
+            "title_for_slug": "haltestellen-des-offentlichen-verkehrs",
+            "type": "dataset",
+            "url": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/geoinformation/geobasisdaten/haltestellen-des-oeffentlichen-verkehrs.html",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "geodata@swisstopo.ch",
+                "name": "geodata@swisstopo.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+            "description": {
+              "de": "swissTLM3D \u00fcbrige Bahnen beinhaltet verschiedene Seilbahnarten sowie andere mechanische Transportsysteme. Es ist Bestandteil des Datensatzes swissTLM3D. Mit seiner hohen Genauigkeit und dem Einbezug der dritten Dimension ist swissTLM3D der umfassendste 3D-Vektordatensatz der Schweiz. Im Geoportal des Bundes werden die Objekte der Ebene \"\u00fcbrige Bahnen\" entsprechend der ausgew\u00e4hlten Zoomstufe schrittweise dargestellt.",
+              "en": "swissTLM3D other transportations contains the different types of cable railway and other types of mechanical transport. It is part of the dataset swissTLM3D. With a high accuracy and the incorporation of a third dimension, swissTLM3D is the most extensive 3D vector data set of Switzerland. In the federal geoportal the objects of the layer \"other transportations\" are displayed gradually according to the different zoomlevels.",
+              "fr": "swissTLM3D autres transports comprend les diff\u00e9rents transports \u00e0 c\u00e2ble ainsi que d'autres types de transport m\u00e9canique. Il fait partie du jeu de donn\u00e9es swissTLM3D. Avec une haute pr\u00e9cision et l'int\u00e9gration de la troisi\u00e8me dimension, swissTLM3D constitue le jeu de donn\u00e9es vectorielles en 3D le plus complet de la Suisse. Dans le g\u00e9oportail f\u00e9d\u00e9ral, les objets de la couche \" autres transports\" sont affich\u00e9s progressivement en fonction des niveaux de zoom.",
+              "it": "swissTLM3D altri trasporti comprende i differenti tipi di trasporto a fune e altri tipi di trasporto meccanico. Fa parte del set di dati swissTLM3D. Il prodotto swissTLM3D offre un'alta precisione e include anche la terza dimensione, si tratta della raccolta dati vettoriali in 3D pi\u00f9 completa del territorio svizzero. All'interno del geoportale federale, gli oggetti del layer \"altri trasporti \" sono visualizzabili progressivamente, in funzione del livello di zoom selezionato."
+            },
+            "display_name": {},
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "7bde722b-9647-4782-96d9-bb48efbe6f1c"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "b0377d3c-5583-4c7d-81bc-ec7aa8f60ae2"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "Swisstopo - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Umwelt",
+                  "en": "Environment",
+                  "fr": "Environnement",
+                  "it": "Ambiente"
+                },
+                "id": "ab2cc387-d129-4d76-b78d-517326d2a772",
+                "image_display_url": "",
+                "name": "envi",
+                "title": "{\"de\": \"Umwelt\", \"en\": \"Environment\", \"fr\": \"Environnement\", \"it\": \"Ambiente\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Verkehr",
+                  "en": "Transport",
+                  "fr": "Transports",
+                  "it": "Trasporti"
+                },
+                "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f",
+                "image_display_url": "",
+                "name": "tran",
+                "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}"
+              }
+            ],
+            "id": "ea79dbf3-4d4a-4e8f-8c80-e65ff5b7f2f7",
+            "identifier": "ffc0267e-aca8-49ac-8f3e-86c9beca51f2@bundesamt-fur-landestopografie-swisstopo",
+            "isopen": false,
+            "issued": "2011-04-01T00:00:00",
+            "keywords": {
+              "de": [
+                "verkehrsnetz",
+                "einzelobjekt",
+                "aufbewahrungs--und-archivierungsplanung-aap---bund",
+                "landschaftsmodell",
+                "geobasisdaten",
+                "gis-geografisches-informationssystem",
+                "geografische-bezeichnungen",
+                "verkehrsnetze",
+                "bgdi-bundesgeodaten-infrastruktur"
+              ],
+              "en": [
+                "traffic-network",
+                "single-object",
+                "conservation-and-archiving-planning-aap---confederation",
+                "landscape-model",
+                "official-geodata",
+                "gis-geographic-information-system",
+                "geographical-names",
+                "transport-networks",
+                "fsdi-federal-spatial-data-infrastructure"
+              ],
+              "fr": [
+                "reseau-de-transport",
+                "objet-divers",
+                "planification-de-la-conservation-et-de-larchivage-aap---confederation",
+                "modele-du-territoire",
+                "geodonnees-de-base",
+                "sig-systeme-dinformation-geographique",
+                "denominations-geographiques",
+                "reseaux-de-transport",
+                "ifdg-linfrastructure-federale-de-donnees-geographiques"
+              ],
+              "it": [
+                "rete-di-trasporto",
+                "oggetto-singolo",
+                "pianificazione-della-conservazione-e-dellarchiviazione-aap---confederazione",
+                "modello-del-territorio",
+                "geodati-di-base",
+                "sig-sistema-informativo-geografico",
+                "nomi-geografici",
+                "reti-di-trasporto",
+                "ifdg-infrastruttura-federale-dei-dati-geografici"
+              ]
+            },
+            "language": [
+              "en",
+              "de",
+              "fr",
+              "it"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "geodata@swisstopo.ch",
+            "maintainer_email": "geodata@swisstopo.ch",
+            "metadata_created": "2021-02-27T04:00:29.708716",
+            "metadata_modified": "2024-03-06T03:54:02.216319",
+            "modified": "2024-03-06T00:00:00",
+            "name": "swisstlm3d-ubrige-bahn",
+            "num_resources": 5,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2015-11-30T12:12:55.529975",
+              "description": {
+                "de": "Das Kompetenzzentrum der Schweizerischen Eidgenossenschaft f\u00fcr Geoinformation, d.h. f\u00fcr die Beschreibung, Darstellung und Archivierung von raumbezogenen Geodaten.",
+                "en": "The centre of competence for the Swiss Confederation responsible for geographical reference data, for instance the description, representation and archiving of geographic spatial data.",
+                "fr": "Le centre de comp\u00e9tence de la Conf\u00e9d\u00e9ration suisse pour les informations g\u00e9ographiques, c'est-\u00e0-dire pour la description, la repr\u00e9sentation et l\u2019archivage de donn\u00e9es \u00e0 r\u00e9f\u00e9rence spatiale.",
+                "it": "Il centro d\u2019eccellenza della Confederazione Elvetica per geoinformazione, cio\u00e8 per la descrizione, rappresentazione e archiviazione dei dati georeferenziati (geodati)."
+              },
+              "display_name": {
+                "de": "Bundesamt f\u00fcr Landestopografie swisstopo",
+                "en": "Federal Office of Topography swisstopo",
+                "fr": "Office f\u00e9d\u00e9ral de topographie swisstopo",
+                "it": "Ufficio federale di topografia swisstopo"
+              },
+              "groups": [],
+              "id": "ddd28bac-6890-474c-84cb-97a85db8d2f1",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/IMG_1857.jpg",
+              "image_url": "https://ckan.opendata.swiss/uploads/group/IMG_1857.jpg",
+              "is_organization": true,
+              "name": "bundesamt-fur-landestopografie-swisstopo",
+              "num_followers": 0,
+              "package_count": 142,
+              "political_level": "confederation",
+              "revision_id": "5304c193-6039-489e-b273-1028269f6b40",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Bundesamt f\u00fcr Landestopografie swisstopo",
+                "en": "Federal Office of Topography swisstopo",
+                "fr": "Office f\u00e9d\u00e9ral de topographie swisstopo",
+                "it": "Ufficio federale di topografia swisstopo"
+              },
+              "type": "organization",
+              "url": ""
+            },
+            "owner_org": "ddd28bac-6890-474c-84cb-97a85db8d2f1",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.swisstopo.ch\", \"name\": \"Bundesamt f\\u00fcr Landestopografie swisstopo\"}",
+            "qualified_relations": [
+              {
+                "had_role": "http://www.iana.org/assignments/relation/related",
+                "relation": "https://ckan.opendata.swiss/perma/73856ca2-f21d-4cc9-90f6-f3e8375555df@bundesamt-fur-landestopografie-swisstopo"
+              }
+            ],
+            "relations": [
+              {
+                "label": "map.geo.admin.ch",
+                "url": "https://map.geo.admin.ch/?topic=swisstopo&lang=de&bgLayer=voidLayer&catalogNodes=1436,1396,1397&layers=ch.swisstopo.swisstlm3d-karte-farbe&X=192000.00&Y=622250.00&zoom=2"
+              },
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/ffc0267e-aca8-49ac-8f3e-86c9beca51f2"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-13T11:30:23.702492",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Vorschau map.geo.admin.ch",
+                  "en": "Preview map.geo.admin.ch",
+                  "fr": "Aper\u00e7u map.geo.admin.ch",
+                  "it": "Previsione map.geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "format": "SERVICE",
+                "hash": "",
+                "id": "3b9e4c34-f769-4555-867d-8384bf68d3cc",
+                "issued": "2011-04-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-03-06T00:00:00",
+                "name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "package_id": "ea79dbf3-4d4a-4e8f-8c80-e65ff5b7f2f7",
+                "position": 0,
+                "protocol": "MAP:Preview",
+                "resource_type": null,
+                "revision_id": "0a1f10ae-1331-409f-b9a6-c5e5aa332bef",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "url": "https://map.geo.admin.ch/?layers=ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:56:16.485145",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WMTS-BGDI Dienst, Layer \"Seilbahnen swissTLM3D\"",
+                  "en": "WMTS-FSDI service, layer \"Cableways swissTLM3D\"",
+                  "fr": "Service WMTS-IFDG, couche , Layer \"Transports \u00e0 c\u00e2ble swissTLM3D\"",
+                  "it": "Servizio WMTS-IFDG, strato \"Trasporti a fune swissTLM3D\""
+                },
+                "display_name": {
+                  "de": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "en": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "fr": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "it": "ch.swisstopo.swisstlm3d-uebrigerverkehr"
+                },
+                "format": "WMTS",
+                "hash": "",
+                "id": "557007ac-a11f-40d5-b1e1-3032b17f3e70",
+                "issued": "2011-04-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-03-06T00:00:00",
+                "name": {
+                  "de": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "en": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "fr": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "it": "ch.swisstopo.swisstlm3d-uebrigerverkehr"
+                },
+                "package_id": "ea79dbf3-4d4a-4e8f-8c80-e65ff5b7f2f7",
+                "position": 1,
+                "protocol": "OGC:WMTS",
+                "resource_type": null,
+                "revision_id": "0a1f10ae-1331-409f-b9a6-c5e5aa332bef",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "en": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "fr": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "it": "ch.swisstopo.swisstlm3d-uebrigerverkehr"
+                },
+                "url": "https://wmts.geo.admin.ch/EPSG/3857/1.0.0/WMTSCapabilities.xml?lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-21T00:46:04.764654",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Seilbahnen swissTLM3D",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "b7a642d8-5c84-412d-bca9-71afb7428a91",
+                "issued": "2011-04-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-03-06T00:00:00",
+                "name": {
+                  "de": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "ea79dbf3-4d4a-4e8f-8c80-e65ff5b7f2f7",
+                "position": 2,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "0a1f10ae-1331-409f-b9a6-c5e5aa332bef",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-01-25T02:16:21.297555",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Shop",
+                  "en": "Shop",
+                  "fr": "Shop",
+                  "it": "Shop"
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d",
+                "format": "",
+                "hash": "",
+                "id": "ef90188c-543a-4062-b578-cab023526eef",
+                "issued": "2011-04-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-03-06T00:00:00",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "ea79dbf3-4d4a-4e8f-8c80-e65ff5b7f2f7",
+                "position": 3,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "0a1f10ae-1331-409f-b9a6-c5e5aa332bef",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-13T11:30:23.702503",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "format": "API",
+                "hash": "",
+                "id": "18f641b5-a2eb-45a3-a635-611d336822ec",
+                "issued": "2011-04-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-03-06T00:00:00",
+                "name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "package_id": "ea79dbf3-4d4a-4e8f-8c80-e65ff5b7f2f7",
+                "position": 4,
+                "protocol": "ESRI:REST",
+                "resource_type": null,
+                "revision_id": "0a1f10ae-1331-409f-b9a6-c5e5aa332bef",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swisstlm3d-uebrigerverkehr",
+                "url_type": null
+              }
+            ],
+            "revision_id": "24961d4d-68ca-4134-b04d-d26997c89b55",
+            "see_alsos": [],
+            "spatial": "Schweiz",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "swissTLM3D \u00dcbrige Bahn",
+              "en": "swissTLM3D Other transportations",
+              "fr": "swissTLM3D Autres transports",
+              "it": "swissTLM3D Altri trasporti"
+            },
+            "title_for_slug": "swisstlm3d-ubrige-bahn",
+            "type": "dataset",
+            "url": "https://www.swisstopo.admin.ch/de/landschaftsmodell-swisstlm3d",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/DAILY",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "info@bav.admin.ch",
+                "name": "info@bav.admin.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "0594d621-c92a-4a32-809c-98e281dc7944",
+            "description": {
+              "de": "\u00d6ffentlich zug\u00e4nglicher Kataster der belasteten Standorte im Bereich des \u00f6ffentlichen Verkehrs. Der Kataster gibt Auskunft \u00fcber die belasteten Standorte (gem\u00e4ss Altlasten-Verordnung), welche in der Vollzugszust\u00e4ndigkeit des Bundesamt f\u00fcr Verkehr (BAV) liegen. Es handelt sich dabei um Bauten und Anlagen von eidgen\u00f6ssisch konzessionierten Eisenbahnen, Trolleybussen, Binnenschifffahrtsunternehmen und Seilbahnen, welche anhand der aktuellen Nutzung ganz oder \u00fcberwiegend dem Betrieb der jeweiligen Infrastruktur- oder Transportunternehmen dienen.",
+              "en": "A publicly available register of the polluted sites in the area of public transport. The register provides information about the polluted sites (in accordance with the Contaminated Sites Ordinance) which come under the enforcement responsibility of the Federal Office of Transport (FOT). These are buildings and facilities for railways, trolley bus systems, inland shipping companies and cableways with federal concessions, which are currently used mainly or completely for the business of the relevant infrastructure or transport companies.",
+              "fr": "Cadastre public des sites pollu\u00e9s dans le domaine des transports publics. Le cadastre fournit des renseignements sur les sites pollu\u00e9s (selon l\u2019ordonnance sur l\u2019assainissement des sites pollu\u00e9s), qui rel\u00e8vent de la comp\u00e9tence d\u2019ex\u00e9cution de l\u2019Office f\u00e9d\u00e9ral des transports (OFT). Il s\u2019agit de constructions et d\u2019installations d\u2019entreprises ferroviaires, de trolleybus, d\u2019entreprises de navigation int\u00e9rieure et d\u2019installations \u00e0 c\u00e2bles au b\u00e9n\u00e9fice d\u2019une concession f\u00e9d\u00e9rale, dont l\u2019utilisation actuelle est consacr\u00e9e int\u00e9gralement ou principalement \u00e0 l\u2019exploitation ou \u00e0 l\u2019infrastructure des entreprises de transport.",
+              "it": "Catasto pubblico dei siti inquinati concernente il settore dei trasporti pubblici. Il catasto fornisce informazioni sui siti inquinati (ai sensi dell\u2019ordinanza sul risanamento dei siti inquinati) che rientrano nell\u2019ambito di competenza dell\u2019Ufficio federale dei trasporti (UFT). Si tratta di costruzioni e impianti di imprese ferroviarie, di filobus, di navigazione e di trasporto a fune titolari di una concessione federale, che attualmente sono utilizzati soltanto o prevalentemente per l\u2019esercizio o l\u2019infrastruttura delle imprese di trasporto."
+            },
+            "display_name": {},
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "199d6a68-a63c-4912-874d-108a30d181d6"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "732512f4-310e-468a-8df9-eb5836bcbff4"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "BAV - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Umwelt",
+                  "en": "Environment",
+                  "fr": "Environnement",
+                  "it": "Ambiente"
+                },
+                "id": "ab2cc387-d129-4d76-b78d-517326d2a772",
+                "image_display_url": "",
+                "name": "envi",
+                "title": "{\"de\": \"Umwelt\", \"en\": \"Environment\", \"fr\": \"Environnement\", \"it\": \"Ambiente\"}"
+              }
+            ],
+            "id": "11f567c8-33df-4eb5-8dfc-479090ccdba3",
+            "identifier": "c022c6b6-67ad-4023-8d01-cd0d89cf73a6@bundesamt-fur-verkehr-bav",
+            "isopen": false,
+            "issued": "2013-01-01T00:00:00",
+            "keywords": {
+              "de": [
+                "geobasisdaten",
+                "aufbewahrungs--und-archivierungsplanung-aap---bund",
+                "bahnhof",
+                "eisenbahn",
+                "altlast",
+                "offentlicher-verkehr",
+                "umweltuberwachung",
+                "bgdi-bundesgeodaten-infrastruktur"
+              ],
+              "en": [
+                "official-geodata",
+                "conservation-and-archiving-planning-aap---confederation",
+                "station",
+                "railway",
+                "old-hazardous-site",
+                "public-transport",
+                "environmental-monitoring-facilities",
+                "fsdi-federal-spatial-data-infrastructure"
+              ],
+              "fr": [
+                "geodonnees-de-base",
+                "planification-de-la-conservation-et-de-larchivage-aap---confederation",
+                "gare",
+                "voie-ferree",
+                "site-ancien-dangereux",
+                "transport-en-commun",
+                "installations-de-suivi-environnemental",
+                "ifdg-linfrastructure-federale-de-donnees-geographiques"
+              ],
+              "it": [
+                "geodati-di-base",
+                "pianificazione-della-conservazione-e-dellarchiviazione-aap---confederazione",
+                "stazione",
+                "ferrovia",
+                "discarica-dismessa",
+                "trasporto-pubblico",
+                "impianti-di-monitoraggio-ambientale",
+                "ifdg-infrastruttura-federale-dei-dati-geografici"
+              ]
+            },
+            "language": [
+              "en",
+              "de",
+              "fr",
+              "it"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "markus.ammann@bav.admin.ch",
+            "maintainer_email": "markus.ammann@bav.admin.ch",
+            "metadata_created": "2018-02-15T09:13:37.713564",
+            "metadata_modified": "2023-12-07T00:33:44.080100",
+            "modified": "",
+            "name": "kataster-der-belasteten-standorte-im-bereich-des-offentlichen-verkehrs-kbs-bav",
+            "num_resources": 4,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2016-03-04T16:00:58.767460",
+              "description": {
+                "de": "Das Bundesamt f\u00fcr Verkehr (BAV) ist t\u00e4glich daf\u00fcr besorgt, die schweizerische Politik im Bereich des \u00f6ffentlichen Verkehrs umzusetzen und mitzugestalten. Es realisiert damit wesentliche Teile der von Volk, Parlament und Bundesrat beschlossenen Verkehrspolitik. Die Fachleute des BAV sind zust\u00e4ndig f\u00fcr den Personen- und den G\u00fcterverkehr auf der Schiene, f\u00fcr die Seilbahnen und Sessellifte, die Busse und die Schiffe.",
+                "en": "",
+                "fr": "L'Office f\u00e9d\u00e9ral des transports (OFT) veille journellement \u00e0 concevoir et \u00e0 mettre en \u0153uvre la politique suisse en mati\u00e8re de transports publics, r\u00e9alisant ainsi des parties essentielles de la politique des transports d\u00e9cid\u00e9e par le peuple, le Parlement et le Conseil f\u00e9d\u00e9ral. Les sp\u00e9cialistes de l'OFT sont comp\u00e9tents pour le transport de voyageurs et de marchandises sur le rail, pour les t\u00e9l\u00e9ph\u00e9riques et les t\u00e9l\u00e9si\u00e8ges, les bus et les bateaux.",
+                "it": "L'ufficio federale dei trasporti (UFT) si occupa quotidianamente di attuare e pianificare la politica svizzera nell'ambito dei trasporti pubblici, realizzando cos\u00ec i principi chiave della politica dei trasporti decisa dal Popolo, dal Parlamento e dal Consiglio federale. Gli esperti dell'UFT sono competenti per il trasporto di viaggiatori e di merci con la ferrovia, per gli impianti a fune, gli autobus e i battelli."
+              },
+              "display_name": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "groups": [],
+              "id": "2fddceb9-13df-42cc-8120-79d489582657",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "image_url": "https://ckan.opendata.swiss/uploads/group/BAV_Gebaeude.jpg",
+              "is_organization": true,
+              "name": "bundesamt-fur-verkehr-bav",
+              "num_followers": 0,
+              "package_count": 13,
+              "political_level": "confederation",
+              "revision_id": "ebd80158-d8a3-416b-b402-e7a7d3174ccc",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Bundesamt f\u00fcr Verkehr BAV",
+                "en": "Federal Office of Transport FOT",
+                "fr": "Office f\u00e9d\u00e9ral des transports OFT",
+                "it": "Ufficio federale dei trasporti UFT"
+              },
+              "type": "organization",
+              "url": ""
+            },
+            "owner_org": "2fddceb9-13df-42cc-8120-79d489582657",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.bav.admin.ch/bav/de/home.html\", \"name\": \"Bundesamt f\\u00fcr Verkehr BAV\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "Spezialisiertes Geoportal",
+                "url": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/fachthemen/geoinformation/geobasisdaten/kataster-der-belasteten-standorte-im-bereich-oev.html"
+              },
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/c022c6b6-67ad-4023-8d01-cd0d89cf73a6"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:59.518107",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Vorschau map.geo.admin.ch",
+                  "en": "Preview map.geo.admin.ch",
+                  "fr": "Aper\u00e7u map.geo.admin.ch",
+                  "it": "Previsione map.geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "format": "SERVICE",
+                "hash": "",
+                "id": "a8f4f16b-f80c-4b09-9d5b-400f85df49a0",
+                "issued": "2013-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "package_id": "11f567c8-33df-4eb5-8dfc-479090ccdba3",
+                "position": 0,
+                "protocol": "MAP:Preview",
+                "resource_type": null,
+                "revision_id": "87c09171-9c12-4312-bff7-587f0bf84db8",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Map (Preview) Vorschau map.geo.admin.ch",
+                  "en": "Map (Preview)  map.geo.admin.ch",
+                  "fr": "Map (Preview) Aper\u00e7u map.geo.admin.ch",
+                  "it": "Map (Preview) Previsione map.geo.admin.ch"
+                },
+                "url": "https://map.geo.admin.ch/?layers=ch.bav.kataster-belasteter-standorte-oev",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-03-30T00:16:31.381432",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "WMS-BGDI Dienst, Layer \"KbS \u00f6V\"",
+                  "en": "WMS-FSDI service, layer \"CPS public transports\"",
+                  "fr": "Service WMS-IFDG, couche \"CSP transports publics\"",
+                  "it": "Servizio WMS-IFDG, strato \"CSIN trasporti pubblici\""
+                },
+                "display_name": {
+                  "de": "ch.bav.kataster-belasteter-standorte-oev",
+                  "en": "ch.bav.kataster-belasteter-standorte-oev",
+                  "fr": "ch.bav.kataster-belasteter-standorte-oev",
+                  "it": "ch.bav.kataster-belasteter-standorte-oev"
+                },
+                "format": "WMS",
+                "hash": "",
+                "id": "9ade7778-a398-42c7-a6ae-adf237eadd7f",
+                "issued": "2013-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "ch.bav.kataster-belasteter-standorte-oev",
+                  "en": "ch.bav.kataster-belasteter-standorte-oev",
+                  "fr": "ch.bav.kataster-belasteter-standorte-oev",
+                  "it": "ch.bav.kataster-belasteter-standorte-oev"
+                },
+                "package_id": "11f567c8-33df-4eb5-8dfc-479090ccdba3",
+                "position": 1,
+                "protocol": "OGC:WMS",
+                "resource_type": null,
+                "revision_id": "87c09171-9c12-4312-bff7-587f0bf84db8",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "ch.bav.kataster-belasteter-standorte-oev",
+                  "en": "ch.bav.kataster-belasteter-standorte-oev",
+                  "fr": "ch.bav.kataster-belasteter-standorte-oev",
+                  "it": "ch.bav.kataster-belasteter-standorte-oev"
+                },
+                "url": "https://wms.geo.admin.ch/?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&lang=de",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-08-05T00:17:32.436144",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Link f\u00fcr Datenbezug",
+                  "en": "Data download link",
+                  "fr": "Lien pour t\u00e9l\u00e9charger les donn\u00e9es",
+                  "it": "Link per il download dei dati"
+                },
+                "display_name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://data.geo.admin.ch/ch.bav.kataster-belasteter-standorte-oev/",
+                "format": "",
+                "hash": "",
+                "id": "5b7d86b0-bf13-4db3-aee7-8ab3df4056b4",
+                "issued": "2013-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "11f567c8-33df-4eb5-8dfc-479090ccdba3",
+                "position": 2,
+                "protocol": "WWW:DOWNLOAD-URL",
+                "resource_type": null,
+                "revision_id": "87c09171-9c12-4312-bff7-587f0bf84db8",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://data.geo.admin.ch/ch.bav.kataster-belasteter-standorte-oev/",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2022-06-14T00:17:59.518120",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "display_name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "format": "API",
+                "hash": "",
+                "id": "93bec66a-5eae-4367-aa32-1f4203c5385e",
+                "issued": "2013-01-01T00:00:00",
+                "language": [
+                  "en",
+                  "de",
+                  "fr",
+                  "it"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "package_id": "11f567c8-33df-4eb5-8dfc-479090ccdba3",
+                "position": 3,
+                "protocol": "ESRI:REST",
+                "resource_type": null,
+                "revision_id": "87c09171-9c12-4312-bff7-587f0bf84db8",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "RESTful API von geo.admin.ch",
+                  "en": "RESTful API from geo.admin.ch",
+                  "fr": "RESTful API de geo.admin.ch",
+                  "it": "RESTful API da geo.admin.ch"
+                },
+                "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.bav.kataster-belasteter-standorte-oev",
+                "url_type": null
+              }
+            ],
+            "revision_id": "a8088ae1-fa53-4aa4-b89b-8c60a9aa906a",
+            "see_alsos": [],
+            "spatial": "Schweiz",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "Kataster der belasteten Standorte im Bereich des \u00f6ffentlichen Verkehrs (KbS BAV)",
+              "en": "Cataster of polluted sites in the area of public transport (CPS FOT)",
+              "fr": "Cadastre des sites pollu\u00e9s \u2013 domaine des transports publics (CSP OFT)",
+              "it": "Catasto dei siti inquinati nel settore dei trasporti pubblici (CSIN UFT)"
+            },
+            "title_for_slug": "kataster-der-belasteten-standorte-im-bereich-des-offentlichen-verkehrs-kbs-bav",
+            "type": "dataset",
+            "url": "https://www.bav.admin.ch/bav/de/home/allgemeine-themen/umwelt/altlasten.html",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/CONT",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "avt@bd.so.ch",
+                "name": "avt@bd.so.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+            "description": {
+              "de": "Der \u00f6ffentliche Verkehr im Kanton Solothurn umfasst diverse Bahn- und Buslinien.",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "display_name": {},
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "1e0a1a2a-5b27-4ca9-afd3-17d6f6c85059"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "7e7b9ad6-0825-4bcf-9cd1-b56434d32dde"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "SO-Kt - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Umwelt",
+                  "en": "Environment",
+                  "fr": "Environnement",
+                  "it": "Ambiente"
+                },
+                "id": "ab2cc387-d129-4d76-b78d-517326d2a772",
+                "image_display_url": "",
+                "name": "envi",
+                "title": "{\"de\": \"Umwelt\", \"en\": \"Environment\", \"fr\": \"Environnement\", \"it\": \"Ambiente\"}"
+              }
+            ],
+            "id": "21843915-77a8-44d0-b4f1-199b896875da",
+            "identifier": "73efe665-efa1-468c-8c6c-a4cfb5e615d5@kanton_solothurn",
+            "isopen": false,
+            "issued": "2024-01-03T00:00:00",
+            "keywords": {
+              "de": [
+                "bus",
+                "bahn",
+                "linie",
+                "haltestelle"
+              ],
+              "en": [],
+              "fr": [],
+              "it": []
+            },
+            "language": [
+              "de"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": null,
+            "maintainer_email": null,
+            "metadata_created": "2024-03-15T05:34:47.638990",
+            "metadata_modified": "2024-03-15T05:34:47.638998",
+            "modified": "2024-01-03T00:00:00",
+            "name": "offentlicher-verkehr2",
+            "num_resources": 4,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2023-03-01T08:21:25.119836",
+              "description": {
+                "de": "Beginnend mit den Geodaten ver\u00f6ffentlicht der Kanton Solothurn hier nach und nach Datens\u00e4tze der kantonalen Verwaltung, welche die Anforderungen zur Publikation als Open Government Data erf\u00fcllen.",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "display_name": {
+                "de": "Kanton Solothurn",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "groups": [],
+              "id": "1e4cc1ec-05f2-4801-821e-492a8199dced",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/2023-03-01-082125.0870262022-05-30-141509.051673logoso.png",
+              "image_url": "2023-03-01-082125.0870262022-05-30-141509.051673logoso.png",
+              "is_organization": true,
+              "name": "kanton_solothurn",
+              "num_followers": 0,
+              "package_count": 259,
+              "political_level": "canton",
+              "revision_id": "ce7044e7-6c6d-4469-b396-43fb030c8e19",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Kanton Solothurn",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "type": "organization",
+              "url": "https://so.ch/"
+            },
+            "owner_org": "1e4cc1ec-05f2-4801-821e-492a8199dced",
+            "private": false,
+            "publisher": "{\"url\": \"https://avt.so.ch\", \"name\": \"Amt f\\u00fcr Verkehr und Tiefbau\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/73efe665-efa1-468c-8c6c-a4cfb5e615d5"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-15T05:34:47.654322",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "DXF (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.dxf.zip",
+                "format": "DXF",
+                "hash": "",
+                "id": "b8b261b7-42d0-48a1-b65b-a5967f7ca0cb",
+                "issued": "2024-01-03T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "application/vnd.dxf",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-01-03T00:00:00",
+                "name": {
+                  "de": "DXF (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "21843915-77a8-44d0-b4f1-199b896875da",
+                "position": 0,
+                "protocol": "WWW:DOWNLOAD:DXF",
+                "resource_type": null,
+                "revision_id": "5ef16d7d-ce8c-4784-a72f-6c1e03b3de67",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "DXF (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.dxf.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-15T05:34:47.654329",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "GeoPackage (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.gpkg.zip",
+                "format": "GPKG",
+                "hash": "",
+                "id": "b99aa28b-c8d0-491e-a0d4-758fbd7b6a84",
+                "issued": "2024-01-03T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "application/geopackage+sqlite3",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-01-03T00:00:00",
+                "name": {
+                  "de": "GeoPackage (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "21843915-77a8-44d0-b4f1-199b896875da",
+                "position": 1,
+                "protocol": "WWW:DOWNLOAD:Geopackage (ogc)",
+                "resource_type": null,
+                "revision_id": "5ef16d7d-ce8c-4784-a72f-6c1e03b3de67",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "GeoPackage (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.gpkg.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-15T05:34:47.654331",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "INTERLIS 2 (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.xtf.zip",
+                "format": "INTERLIS",
+                "hash": "",
+                "id": "30e2bb72-9551-46f3-b8c9-91663e4933ec",
+                "issued": "2024-01-03T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-01-03T00:00:00",
+                "name": {
+                  "de": "INTERLIS 2 (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "21843915-77a8-44d0-b4f1-199b896875da",
+                "position": 2,
+                "protocol": "WWW:DOWNLOAD:INTERLIS",
+                "resource_type": null,
+                "revision_id": "5ef16d7d-ce8c-4784-a72f-6c1e03b3de67",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "INTERLIS 2 (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.xtf.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-15T05:34:47.654333",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Shapefile (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.shp.zip",
+                "format": "SHP",
+                "hash": "",
+                "id": "4a9344c2-0858-4453-8c8d-2118a973ac69",
+                "issued": "2024-01-03T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "application/vnd.shp",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2024-01-03T00:00:00",
+                "name": {
+                  "de": "Shapefile (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "21843915-77a8-44d0-b4f1-199b896875da",
+                "position": 3,
+                "protocol": "WWW:DOWNLOAD:SHP",
+                "resource_type": null,
+                "revision_id": "5ef16d7d-ce8c-4784-a72f-6c1e03b3de67",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Shapefile (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.shp.zip",
+                "url_type": null
+              }
+            ],
+            "revision_id": "5ef16d7d-ce8c-4784-a72f-6c1e03b3de67",
+            "see_alsos": [],
+            "spatial": "Kanton Solothurn (SO)",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "\u00f6ffentlicher Verkehr",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "title_for_slug": "offentlicher-verkehr2",
+            "type": "dataset",
+            "url": "https://data.geo.so.ch?filter=ch.so.avt.oev",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/CONT",
+            "author": null,
+            "author_email": null,
+            "contact_points": [
+              {
+                "email": "avt@bd.so.ch",
+                "name": "avt@bd.so.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+            "description": {
+              "de": "Der \u00f6ffentliche Verkehr im Kanton Solothurn umfasst diverse Bahn- und Buslinien.",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "display_name": {
+              "de": "\u00f6ffentlicher Verkehr",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              }
+            ],
+            "id": "e688929d-d60f-4a60-b665-6fdfd8a64bf1",
+            "identifier": "c51191ea-273f-4a48-a38b-abb08fc9b4d0@kanton_solothurn",
+            "isopen": false,
+            "issued": "2023-03-01T00:00:00",
+            "keywords": {
+              "de": [
+                "bus",
+                "bahn",
+                "linie",
+                "haltestelle"
+              ],
+              "en": [],
+              "fr": [],
+              "it": []
+            },
+            "language": [
+              "de"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "avt@bd.so.ch",
+            "maintainer_email": "avt@bd.so.ch",
+            "metadata_created": "2023-05-13T05:30:45.924024",
+            "metadata_modified": "2023-12-06T17:52:38.202789",
+            "modified": "2023-03-01T00:00:00",
+            "name": "offentlicher-verkehr1",
+            "num_resources": 4,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2023-03-01T08:21:25.119836",
+              "description": {
+                "de": "Beginnend mit den Geodaten ver\u00f6ffentlicht der Kanton Solothurn hier nach und nach Datens\u00e4tze der kantonalen Verwaltung, welche die Anforderungen zur Publikation als Open Government Data erf\u00fcllen.",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "display_name": {
+                "de": "Kanton Solothurn",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "groups": [],
+              "id": "1e4cc1ec-05f2-4801-821e-492a8199dced",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/2023-03-01-082125.0870262022-05-30-141509.051673logoso.png",
+              "image_url": "2023-03-01-082125.0870262022-05-30-141509.051673logoso.png",
+              "is_organization": true,
+              "name": "kanton_solothurn",
+              "num_followers": 0,
+              "package_count": 156,
+              "political_level": "canton",
+              "revision_id": "ce7044e7-6c6d-4469-b396-43fb030c8e19",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Kanton Solothurn",
+                "en": "",
+                "fr": "",
+                "it": ""
+              },
+              "type": "organization",
+              "url": "https://so.ch/"
+            },
+            "owner_org": "1e4cc1ec-05f2-4801-821e-492a8199dced",
+            "private": false,
+            "publisher": "{\"url\": \"https://avt.so.ch\", \"name\": \"Amt f\\u00fcr Verkehr und Tiefbau\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/c51191ea-273f-4a48-a38b-abb08fc9b4d0"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-05-13T05:30:45.970540",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "DXF (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.dxf.zip",
+                "format": "DXF",
+                "hash": "",
+                "id": "b1906e5b-e005-400a-9911-e12ff1734b82",
+                "issued": "2023-03-01T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-03-01T00:00:00",
+                "name": {
+                  "de": "DXF (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "e688929d-d60f-4a60-b665-6fdfd8a64bf1",
+                "position": 0,
+                "protocol": "WWW:DOWNLOAD:DXF",
+                "resource_type": null,
+                "revision_id": "129e781b-96a8-4ba2-8356-fd82e2c7f7a7",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "DXF (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.dxf.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-05-13T05:30:45.970546",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "GeoPackage (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.gpkg.zip",
+                "format": "GPKG",
+                "hash": "",
+                "id": "71a8a630-4859-4565-8115-0bdabada4e3e",
+                "issued": "2023-03-01T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-03-01T00:00:00",
+                "name": {
+                  "de": "GeoPackage (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "e688929d-d60f-4a60-b665-6fdfd8a64bf1",
+                "position": 1,
+                "protocol": "WWW:DOWNLOAD:Geopackage (ogc)",
+                "resource_type": null,
+                "revision_id": "129e781b-96a8-4ba2-8356-fd82e2c7f7a7",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "GeoPackage (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.gpkg.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-05-13T05:30:45.970555",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "INTERLIS 2 (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.xtf.zip",
+                "format": "INTERLIS",
+                "hash": "",
+                "id": "bd54ee34-c267-4edf-ac81-760c2281f005",
+                "issued": "2023-03-01T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-03-01T00:00:00",
+                "name": {
+                  "de": "INTERLIS 2 (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "e688929d-d60f-4a60-b665-6fdfd8a64bf1",
+                "position": 2,
+                "protocol": "WWW:DOWNLOAD:INTERLIS",
+                "resource_type": null,
+                "revision_id": "129e781b-96a8-4ba2-8356-fd82e2c7f7a7",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "INTERLIS 2 (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.xtf.zip",
+                "url_type": null
+              },
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-05-13T05:30:45.970557",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Shapefile (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "download_url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.shp.zip",
+                "format": "SHP",
+                "hash": "",
+                "id": "3edb68c9-75fb-4564-8c60-3f9d0df26b48",
+                "issued": "2023-03-01T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "2023-03-01T00:00:00",
+                "name": {
+                  "de": "Shapefile (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "e688929d-d60f-4a60-b665-6fdfd8a64bf1",
+                "position": 3,
+                "protocol": "WWW:DOWNLOAD:SHP",
+                "resource_type": null,
+                "revision_id": "129e781b-96a8-4ba2-8356-fd82e2c7f7a7",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Shapefile (in Zip): \u00f6ffentlicher Verkehr",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://files.geo.so.ch/ch.so.avt.oev/aktuell/ch.so.avt.oev.shp.zip",
+                "url_type": null
+              }
+            ],
+            "revision_id": "129e781b-96a8-4ba2-8356-fd82e2c7f7a7",
+            "see_alsos": [],
+            "spatial": "Kanton Solothurn (SO)",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "\u00f6ffentlicher Verkehr",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "title_for_slug": "offentlicher-verkehr1",
+            "type": "dataset",
+            "url": "https://data.geo.so.ch?filter=ch.so.avt.oev",
+            "version": null
+          },
+          {
+            "accrual_periodicity": "http://publications.europa.eu/resource/authority/frequency/IRREG",
+            "author": null,
+            "author_email": null,
+            "conforms_to": [],
+            "contact_points": [
+              {
+                "email": "info@vvl.ch",
+                "name": "info@vvl.ch"
+              }
+            ],
+            "coverage": "",
+            "creator_user_id": "af084126-f711-4016-a585-70354e997796",
+            "description": {
+              "de": "Zeigt Haltestellen des \u00f6ffentlichen Verkehrs, sowie Bahnstrecken, Schiffs- und Buslinien.",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "display_name": {},
+            "extras": [
+              {
+                "key": "harvest_object_id",
+                "value": "609593c4-c910-45b5-ac96-197a2cb06db7"
+              },
+              {
+                "key": "harvest_source_id",
+                "value": "795af522-2bcb-4fbc-963f-f38b1f99db57"
+              },
+              {
+                "key": "harvest_source_title",
+                "value": "LU-Kt - Geocat Harvester"
+              }
+            ],
+            "groups": [
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Regionen und St\u00e4dte",
+                  "en": "Regions and cities",
+                  "fr": "R\u00e9gions et villes",
+                  "it": "Regioni e citt\u00e0"
+                },
+                "id": "5ce2de34-4114-43cd-ab45-e90a42db50aa",
+                "image_display_url": "",
+                "name": "regi",
+                "title": "{\"de\": \"Regionen und St\u00e4dte\", \"en\": \"Regions and cities\", \"fr\": \"R\u00e9gions et villes\", \"it\": \"Regioni e citt\u00e0\"}"
+              },
+              {
+                "description": {
+                  "de": "",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Verkehr",
+                  "en": "Transport",
+                  "fr": "Transports",
+                  "it": "Trasporti"
+                },
+                "id": "896b8bde-68ed-4eb9-ab30-c0ea6f64747f",
+                "image_display_url": "",
+                "name": "tran",
+                "title": "{\"de\": \"Verkehr\", \"en\": \"Transport\", \"fr\": \"Transports\", \"it\": \"Trasporti\"}"
+              }
+            ],
+            "id": "56e910ad-be7c-46e7-83eb-dbf69a24a6f8",
+            "identifier": "f4a1db23-b029-49a5-ad42-39b0e27aefbb@geoinformation_kanton_luzern",
+            "isopen": false,
+            "issued": "2024-01-11T00:00:00",
+            "keywords": {
+              "de": [
+                "netzstruktur",
+                "offentlicher-verkehr",
+                "schienenverkehr",
+                "schifffahrt",
+                "verkehr"
+              ],
+              "en": [],
+              "fr": [],
+              "it": []
+            },
+            "language": [
+              "de"
+            ],
+            "license_id": null,
+            "license_title": null,
+            "maintainer": "info@vvl.ch",
+            "maintainer_email": "info@vvl.ch",
+            "metadata_created": "2023-04-23T20:06:21.718442",
+            "metadata_modified": "2024-02-03T06:32:04.604471",
+            "modified": "",
+            "name": "offentlicher-verkehr-bahn-bus-schiff",
+            "num_resources": 1,
+            "num_tags": 0,
+            "organization": {
+              "approval_status": "approved",
+              "created": "2023-04-23T19:59:45.630058",
+              "description": {
+                "de": "Die Geoinformation des Kantons Luzern ist f\u00fcr die Erhebung, Verarbeitung und Verwaltung von raumbezogenen Daten zust\u00e4ndig. Sie leitet, koordiniert und \u00fcberwacht die Arbeiten der Geoinformation und der amtlichen Vermessung.",
+                "en": "Geoinformation of the Canton of Lucerne is responsible for the collection, processing and management of spatial data. It manages, coordinates and monitors the work of geoinformation and of the cadastral surveying.",
+                "fr": "La g\u00e9oinformation du canton de Lucerne est responsable de la collecte, du traitement et de la gestion des donn\u00e9es \u00e0 r\u00e9f\u00e9rence spatiale. Elle dirige, coordonne et surveille les travaux de la g\u00e9oinformation et de la mensuration officielle.",
+                "it": "La Geoinformation del Cantone di Lucerna \u00e8 responsabile della raccolta, dell'elaborazione e della gestione dei dati territoriali. Gestisce, coordina e monitora il lavoro della geoinformazione e della misurazione ufficiale."
+              },
+              "display_name": {
+                "de": "Geoinformation Kanton Luzern",
+                "en": "Geoinformation Canton of Lucerne",
+                "fr": "G\u00e9oinformation du canton de Lucerne",
+                "it": "Geoinformazione del Cantone di Lucerna"
+              },
+              "groups": [
+                {
+                  "capacity": "public",
+                  "name": "kanton_luzern"
+                }
+              ],
+              "id": "d68f99a5-6e06-4b8f-bb28-244696368805",
+              "image_display_url": "https://ckan.opendata.swiss/uploads/group/2023-07-03-123724.468273ktlogodefault.png",
+              "image_url": "2023-07-03-123724.468273ktlogodefault.png",
+              "is_organization": true,
+              "name": "geoinformation_kanton_luzern",
+              "num_followers": 0,
+              "package_count": 234,
+              "political_level": "canton",
+              "revision_id": "b0ce461a-1353-4fa1-b657-6c3911490819",
+              "state": "active",
+              "tags": [],
+              "title": {
+                "de": "Geoinformation Kanton Luzern",
+                "en": "Geoinformation Canton of Lucerne",
+                "fr": "G\u00e9oinformation du canton de Lucerne",
+                "it": "Geoinformazione del Cantone di Lucerna"
+              },
+              "type": "organization",
+              "url": "https://geoportal.lu.ch/"
+            },
+            "owner_org": "d68f99a5-6e06-4b8f-bb28-244696368805",
+            "private": false,
+            "publisher": "{\"url\": \"https://www.vvl.ch\", \"name\": \"Verkehrsverbund Luzern\"}",
+            "qualified_relations": [],
+            "relations": [
+              {
+                "label": "geocat.ch permalink",
+                "url": "https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/f4a1db23-b029-49a5-ad42-39b0e27aefbb"
+              }
+            ],
+            "relationships_as_object": [],
+            "relationships_as_subject": [],
+            "resources": [
+              {
+                "byte_size": 0,
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-04-23T20:06:21.730640",
+                "datastore_active": false,
+                "datastore_contains_all_records_of_source_file": false,
+                "description": {
+                  "de": "Produktansicht Geodatenshop",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "display_name": {
+                  "de": "Datenshop",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "format": "SERVICE",
+                "hash": "",
+                "id": "8a96ae5c-1420-4b4d-a1dd-ede7e6638380",
+                "issued": "2024-01-11T00:00:00",
+                "language": [
+                  "de"
+                ],
+                "last_modified": null,
+                "license": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "media_type": "",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "modified": "",
+                "name": {
+                  "de": "Datenshop",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "package_id": "56e910ad-be7c-46e7-83eb-dbf69a24a6f8",
+                "position": 0,
+                "protocol": "https",
+                "resource_type": null,
+                "revision_id": "6d567f9a-86c0-4421-ab67-225f9edc28bc",
+                "rights": "NonCommercialAllowed-CommercialAllowed-ReferenceRequired",
+                "size": null,
+                "state": "active",
+                "title": {
+                  "de": "Datenshop",
+                  "en": "",
+                  "fr": "",
+                  "it": ""
+                },
+                "url": "https://daten.geo.lu.ch/produkt/meta/OEVXXXXX_COL",
+                "url_type": null
+              }
+            ],
+            "revision_id": "236b99bf-5c22-41b3-a996-908b0621187d",
+            "see_alsos": [],
+            "spatial": "Kanton Luzern",
+            "state": "active",
+            "tags": [],
+            "temporals": [],
+            "title": {
+              "de": "\u00d6ffentlicher Verkehr: Haltestellen und Liniennetze Bahn, Bus und Schiff",
+              "en": "",
+              "fr": "",
+              "it": ""
+            },
+            "title_for_slug": "offentlicher-verkehr-bahn-bus-schiff",
+            "type": "dataset",
+            "version": null
+          }
+        ],
+        "search_facets": {},
+        "sort": "score desc, metadata_modified desc"
+      },
+      "success": true,
+      "widening_prompts": [
+        "Eisenbahn OR anzahl-zuge",
+        "Eisenbahn OR rollstuhlzuganglichkeit",
+        "Eisenbahn OR zug",
+        "Eisenbahn OR zuge",
+        "Eisenbahn OR bahnhof",
+        "Eisenbahn OR bahnhofsliste",
+        "Eisenbahn OR bahnhofstrasse",
+        "Eisenbahn OR gleise",
+        "Eisenbahn OR schienenschmieranlagen",
+        "Eisenbahn OR statistik-des-offentlichen-verkehrs-inkl-schienenguterverkehr"
+      ]
+    } );
   }
 }

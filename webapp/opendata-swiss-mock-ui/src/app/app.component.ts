@@ -24,7 +24,7 @@ export class AppComponent {
     document.getElementById("ogdch_search").value = this.query.replaceAll("+", " ");
     this.datasetService.getDataset(this.query)
       .subscribe(
-        result => (this.results = result) && console.log(result)
+        result => (this.results = result)
       );
   }
 

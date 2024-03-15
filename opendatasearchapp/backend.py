@@ -1,5 +1,7 @@
+import os
 from ai1.ai1 import AI1
 from ai2.ai2 import AI2
+from dotenv import load_dotenv
 import requests
 
 
@@ -7,22 +9,24 @@ class Backend:
 
     def __init__(self) -> None:
         super().__init__()
-        self.ai1 = AI1()
-        self.ai2 = AI2()
+        load_dotenv()
+        key = os.environ.get("OPENAI_API_KEY")
+        self.ai1 = AI1(key)
+        self.ai2 = AI2(key)
 
     def get_for_input(self, user_input):
-        user_input = user_input.split("+")
+        user_input = " ".join(user_input.split("+"))
 
         # Display the input below when the user hits enter
         keywords = self.ai1.refine(user_input)
         result = self.callCKAN(keywords)
-        improvement = self.ai2.refine(user_input, keywords, result["result"])
+        improvement = self.ai2.refine(user_input.split(" "), keywords, result["result"])
 
-        result["message"] = improvement.message
-        result["widening_prompts"] = improvement.widening_prompts
-        result["narrowing_prompts"] = improvement.narrowing_prompts
-        result["alternative_prompts"] = improvement.alternative_prompts
-        return keywords, result, improvement
+        result["message"] = improvement[0].message
+        result["widening_prompts"] = improvement[0].widening_prompts
+        result["narrowing_prompts"] = improvement[0].narrowing_prompts
+        result["alternative_prompts"] = improvement[0].alternative_prompts
+        return result
 
     def callCKAN(self, values):
         titles = [f"title:{v}" for v in values]
