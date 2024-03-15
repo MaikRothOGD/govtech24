@@ -18,9 +18,9 @@ class AI1:
                 2. Return a maximum of 10 keywords
                 4. Be creative in the words you generate, think about synomyms.
                 5. Correct any spelling error in the Input.
-                6. Return all keywords in German.
-                7. Present results as a list of keywords separated with spaces.
-        
+                7. If the input has no meaning, return an empty string.
+                8. Present results as a list of keywords separated with spaces.
+
                 Input: Give me all datasets about acute care hospital in Switzerland.
         
                 Output: Geshundheit Geshundheitswesen Akutspital Spital Akutversorgung Notfallversorgung Schweiz
