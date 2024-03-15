@@ -9,12 +9,23 @@ class AI1:
 
     def refine(self, input: str) -> list:
         completion = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4-0125-preview",
             messages=[
                 {
                     "role": "system",
-                    "content": "You are an assistant to reformulate and improve search query for solr search platform. You must give the most relevant search keywords. You must give only 5 keywords separated by white space."
-                    },
+                    "content": """Based on the Input, generate a list of relevant keywords that will be used for a search query on an open data catalogue powered by a SolR search engine. 
+
+                1. The keywords must be written in the singular form. 
+                2. Return a maximum of 10 keywords
+                4. Be creative in the words you generate, think about synomyms.
+                5. Correct any spelling error in the Input.
+                6. Return all keywords in German.
+                7. Present results as a list of keywords separated with spaces.
+        
+                Input: Give me all datasets about acute care hospital in Switzerland.
+        
+                Output: Geshundheit Geshundheitswesen Akutspital Spital Akutversorgung Notfallversorgung Schweiz
+                """},
                 {
                     "role": "user", 
                     "content": input
