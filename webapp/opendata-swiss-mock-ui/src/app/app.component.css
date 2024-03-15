@@ -8,6 +8,56 @@ li {
   color: white;
   display: flex;
   flex-direction: row;
+  border-radius: 5px;
+}
+
+.message-container li{
+  background-color: #ddfffc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.message-container li:hover{
+  background-color: white;
+}
+
+.message-container a{
+  color: #009688 !important;
+}
+
+.message-container div{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message-container div:nth-child(1){
+  animation-delay: 0.2s;
+}
+
+.message-container div:nth-child(2){
+  animation-delay: 2s;
+}
+
+.message-container div:nth-child(3){
+  animation-delay: 3s;
+}
+
+.message-container div:nth-child(4){
+  animation-delay: 4s;
+}
+
+.message-container div:nth-child(5){
+  animation-delay: 5s;
 }
 
 .message-container img {
