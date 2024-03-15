@@ -37,8 +37,6 @@ class Backend:
         tags_string = "%20OR%20".join(tags)
         url = f"https://ckan.opendata.swiss/api/3/action/package_search?q={title_string}%20OR%20{description_string}%20OR%20{tags_string}"
 
-        print(f"url: {url}")
-
         # Make a GET request
         response = requests.get(url)
 
