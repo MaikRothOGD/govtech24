@@ -84,7 +84,10 @@ class AI2:
         ]
 
 
-# ai2 = AI2(openai_api_key)
+# import os
+# from dotenv import load_dotenv
+# load_dotenv()
+# ai2 = AI2(os.environ["OPENAI_API_KEY"])
 # print(
 #     ai2.refine(
 #         ["kuh"],
