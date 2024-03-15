@@ -6,6 +6,13 @@ li {
   background: #009688;
   padding: 15px;
   color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.message-container img {
+  max-width: 80%;
+  float: right;
 }
 
 .message-container a {
