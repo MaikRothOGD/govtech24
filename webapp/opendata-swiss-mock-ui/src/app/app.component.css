@@ -12,10 +12,14 @@ li {
 }
 
 .message-container li{
-  background-color: white;
+  background-color: #ddfffc;
   margin-bottom: 5px;
   border-radius: 5px;
   padding: 5px;
+}
+
+.message-container li:hover{
+  background-color: white;
 }
 
 .message-container a{

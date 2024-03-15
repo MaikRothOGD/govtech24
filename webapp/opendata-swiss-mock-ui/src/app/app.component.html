@@ -1,17 +1,7 @@
 <div class="loading-overlay" *ngIf="loading"><div class="loader"></div></div>
 <div class="search-result-title clearfix">
 
-  <!-- Sort Options -->
-  <div class="form-group form-inline header-md-vertical-center sortby">
-    <label for="field-order-by">Sortieren nach</label>
-    <select class="form-control" id="field-order-by" name="sort" onchange="this.form.submit()">
-      <option value="score desc, metadata_modified desc">Relevanz</option>
-      <option value="max(res_latest_issued, res_latest_modified) desc">Daten zuletzt geändert</option>
-      <option value="max(issued, modified) desc">Metadaten zuletzt geändert</option>
-      <option value="title_string_de asc">Name aufsteigend</option>
-      <option value="title_string_de desc">Name absteigend</option>
-    </select>
-  </div>
+
 
   @if (results.result.results.length > 0){
     <div class="message-container" *ngIf="!!query && query.length > 0">
@@ -45,6 +35,18 @@
       <div class="img">
         <img src="https://bucketeer-036aa605-c047-4623-8610-f1764b90cf98.s3.amazonaws.com/public/2122/UV5HM145R0SN9J7K6GJFNV0S/2024_botgovtech.jpg" />
       </div>
+    </div>
+
+      <!-- Sort Options -->
+    <div class="form-group form-inline header-md-vertical-center sortby">
+      <label for="field-order-by">Sortieren nach</label>
+      <select class="form-control" id="field-order-by" name="sort" onchange="this.form.submit()">
+        <option value="score desc, metadata_modified desc">Relevanz</option>
+        <option value="max(res_latest_issued, res_latest_modified) desc">Daten zuletzt geändert</option>
+        <option value="max(issued, modified) desc">Metadaten zuletzt geändert</option>
+        <option value="title_string_de asc">Name aufsteigend</option>
+        <option value="title_string_de desc">Name absteigend</option>
+      </select>
     </div>
 
     <div class="row" style="margin-left: 0px;">
