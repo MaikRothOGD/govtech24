@@ -20,7 +20,7 @@
       <div class="text">
       <div class="chat-response">{{results.message}}</div>
       <div class="widening">
-        <p>Hier sind ein paar Vorschläge, um die Suche auszuweiten:</p>
+        <p><br>Hier sind ein paar Vorschläge, um die Suche auszuweiten:</p>
         <ul>
           <li *ngFor="let widened of results.widening_prompts">
             <a href="/?q={{widened.split(' ').join('+')}}">{{widened}}</a>
@@ -48,6 +48,10 @@
         <img src="https://bucketeer-036aa605-c047-4623-8610-f1764b90cf98.s3.amazonaws.com/public/2122/UV5HM145R0SN9J7K6GJFNV0S/2024_botgovtech.jpg" />
       </div>
     </div>
+
+    <h2>
+      {{results.result.count}} Datensätze gefunden
+    </h2>
 
     <li class="dataset-item" *ngFor="let result of results.result.results">
       <div class="dataset-content">
