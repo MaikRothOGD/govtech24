@@ -14,56 +14,61 @@
     </select>
   </div>
 
-  <div class="message-container" *ngIf="!!query && query.length > 0">
-    <div class="text">
-    <div class="chat-response">{{results.message}}</div>
-    <div class="widening">
-      <p>Hier sind ein paar Vorschläge, um die Suche auszuweiten:</p>
-      <ul>
-        <li *ngFor="let widened of results.widening_prompts">
-          <a href="/?q={{widened.split(' ').join('+')}}">{{widened}}</a>
-        </li>
-      </ul>
+  @if (results.result.results){
+    <div class="message-container" *ngIf="!!query && query.length > 0">
+      <div class="text">
+      <div class="chat-response">{{results.message}}</div>
+      <div class="widening">
+        <p>Hier sind ein paar Vorschläge, um die Suche auszuweiten:</p>
+        <ul>
+          <li *ngFor="let widened of results.widening_prompts">
+            <a href="/?q={{widened.split(' ').join('+')}}">{{widened}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="narrowing">
+        <p>Hier sind ein paar Vorschläge, um die Suche weiter einzugrenzen:</p>
+        <ul>
+          <li *ngFor="let narrowed of results.narrowing_prompts">
+            <a href="/?q={{narrowed.split(' ').join('+')}}">{{narrowed}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="alternative">
+        <p>Ich habe auch spannende alternative Suchergebnisse gefunden:</p>
+        <ul>
+          <li *ngFor="let alternative of results.alternative_prompts">
+            <a href="/?q={{alternative.split(' ').join('+')}}">{{alternative}}</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="img">
+        <img src="https://bucketeer-036aa605-c047-4623-8610-f1764b90cf98.s3.amazonaws.com/public/2122/UV5HM145R0SN9J7K6GJFNV0S/2024_botgovtech.jpg" />
+      </div>
     </div>
-    <div class="narrowing">
-      <p>Hier sind ein paar Vorschläge, um die Suche weiter einzugrenzen:</p>
-      <ul>
-        <li *ngFor="let narrowed of results.narrowing_prompts">
-          <a href="/?q={{narrowed.split(' ').join('+')}}">{{narrowed}}</a>
-        </li>
-      </ul>
-    </div>
-    <div class="alternative">
-      <p>Ich habe auch spannende alternative Suchergebnisse gefunden:</p>
-      <ul>
-        <li *ngFor="let alternative of results.alternative_prompts">
-          <a href="/?q={{alternative.split(' ').join('+')}}">{{alternative}}</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-    <div class="img">
-      <img src="https://bucketeer-036aa605-c047-4623-8610-f1764b90cf98.s3.amazonaws.com/public/2122/UV5HM145R0SN9J7K6GJFNV0S/2024_botgovtech.jpg" />
-    </div>
-  </div>
 
-  <li class="dataset-item" *ngFor="let result of results.result.results">
-    <div class="dataset-content">
-      <h3 class="dataset-heading">
-        <a href="https://opendata.swiss/de/dataset/qualitatsindikatoren-der-schweizer-akutspitaler-2022">
-          {{result.title.de}}
-        </a>
-      </h3>
-      <p class="small"><span class="organization">{{result.organization.display_name.de}}</span><br>
-        <span *ngFor="let grp of result.groups; let last = last">{{grp.display_name.de}}<span *ngIf="!last">, </span></span>
-      </p>
-      <p>{{result.description.de}}</p>
-    </div>
-    <p class="small">Zuletzt aktualisiert: {{result.issued?.substring(0, 10)}}</p>
-    <ul class="dataset-resources-keywords list-inline tags">
-      <li *ngFor="let keyword of result.keywords.de">
-        <small><span class="label label-primary-gray" title="fallzahlen">{{keyword}}</span></small>
-      </li>
-    </ul>
-  </li>
+    <li class="dataset-item" *ngFor="let result of results.result.results">
+      <div class="dataset-content">
+        <h3 class="dataset-heading">
+          <a href="https://opendata.swiss/de/dataset/qualitatsindikatoren-der-schweizer-akutspitaler-2022">
+            {{result.title.de}}
+          </a>
+        </h3>
+        <p class="small"><span class="organization">{{result.organization.display_name.de}}</span><br>
+          <span *ngFor="let grp of result.groups; let last = last">{{grp.display_name.de}}<span *ngIf="!last">, </span></span>
+        </p>
+        <p>{{result.description.de}}</p>
+      </div>
+      <p class="small">Zuletzt aktualisiert: {{result.issued?.substring(0, 10)}}</p>
+      <ul class="dataset-resources-keywords list-inline tags">
+        <li *ngFor="let keyword of result.keywords.de">
+          <small><span class="label label-primary-gray" title="fallzahlen">{{keyword}}</span></small>
+        </li>
+      </ul>
+    </li>
+  }
+  @else {
+    <p>Text when no results goes here</p>
+  }
 </div>
