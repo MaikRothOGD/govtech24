@@ -50,7 +50,7 @@ class AI2:
             messages=[
                 {
                     "role": "user",
-                    "content": f"Which of the following terms is related to {keyword}: {','.join(alternative_tags)}? Output only the terms, one per line as raw strings. Add a line with a sentence in the German stating how those terms are related and suggesting if the user should narrow or widen their search. Their search yielded {result['count']} results where a good search yeilds between 5 and 15 results.",
+                    "content": f"Which of the following terms is related to {keyword}: {','.join(alternative_tags)}? Output only the terms, one per line as raw strings. Add a line with a sentence in the German stating how those terms are related and suggesting if the user should narrow or widen their search. Their search yielded {result['count']} results where a good search yields between 5 and 15 results.",
                 }
             ],
         )
