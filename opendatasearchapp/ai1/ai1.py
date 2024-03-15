@@ -17,9 +17,9 @@ class AI1:
                 1. The keywords must be written in the singular form. 
                 2. Return a maximum of 10 keywords
                 3. Be creative in the words you generate, think about synomyms.
-                4. Correct any spelling error in the Input.
-                5. Return all keywords in German.
-                6. Present results as a list of keywords separated with spaces.
+                4. Return all keywords in German.
+                5. Present results as a list of keywords separated with spaces.
+                6. If you can't return any keyword, just return an empty string.
 
                 Input: Give me all datasets about acute care hospital in Switzerland.
         
