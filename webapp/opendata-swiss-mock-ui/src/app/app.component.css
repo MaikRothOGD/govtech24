@@ -1,5 +1,7 @@
 li {
   list-style-type: none;
+  border-radius: 2px;
+  padding: 3px;
 }
 
 .message-container {
@@ -8,14 +10,25 @@ li {
   color: white;
   display: flex;
   flex-direction: row;
-  border-radius: 5px;
+  border-radius: 15px;
+  box-shadow: 
+    1px 1px 1px 1px #00998a,
+    2px 2px 2px 2px #00b3a1,
+    3px 3px 3px 3px #00ccb8,
+    4px 4px 4px 4px #00e6cf;
 }
+
+
 
 .message-container li{
   background-color: #ddfffc;
   margin-bottom: 5px;
   border-radius: 5px;
   padding: 5px;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+  overflow: hidden;
 }
 
 .message-container li:hover{
@@ -27,18 +40,58 @@ li {
   color: #009688 !important;
 }
 
-.message-container div{
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
+.message-container li::before,
+.message-container li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+.message-container li::before {
+  background: #ddfffc;
+  animation: typewriter 4s
+    steps(35) 1s forwards;
+} 
+
+.message-container li::before:nth-child(1) {
+  background: #ddfffc;
+  animation: typewriter 4s
+    steps(35) 10s forwards;
+} 
+
+.message-container li::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 4s
+      steps(35) 1s forwards,
+    blink 800ms steps(30) infinite;
+}
+
+@keyframes typewriter {
   to {
-    opacity: 1;
+    left: 100%;
   }
+}
+
+@keyframes blink {
+  0% {
+    background: black;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: black;
+  }
+}
+
+.message-container div{
+  opacity: 0;
+  overflow: hidden;
+  animation: fadeIn 0.5s forwards;
 }
 
 .message-container div:nth-child(1){
@@ -66,6 +119,14 @@ li {
   float: right;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .message-container a {
   color: white;
   font-weight: bold;
@@ -79,7 +140,7 @@ li {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: #000c;
+  background: rgba(0, 0, 0, 0.292);
   z-index: 10000;
 }
 
